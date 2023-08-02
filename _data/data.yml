@@ -1,0 +1,171 @@
+#
+# Be aware that even a small syntax error here can lead to failures in output.
+#
+
+sidebar:
+    position: right # position of the sidebar : left or right
+    about: False # set to False or comment line if you want to remove the "how to use?" in the sidebar
+    education: True # set to False if you want education in main section instead of in sidebar
+
+    # Profile information
+    name: liuliu (L2)
+    tagline: Software Engineer
+    avatar: avatar.jpg
+
+    # Sidebar links
+    email: liuliugit@gmail.com
+    phone: 
+    timezone: Asia/Taipei
+    citizenship:
+    website: github.com/liuliuOD
+    linkedin: chiamin-liu
+    xing:
+    github: liuliuOD
+    # telegram: # add your nickname without '@' sign
+    # gitlab:
+    # bitbucket:
+    # twitter: # add your nickname with '@' sign
+    # stack-overflow: # Number/Username, e.g. 123456/alandoe
+    # codewars:
+    # goodreads: # Number-Username, e.g. 123456-alandoe
+    # pdf: http://www.africau.edu/images/default/sample.pdf # Resume PDF
+
+    languages:
+      title: Languages
+      info:
+        - idiom: Chinese
+          level: Native
+
+        - idiom: English
+          level: Professional
+
+    interests:
+      title: Interests
+      info:
+        - item: Reading
+          link:
+
+        - item: Board Game
+          link:
+
+education:
+    title: Education
+    info:
+      - degree: BSc in Computer Science
+        university: Chiayi University
+        time: 2015 - 2019
+
+career-profile:
+    title: About Me
+    summary: |
+      A demand-centric software engineer. Skilled at building robust, easy to maintain and scalable services. Core skills: Container, Cloud Platform and Automated Processes.
+
+experiences:
+    title: Experiences
+    info:
+      - role: Software Engineer
+        time: 2020 - Present
+        company: HiSKIO, Online Education Platform
+        details: |
+          - **Laravel**:
+            - iteration of RESTful API versions.
+            - build faster unit test.
+            - build facilite API for backstage website.
+            - improve function response speed by 20% ~ 30%.
+          - **MySQL**:
+            - improve execution time by 50%.
+            - optimize index and table structures.
+          - **AWS**:
+            - maintain 3-tier service structure, ALB + EC2 + RDS.
+            - use SQS + Lambda to develop asynchronous procedures, eg: image generator, screenshot for SEO, etc.
+            - integrate API projects to CodePipeline for continuous integration (CI).
+            - combine ECR + ASG + CloudWatch Alarm to do auto scaling when services suffering pike traffic.
+          - **Third-Party API**:
+            - ChatGPT.
+            - social Media, eg: Line, Google, etc.
+          - **Docker**:
+            - dockerize API projects.
+            - dockerize service tools.
+            - reduce image size about 50%.
+      - role: Software Engineer & Intern
+        time: 2019 - 2020, 2018 - 2019
+        company: Awoo, SEO & AI Recommendation
+        details: |
+          - **Laravel**:
+            - iteration of RESTful API versions.
+            - build unit test.
+          - **CodeIgniter2**:
+            - maintain on-premises service.
+          - **Third-Party API**:
+            - HubSpot.
+
+certifications:
+      title: Certifications
+      list:
+        - name: AWS Certified Solutions Architect - Associate (SAA)
+          start: 2023
+          end: 2026
+          organization: AWS
+          credentialid: AWS03666006
+          credentialurl: www.credly.com/badges/5fa62ede-8f8b-4b70-9976-daa0a4fee3a2/public_url
+          credentialname: AWS Certified Solutions Architect - Associate (SAA)
+          details: |
+            Earners of this certification have a comprehensive understanding of AWS services and technologies. They demonstrated the ability to build secure and robust solutions using architectural design principles based on customer requirements. Badge owners are able to strategically design well-architected distributed systems that are scalable, resilient, efficient, and fault-tolerant.
+
+projects:
+    title: Projects
+    intro: >
+      You can list your side projects in this
+      section. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
+    assignments:
+      - title: (RUST) Documentation Embedding
+        link: "https://github.com/liuliuOD/Documentation-Embedding"
+        tagline: "This tool provides a fast and efficient way to convert text into vector embeddings and store them in the Qdrant search engine. Built with Rust, this tool is designed to handle large datasets and deliver lightning-fast search results."
+      - title: (Python3) ChatGPT token usage Calculator
+        link: "https://github.com/liuliuOD/ChatGPT-Token-Usage-Pre-Calculator"
+        tagline: "Perfect for anyone who needs to quickly calculate the token amount of ChatGPT in prompts for their project."
+      - title: (Docker) Dockerize Templates
+        link: "https://github.com/liuliuOD/Dockerize-Templates"
+        tagline: "A collection of Docker templates that you can use as a starting point for your own projects. Whether you're a developer, sysadmin, or just someone who wants to get started with Docker."
+
+oss:
+    title: OSS Contributions
+    intro: >
+      My open source software contributions.
+    contributions:
+      - title: actix/examples
+        link: "https://github.com/actix/examples"
+        tagline: "Community showcase and examples of Actix ecosystem usage."
+
+      - title: openai-cookbook
+        link: "https://github.com/openai/openai-cookbook"
+        tagline: "Examples and guides for using the OpenAI API."
+
+      - title: design-patterns-for-humans-zh-TW
+        link: "https://github.com/liuliuOD/design-patterns-for-humans-zh-TW"
+        tagline: "An ultra-simplified explanation to design patterns."
+
+skills:
+    title: Skills &amp; Proficiency
+
+    toolset:
+      - name: PHP & Laravel
+        level: 85%
+      - name: Docker
+        level: 70%
+      - name: MySQL
+        level: 65%
+      - name: AWS
+        level: 65%
+      - name: Javascript & Vue
+        level: 60%
+      - name: Python & Django REST Framework (DRF)
+        level: 50%
+      - name: RUST & Actix
+        level: 30%
+      - name: Redis
+        level: 30%
+
+footer: >
+    Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
