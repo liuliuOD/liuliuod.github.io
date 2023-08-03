@@ -82,7 +82,7 @@ experiences:
             - combine ECR + ASG + CloudWatch Alarm to do auto scaling when services suffering pike traffic.
           - **Third-Party API**:
             - ChatGPT.
-            - social Media, eg: Line, Google, etc.
+            - social media, eg: Line, Google, etc.
           - **Docker**:
             - dockerize API projects.
             - dockerize service tools.
