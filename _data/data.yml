@@ -150,22 +150,24 @@ skills:
     title: Skills &amp; Proficiency
 
     toolset:
-      - name: PHP & Laravel
-        level: 85%
-      - name: Docker
-        level: 70%
-      - name: MySQL
-        level: 65%
-      - name: AWS
-        level: 65%
-      - name: Javascript & Vue
-        level: 60%
-      - name: Python & Django REST Framework (DRF)
-        level: 50%
-      - name: RUST & Actix
-        level: 30%
-      - name: Redis
-        level: 30%
+      - name: Programming Languages
+        tagline:
+          - description: Python3, JavaScript, RUST, PHP.
+      - name: Frameworks
+        tagline:
+          - description: Vue, Actix, Laravel, Django REST Framework (DRF), Swagger.
+      - name: RDBMS
+        tagline:
+          - description: MySQL, MariaDB, Sqlite.
+      - name: NoSQL
+        tagline:
+          - description: Redis.
+      - name: IaaS
+        tagline:
+          - description: AWS (EC2, ELB, S3, CloudFront, Lambda, SQS, CloudWatch, CodePipeline, etc).
+      - name: Misc
+        tagline:
+          - description: GitHub Action, Docker, Docker Swarm, Nginx, Ansible.
 
 footer: >
     Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>

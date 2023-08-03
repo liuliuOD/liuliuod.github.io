@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: resume
 title: L2's Resume
 ---
 
@@ -20,5 +20,4 @@ title: L2's Resume
 
 {% include publications.html %}
 
-{% include skills.html %}
-
+{% include skills-list.html %}
