@@ -1,5 +1,6 @@
 ---
 layout: default
+title: L2's Resume
 ---
 
 
