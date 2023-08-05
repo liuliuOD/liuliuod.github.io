@@ -4,16 +4,16 @@ permalink: /print
 ---
 
 
-{% include career-profile.html %}
+{% include_relative _includes/resume/career-profile.html %}
 
 {% unless site.data.data.sidebar.education %}
-  {% include education.html %}
+{% include_relative _includes/resume/education.html %}
 {% endunless %}
 
-{% include experiences.html %}
+{% include_relative _includes/resume/experiences.html %}
 
-{% include projects.html %}
+{% include_relative _includes/resume/projects.html %}
 
-{% include publications.html %}
+{% include_relative _includes/resume/publications.html %}
 
-{% include skills.html %}
+{% include_relative _includes/resume/skills.html %}

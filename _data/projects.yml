@@ -1,0 +1,17 @@
+list:
+    - title: (RUST) Documentation Embedding
+      link: liuliuOD/Documentation-Embedding
+      description: "This tool provides a fast and efficient way to convert text into vector embeddings and store them in the Qdrant search engine. Built with Rust, this tool is designed to handle large datasets and deliver lightning-fast search results."
+      date: 2023 - 
+    - title: (Python3) ChatGPT token usage Calculator
+      link: liuliuOD/ChatGPT-Token-Usage-Pre-Calculator
+      description: "Perfect for anyone who needs to quickly calculate the token amount of ChatGPT in prompts for their project."
+      date: 2023 - 
+    - title: (Docker) Dockerize Templates
+      link: liuliuOD/Dockerize-Templates
+      description: "A collection of Docker templates that you can use as a starting point for your own projects. Whether you're a developer, sysadmin, or just someone who wants to get started with Docker."
+      date: 2023 - 
+    - title: (Python) Gaussian Sketch Method
+      link: liuliuOD/Gaussian-Sketch-Method
+      description: "Using classical method to transfer images to sketch."
+      date: 2018 - 2019

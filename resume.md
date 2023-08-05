@@ -4,20 +4,20 @@ title: L2's Resume
 ---
 
 
-{% include career-profile.html %}
+{% include_relative _includes/resume/career-profile.html %}
 
 {% unless site.data.data.sidebar.education %}
   {% include education.html %}
 {% endunless %}
 
-{% include experiences.html %}
+{% include_relative _includes/resume/experiences.html %}
 
-{% include certifications.html %}
+{% include_relative _includes/resume/certifications.html %}
 
-{% include projects.html %}
+{% include_relative _includes/resume/projects.html %}
 
-{% include oss-contributions.html %}
+{% include_relative _includes/resume/oss-contributions.html %}
 
-{% include publications.html %}
+{% include_relative _includes/resume/publications.html %}
 
-{% include skills-list.html %}
+{% include_relative _includes/skills-list.html %}

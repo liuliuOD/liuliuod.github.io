@@ -17,6 +17,7 @@ description: >-
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
+repository: liuliuod/liuliuod.github.io # for execute project in local zone
 
 # Build settings
 theme_skin: orange
