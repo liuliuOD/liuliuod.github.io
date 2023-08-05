@@ -68,26 +68,27 @@ experiences:
         time: 2020 - Present
         company: HiSKIO, Online Education Platform
         details: |
-          - **Laravel**:
-            - iteration of RESTful API versions.
-            - build faster unit test.
-            - build facilite API for backstage website.
-            - improve function response speed by 20% ~ 30%.
-          - **MySQL**:
-            - improve execution time by 50%.
-            - optimize index and table structures.
-          - **AWS**:
-            - maintain 3-tier service structure, ALB + EC2 + RDS.
-            - use SQS + Lambda to develop asynchronous procedures, eg: image generator, screenshot for SEO, etc.
-            - integrate API projects to CodePipeline for continuous integration (CI).
-            - combine ECR + ASG + CloudWatch Alarm to do auto scaling when services suffering pike traffic.
-          - **Third-Party API**:
-            - ChatGPT.
-            - social media, eg: Line, Google, etc.
-          - **Docker**:
-            - dockerize API projects.
-            - dockerize service tools.
-            - reduce image size about 50%.
+          - **Projects**:
+            - Develop & Maintain iteration of RESTful API build by Laravel.
+              - build faster unit test.
+              - build facilite API for backstage website.
+              - framework version upgrade.
+              - improve the response speed of functions by 20% ~ 30%.
+            - Improve SQL query execution time by 50% written by MySQL.
+              - optimize index and table structures.
+            - Maintain 3-tier service structures built with AWS ALB, EC2 and RDS.
+            - Combine AWS SQS and Lambda to build asynchronous procedures.
+              - image generator
+              - website screenshot for SEO
+              - etc.
+            - Integrate API projects to CodePipeline for continuous integration (CI).
+            - Combine AWS ECR, ASG and CloudWatch Alarm to trigger auto scaling when services suffering spike traffic.
+            - Build customer reply service BOT by third-Party API, integration with ChatGPT.
+            - Dockerize projects and make deploy to test or production environment more efficient.
+              - reduce image size about 50%.
+          - **Techniques**:
+            - PHP ॰ Python3 ॰ Laravel ॰ Lumen ॰ JS ॰ Vue ॰ Nuxt ॰ AWS ॰ Docker ॰ MySQL ॰ SQLite
+            - Third-Party API ॰ GTM ॰ GA4
       - role: Software Engineer & Intern
         time: 2019 - 2020, 2018 - 2019
         company: awoo, SEO & AI Marketing Platform
