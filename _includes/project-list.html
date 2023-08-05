@@ -1,0 +1,113 @@
+{% assign projects = site.data.projects.list %}
+
+{% if projects %}
+<div class="HomeMainContainer">
+  {% for project in projects %}
+  <div title="{{ project.title }}" class="ItemContainer {{ site.theme_skin }}">
+    <div class="ItemContainerContent">
+      <a href="https://github.com/{{ project.link }}" target="_blank">
+        <p class="title">{{ project.title }}</p>
+        <p class="description">{{ project.description }}</p>
+        <p class="date">{{ project.date }}</p>
+      </a>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font: 300 21px Lato, Helvetica Neue, Helvetica, Arial, sans-serif;
+  }
+
+  .ItemContainer.orange {
+    background: rgba(0, 0, 0, 0.2);
+  }
+
+  .ItemContainer {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin: 1rem 0 10px 0;
+    transition: all .2s
+  }
+
+  .ItemContainer:hover {
+    transform: scale(1.03);
+    box-shadow: 1px 1px 5px grey
+  }
+
+  .ItemContainerContent {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 28px 0 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around
+  }
+
+  .ItemContainer .ItemContainerContent .title {
+    color: white;
+    text-align: left;
+    font-size: 2.5rem;
+    font-weight: 800;
+    display: inline-block;
+    -webkit-margin-before: .5em;
+    margin-block-start: .5em;
+    -webkit-margin-after: 1em;
+    margin-block-end: 1em;
+    -webkit-margin-start: 0;
+    margin-inline-start: 0;
+    -webkit-margin-end: auto;
+    margin-inline-end: auto
+  }
+
+  .ItemContainer .ItemContainerContent .description {
+    width: 100%;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.491);
+    font-size: 1.8rem;
+    font-weight: 500;
+    box-sizing: border-box;
+    -webkit-margin-before: 0;
+    margin-block-start: 0;
+    -webkit-margin-after: 2em;
+    margin-block-end: 2em;
+    -webkit-margin-start: 0;
+    margin-inline-start: 0;
+    -webkit-margin-end: 0;
+    margin-inline-end: 0
+  }
+
+  .ItemContainer .ItemContainerContent .date {
+    color: black;
+    text-align: left;
+    font-size: 1.9rem;
+    font-weight: 600;
+    display: inline-block;
+    -webkit-margin-before: 0;
+    margin-block-start: 0;
+    -webkit-margin-after: 1rem;
+    margin-block-end: 1rem;
+    -webkit-margin-start: 0;
+    margin-inline-start: 0;
+    -webkit-margin-end: auto;
+    margin-inline-end: auto
+  }
+
+  .HomeMainContainer {
+    width: 80%;
+    border-radius: .5rem;
+    box-sizing: border-box;
+    margin: 1rem auto;
+  }
+
+  p {
+    font-size: 1.3rem;
+    font-weight: 345
+  }
+</style>
+{% endif %}

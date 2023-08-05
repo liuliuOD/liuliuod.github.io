@@ -17,17 +17,17 @@
 
   </div><!--//profile-container-->
 
-  {% include contact.html %}
+  {% include_relative _includes/resume/contact.html %}
 
   {% if sidebar.education %}
-    {% include education.html %}
+  {% include_relative _includes/resume/education.html %}
   {% endif %}
 
-  {% include language.html %}
-  {% include interests.html %}
+  {% include_relative _includes/resume/language.html %}
+  {% include_relative _includes/resume/interests.html %}
 
   {% if sidebar.about %}
-    {% include about.html %}
+  {% include_relative _includes/resume/about.html %}
   {% endif %}
 
 </div><!--//sidebar-wrapper-->
