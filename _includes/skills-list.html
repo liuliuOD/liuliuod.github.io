@@ -17,9 +17,9 @@
 
       <h3 class="level-title">{{ skill.name }}</h3>
 
-      {% for line in skill.tagline %}
+      {% for tagline in skill.tagline %}
       <br />
-      <p>{{ line.description }}</p>
+      <p>{{ tagline }}</p>
       {% endfor %}
 
     </div><!--//item-->
