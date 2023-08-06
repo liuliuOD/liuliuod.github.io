@@ -68,26 +68,32 @@ experiences:
         time: 2020 - Present
         company: HiSKIO, Online Education Platform
         details: |
-          - **Projects**:
+          - **Developing**:
             - Develop & Maintain iteration of RESTful API build by Laravel.
               - build faster unit test.
               - build facilite API for online learning website.
               - build facilite API for backstage website.
               - framework version upgrade.
               - improve the response speed of functions by 20% ~ 30%.
+              - use Swagger to write API docs.
+            - Develop & Maintain SPA website by Vue & Nuxt.
             - Improve SQL query execution time by 50% written by MySQL.
               - optimize index and table structures.
-            - Maintain 3-tier service structures built with AWS ALB, EC2 and RDS.
             - Combine AWS SQS and Lambda to build asynchronous procedures.
               - image generator.
               - website screenshot for SEO.
               - etc.
-            - Integrate API projects to CodePipeline for continuous integration (CI).
+          - **Maintaining**:
+            - Maintain 3-tier service structures built with AWS ALB, EC2 and RDS.
+            - Integrate projects to CodePipeline for continuous integration (CI).
             - Combine AWS ECR, ASG and CloudWatch Alarm to trigger auto scaling when services suffering spike traffic.
             - Build customer reply service BOT by third-Party API, integration with ChatGPT.
             - Dockerize projects and make deploy to test or production environment more efficient.
               - reduce image size about 50%.
-            - Monitor & Real time log notification to Slack with AWS CloudWatch Logs.
+          - **Monitoring & Tracking**:
+            - Monitor service logs and custom service statuses through AWS CloudWatch Logs.
+            - Notify developers in real-time through Slack.
+            - Build visual service status charts through AWS CloudWatch Dashboard.
           - **Techniques**:
             - PHP • Python3 • JS • Laravel • Lumen • Vue • Nuxt • AWS • Docker • MySQL • SQLite
             - Third-Party API (Line, Google, YouTube, FaceBook) • GTM • GA4
