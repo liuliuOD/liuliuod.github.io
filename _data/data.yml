@@ -83,6 +83,7 @@ experiences:
               - image generator.
               - website screenshot for SEO.
               - etc.
+            - Combine AWS API Gateway and Lambda to build serverless services.
           - **Maintaining**:
             - Maintain 3-tier service structures built with AWS ALB, EC2 and RDS.
             - Integrate projects to CodePipeline for continuous integration (CI).
