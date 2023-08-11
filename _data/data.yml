@@ -84,19 +84,27 @@ experiences:
               - website screenshot for SEO.
               - etc.
             - Combine AWS API Gateway and Lambda to build serverless services.
+            - Build customer reply service BOT by third-Party API, integration with ChatGPT.
           - **Maintaining**:
             - Maintain 3-tier service structures built with AWS ALB, EC2 and RDS.
-            - Integrate projects to CodePipeline for continuous integration (CI).
+            - Integrate projects to CodePipeline, CodeBuild and CodeDeploy for continuous integration (CI) & continuous delivery (CD).
             - Combine AWS ECR, ASG and CloudWatch Alarm to trigger auto scaling when services suffering spike traffic.
-            - Build customer reply service BOT by third-Party API, integration with ChatGPT.
-            - Dockerize projects and make deploy to test or production environment more efficient.
+            - Dockerize projects and make deploy to test and production environment more efficient.
               - reduce image size about 50%.
+              - use *Docker Swarm* to manage the deployment of services.
+            - Upgrade Laravel framework versions.
+              - from Laravel 8 to Laravel 9.
+              - from php-fpm to Octane Swoole.
+              - from Laravel 9 to Laravel 10.
           - **Monitoring & Tracking**:
             - Monitor service logs and custom service statuses through AWS CloudWatch Logs.
             - Notify developers in real-time through Slack.
             - Build visual service status charts through AWS CloudWatch Dashboard.
+          - **Search Engine Optimization (SEO)**:
+            - combine Prerender service to improve SEO performances in single page application (SPA).
           - **Techniques**:
-            - PHP • Python3 • JS • Laravel • Lumen • Vue • Nuxt • AWS • Docker • MySQL • SQLite
+            - PHP • Python3 • JS • Laravel • Lumen • Vue • Nuxt • Docker • MySQL • SQLite3
+            - AWS (EC2, ELB, RDS, SQS, Lambda, CodePipeline, CodeBuild, CodeDeploy, CloudFormation, API Gateway, ECR, S3, DynamoDB, Route53)
             - Third-Party API (Line, Google, YouTube, FaceBook) • GTM • GA4
       - role: Software Engineer & Intern
         time: 2019 - 2020, 2018 - 2019
