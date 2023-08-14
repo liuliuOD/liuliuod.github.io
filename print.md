@@ -16,4 +16,4 @@ permalink: /print
 
 {% include_relative _includes/resume/publications.html %}
 
-{% include_relative _includes/resume/skills.html %}
+{% include_relative _includes/skills-list.html %}

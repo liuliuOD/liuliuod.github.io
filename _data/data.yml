@@ -94,14 +94,14 @@ experiences:
               - use *Docker Swarm* to manage the deployment of services.
             - Upgrade Laravel framework versions.
               - from Laravel 8 to Laravel 9.
-              - from php-fpm to Octane Swoole.
               - from Laravel 9 to Laravel 10.
+              - from php-fpm to Octane Swoole.
           - **Monitoring & Tracking**:
             - Monitor service logs and custom service statuses through AWS CloudWatch Logs.
             - Notify developers in real-time through Slack.
             - Build visual service status charts through AWS CloudWatch Dashboard.
           - **Search Engine Optimization (SEO)**:
-            - combine Prerender service to improve SEO performances in single page application (SPA).
+            - Combine Prerender service to improve SEO performances in single page application (SPA).
           - **Techniques**:
             - PHP • Python3 • JS • Laravel • Lumen • Vue • Nuxt • Docker • MySQL • SQLite3
             - AWS (EC2, ELB, RDS, SQS, Lambda, CodePipeline, CodeBuild, CodeDeploy, CloudFormation, API Gateway, ECR, S3, DynamoDB, Route53)
