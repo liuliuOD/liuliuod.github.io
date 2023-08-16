@@ -4,15 +4,17 @@ EXPOSE 4000
 
 LABEL MAINTAINER=liuliuod
 
-COPY --chown=jekyll:jekyll . /app
+ARG OWNER=jekyll
 
 WORKDIR /app
 
+COPY --chown=$OWNER:$OWNER Gemfile* /app
+
 USER root
-
+RUN chown $OWNER:$OWNER /app
 RUN bundle install
+COPY --chown=$OWNER:$OWNER . /app
 
-USER jekyll
-
+USER $OWNER
 ENTRYPOINT ["bundle", "exec", "jekyll", "serve"]
 CMD ["--host", "0.0.0.0"]
