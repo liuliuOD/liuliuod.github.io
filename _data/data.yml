@@ -65,7 +65,7 @@ experiences:
     title: Experiences
     info:
       - role: Software Engineer
-        time: 2020 - Present
+        time: Apr 2020 - Present
         company: HiSKIO, Online Education Platform
         details: |
           - **Developing**:
@@ -108,7 +108,7 @@ experiences:
             - AWS (EC2, ELB, RDS, SQS, Lambda, CodePipeline, CodeBuild, CodeDeploy, CloudFormation, API Gateway, ECR, S3, DynamoDB, Route53)
             - Third-Party API (Line, Google, YouTube, FaceBook) • GTM • GA4
       - role: Software Engineer & Intern
-        time: 2019 - 2020, 2018 - 2019
+        time: Nov 2019 - Mar 2020, Sep 2018 - Jul 2019
         company: awoo, SEO & AI Marketing Platform
         details: |
           - **Projects**:
