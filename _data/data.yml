@@ -59,14 +59,15 @@ education:
 career-profile:
     title: About Me
     summary: |
-      A demand-centric software engineer. Skilled at building robust, easy to maintain and scalable services. Core skills: Container, Cloud Platform and Automated Processes.
+      A Demand-Centric software engineer. Skilled at building robust, easy to maintain, and scalable services.
 
 experiences:
     title: Experiences
     info:
       - role: Software Engineer
         time: Apr 2020 - Present
-        company: HiSKIO, Online Education Platform
+        company: |
+          HiSKIO, [Online Learning Platform](https://hiskio.com)
         details: |
           - **Developing**:
             - Develop & Maintain iteration of RESTful API by using Laravel framework in PHP.
@@ -109,7 +110,8 @@ experiences:
             - Third-Party API (Line, Google, YouTube, FaceBook) • GTM • GA4
       - role: Software Engineer & Intern
         time: Nov 2019 - Mar 2020, Sep 2018 - Jul 2019
-        company: awoo, SEO & AI Marketing Platform
+        company: |
+          Awoo, [SEO](https://www.awoo.org) & [AI Marketing Platform](https://www.awoo.ai/zh-hant)
         details: |
           - **Projects**:
             - Develop & Maintain iteration of RESTful API build by Laravel and CodeIgniter2.
