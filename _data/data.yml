@@ -136,9 +136,7 @@ certifications:
 projects:
     title: Projects
     intro: >
-      You can list your side projects in this
-      section. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
+      Here are my side-projects.
     assignments:
       - title: (RUST) Documentation Embedding
         link: "https://github.com/liuliuOD/Documentation-Embedding"
@@ -173,13 +171,13 @@ skills:
     toolset:
       - name: Programming Languages
         tagline:
-          - Python3, JavaScript, RUST, PHP.
+          - Python3, PHP, JavaScript, Node.js, RUST.
       - name: Frameworks
         tagline:
-          - Vue, Actix, Laravel, Django REST Framework (DRF), Swagger.
+          - Vue, Actix, Laravel, Lumen, Django REST Framework (DRF).
       - name: RDBMS
         tagline:
-          - MySQL, MariaDB, Sqlite.
+          - MySQL, MariaDB, SQLite.
       - name: NoSQL
         tagline:
           - Redis.
@@ -188,7 +186,7 @@ skills:
           - AWS (EC2, ELB, S3, CloudFront, Lambda, SQS, CloudWatch, CodePipeline, etc).
       - name: Misc
         tagline:
-          - GitHub Action, Docker, Docker Swarm, Nginx, Ansible.
+          - GitHub Action, Docker, Docker Swarm, Nginx, Ansible, Swagger, Supervisor.
 
 footer: >
     Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
