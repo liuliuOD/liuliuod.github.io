@@ -83,6 +83,9 @@ experiences:
               - image generator by Python3.
               - website screenshot for SEO by node.js.
               - etc.
+            - Integrate Line BOT and our own API to do custom procedure.
+              - promote personalized recommendations to improve customer retention rate to 20%.
+              - bind actions that triggered in Line by users to interact with our own services.
             - Propose the ideas of using Serverless architecture in partial services, plan the implementation approach, research the advantages and disadvantages of architectural transformation, and take responsibility for the implementation.
             - Build customer reply service BOT by third-Party API, integration with ChatGPT.
           - **Maintaining**:
