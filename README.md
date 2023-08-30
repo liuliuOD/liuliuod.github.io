@@ -17,6 +17,7 @@ $ bundle exec jekyll serve --host 0.0.0.0
 ## Run by Docker
 ```shell
 $ docker-compose up -d --build
+# this app will serve at port 4000
 ```
 
 ## References
