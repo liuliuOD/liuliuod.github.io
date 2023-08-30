@@ -59,7 +59,7 @@ education:
 career-profile:
     title: About Me
     summary: |
-      A Demand-Centric software engineer. Skilled at building robust, easy to maintain, and scalable services.
+      A Demand-Centric software engineer. Skilled at building robust, easy to maintain, and scalable services. (open to relocation)
 
 experiences:
     title: Experiences
@@ -77,15 +77,13 @@ experiences:
               - clarify task requirements and present various solutions with their pros and cons, enabling the supervisor to make informed decisions.
               - improve the response speed of functions by 20% ~ 30%.
               - use Swagger to write API docs.
-            - Develop & Maintain SPA website by Vue & Nuxt.
+            - Developed & Maintained SPA website by Vue & Nuxt.
             - Improve SQL query execution time by 50% written by MySQL.
-              - optimize index and table structures.
             - Combine AWS SQS and Lambda to build asynchronous procedures.
-              - image generator.
-              - website screenshot for SEO.
+              - image generator by Python3.
+              - website screenshot for SEO by node.js.
               - etc.
             - Propose the ideas of using Serverless architecture in partial services, plan the implementation approach, research the advantages and disadvantages of architectural transformation, and take responsibility for the implementation.
-              - Using AWS SQS, Lambda Functions, and API Gateway.
             - Build customer reply service BOT by third-Party API, integration with ChatGPT.
           - **Maintaining**:
             - Maintain 3-tier service structures built with AWS ALB, EC2 and RDS.
@@ -100,13 +98,13 @@ experiences:
               - from php-fpm to Octane Swoole.
           - **Monitoring & Tracking**:
             - Monitor service logs and custom service statuses through AWS CloudWatch Logs.
-            - Notify developers in real-time through Slack.
+            - Notify developers in real-time through Slack to speed up bug discovery time by 80%.
             - Build visual service status charts through AWS CloudWatch Dashboard.
           - **Search Engine Optimization (SEO)**:
-            - Combine Prerender service to improve SEO performances in single page application (SPA).
+            - Combine Prerender on-premises solution to improve SEO performances in single page application (SPA).
           - **Techniques**:
             - PHP • Python3 • JS • Laravel • Lumen • Vue • Nuxt • Docker • MySQL • SQLite3
-            - AWS (EC2, ELB, RDS, SQS, Lambda, CodePipeline, CodeBuild, CodeDeploy, CloudFormation, API Gateway, ECR, S3, DynamoDB, Route53)
+            - AWS (EC2, ELB, RDS, SQS, Lambda, CodePipeline family, CloudFormation, API Gateway, ECR, S3, DynamoDB, Route53)
             - Third-Party API (Line, Google, YouTube, FaceBook) • GTM • GA4
       - role: Software Engineer & Intern
         time: Nov 2019 - Mar 2020, Sep 2018 - Jul 2019
