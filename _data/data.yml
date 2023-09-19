@@ -73,18 +73,19 @@ experiences:
           - **Developing**:
             - Develop & Maintain iteration of RESTful API by using Laravel framework in PHP.
               - build faster unit test to improve the correctivity of business logic.
-              - build facilitate API for online learning website.
-              - build facilitate API for backstage website.
+              - build resiliency API for online learning website.
+              - build resiliency API for backstage website.
               - clarify task requirements and present various solutions with their pros and cons, enabling the supervisor to make informed decisions.
               - improve the response speed of functions by 20% ~ 30%.
               - use Swagger to write API docs.
+            - Integrate OpenAI API to build customized learning assistant BOT.
             - Developed & Maintained SPA website by Vue & Nuxt.
             - Improve SQL query execution time by 50% written by MySQL.
             - Combine AWS SQS and Lambda to build asynchronous procedures.
               - image generator by Python3.
               - website screenshot for SEO by node.js.
               - etc.
-            - Integrate Line BOT and our own API to do custom procedure.
+            - Integrate Line BOT and our own API to do customized procedures.
               - promote personalized recommendations to improve customer retention rate to 20%.
               - bind actions that triggered in Line by users to interact with our own services.
             - Propose the ideas of using Serverless architecture in partial services, plan the implementation approach, research the advantages and disadvantages of architectural transformation, and take responsibility for the implementation.
@@ -101,7 +102,7 @@ experiences:
               - from Laravel 9 to Laravel 10.
               - from php-fpm to Octane Swoole.
           - **Monitoring & Tracking**:
-            - Monitor service logs and custom service statuses through AWS CloudWatch Logs.
+            - Monitor service logs and customized service statuses through AWS CloudWatch Logs.
             - Notify developers in real-time through Slack to speed up bug discovery time by 80%.
             - Build visual service status charts through AWS CloudWatch Dashboard.
           - **Search Engine Optimization (SEO)**:
@@ -117,7 +118,7 @@ experiences:
         details: |
           - **Projects**:
             - Develop & Maintain iteration of RESTful API build by Laravel and CodeIgniter2.
-              - build facilitate API for backstage website.
+              - build resiliency API for backstage website.
               - maintain SEO SaaS tool.
               - Integrate user behaviour tracking with HubSpot.
           - **Techniques**:
