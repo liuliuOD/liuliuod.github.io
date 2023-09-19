@@ -111,6 +111,16 @@ experiences:
             - PHP • Python3 • JS • Laravel • Lumen • Vue • Nuxt • Docker • MySQL • SQLite3
             - AWS (EC2, ELB, RDS, SQS, Lambda, CodePipeline family, CloudFormation, API Gateway, ECR, S3, DynamoDB, Route53)
             - Third-Party API (Line, Google, YouTube, FaceBook) • GTM • GA4
+        details_print: |
+          - Develop & Maintain iteration of RESTful API by using Laravel framework in PHP.
+          - Integrate OpenAI API to build customized learning assistant BOT.
+          - Integrate Line BOT and our own API to do customized procedures.
+          - Maintain 3-tier service structures built with AWS ALB, EC2 and RDS.
+          - Integrate and Plan projects to CodePipeline, CodeBuild and CodeDeploy for continuous integration (CI) & continuous delivery (CD).
+          - Dockerize projects and make deploy to test and production environment more efficient.
+          - Monitor service logs and customized service statuses through AWS CloudWatch Logs.
+          - Build visual service status charts through AWS CloudWatch Dashboard.
+          - Combine Prerender on-premises solution to improve SEO performances in single page application (SPA).
       - role: Software Engineer & Intern
         time: Nov 2019 - Mar 2020, Sep 2018 - Jul 2019
         company: |
@@ -124,6 +134,8 @@ experiences:
           - **Techniques**:
             - PHP • Laravel • Code Igniter 2
             - Third-Party API (HubSpot)
+        details_print: |
+          - Develop & Maintain iteration of RESTful API build by Laravel and CodeIgniter2.
 
 certifications:
       title: Certifications
@@ -134,7 +146,7 @@ certifications:
           organization: AWS
           credentialid: AWS03666006
           credentialurl: www.credly.com/badges/5fa62ede-8f8b-4b70-9976-daa0a4fee3a2/public_url
-          credentialname: AWS Certified Solutions Architect - Associate (SAA)
+          credentialname: Badge
           details: |
             Earners of this certification have a comprehensive understanding of AWS services and technologies. They demonstrated the ability to build secure and robust solutions using architectural design principles based on customer requirements. Badge owners are able to strategically design well-architected distributed systems that are scalable, resilient, efficient, and fault-tolerant.
 
@@ -171,7 +183,7 @@ oss:
         tagline: "An ultra-simplified explanation to design patterns."
 
 skills:
-    title: Skills &amp; Proficiency
+    title: Skills
 
     toolset:
       - name: Programming Languages
