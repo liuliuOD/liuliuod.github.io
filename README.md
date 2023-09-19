@@ -25,3 +25,4 @@ $ docker-compose up -d --build
 ### Resume
 - [Online CV shared by Sharu725](https://github.com/sharu725/online-cv)
 - [SEO with Jekyll](https://github.com/jekyll/jekyll-seo-tag)
+- [Useful QR Code Generator](https://qr.ioi.tw)
