@@ -11,6 +11,7 @@ sidebar:
     name: liuliu (L2)
     tagline: Software Engineer
     avatar: avatar.jpg
+    qrcode: qrcode.png
 
     # Sidebar links
     email: liuliugit@gmail.com
@@ -38,7 +39,7 @@ sidebar:
           level: Native
 
         - idiom: English
-          level: Professional
+          level: Conversational
 
     interests:
       title: Interests
