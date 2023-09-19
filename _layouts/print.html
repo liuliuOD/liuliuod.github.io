@@ -17,17 +17,15 @@
   .wrapper {
     max-width: unset !important;
   }
+
   @page {
     size: A4;
   }
 </style>
 
 <body>
-  <div class="wrapper">
-    {% include_relative _includes/resume/sidebar.html %}
+  <div class="main-wrapper">{{ content }}</div>
 
-    <div class="main-wrapper">{{ content }}</div>
-  </div>
   {% include_relative _includes/resume/scripts.html %}
 </body>
 
