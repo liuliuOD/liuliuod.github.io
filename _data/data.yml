@@ -188,22 +188,22 @@ skills:
     toolset:
       - name: Programming Languages
         tagline:
-          - Python3, PHP, JavaScript, Node.js, RUST.
+          - Python3, PHP, JavaScript, Node.js, Rust
       - name: Frameworks
         tagline:
-          - Vue, Actix, Laravel, Lumen, Django REST Framework (DRF).
+          - Vue, Nuxt, Actix, Laravel, Lumen, Django REST Framework (DRF)
       - name: RDBMS
         tagline:
-          - MySQL, MariaDB, SQLite.
+          - MySQL, MariaDB, SQLite
       - name: NoSQL
         tagline:
-          - Redis.
+          - Redis, MongoDB
       - name: IaaS
         tagline:
-          - AWS (EC2, ELB, S3, CloudFront, Lambda, SQS, CloudWatch, CodePipeline, etc).
+          - AWS (EC2, ELB, S3, CloudFront, Lambda, SQS, CloudWatch, CodePipeline, etc)
       - name: Misc
         tagline:
-          - GitHub Action, Docker, Docker Swarm, Nginx, Ansible, Swagger, Supervisor.
+          - GitHub Action, Docker, Docker Swarm, Nginx, Ansible, Swagger, Supervisor
 
 footer: >
     Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
