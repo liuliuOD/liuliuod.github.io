@@ -50,6 +50,9 @@ sidebar:
         - item: Board Game
           link:
 
+        - item: Ice Skating
+          link:
+
 education:
     title: Education
     info:
@@ -60,13 +63,19 @@ education:
 career-profile:
     title: About Me
     summary: |
-      A Demand-Centric software engineer. Skilled at building robust, easy to maintain, and scalable services. (open to relocation)
+      A demand-driven software engineer skilled in building robust, maintainable, and scalable services. Open to relocation.
 
 experiences:
     title: Experiences
     info:
       - role: Software Engineer
-        time: Apr 2020 - Present
+        time: Dec 2023 - Present
+        company: |
+          President Chain Store Corporation(PCSC), [Web Portal](https://www.uniopen.com)
+        details: |
+
+      - role: Software Engineer
+        time: Apr 2020 - Nov 2023
         company: |
           HiSKIO, [Online Learning Platform](https://hiskio.com)
         details: |
@@ -121,7 +130,7 @@ experiences:
           - Monitor service logs and customized service statuses through AWS CloudWatch Logs.
           - Build visual service status charts through AWS CloudWatch Dashboard.
           - Combine Prerender on-premises solution to improve SEO performances in single page application (SPA).
-      - role: Software Engineer & Intern
+      - role: Intern & Software Engineer
         time: Nov 2019 - Mar 2020, Sep 2018 - Jul 2019
         company: |
           Awoo, [SEO](https://www.awoo.org) & [AI Marketing Platform](https://www.awoo.ai/zh-hant)
@@ -188,22 +197,22 @@ skills:
     toolset:
       - name: Programming Languages
         tagline:
-          - Python3, PHP, JavaScript, Node.js, Rust
+          - Python3, Java, Rust, JavaScript, PHP
       - name: Frameworks
         tagline:
-          - Vue, Nuxt, Actix, Laravel, Lumen, Django REST Framework (DRF)
+          - Fastapi, Spring Boot, Django REST Framework (DRF), Vue, Actix, Laravel
       - name: RDBMS
         tagline:
           - MySQL, MariaDB, SQLite
       - name: NoSQL
         tagline:
-          - Redis, MongoDB
+          - MongoDB, DocumentDB, DynamoDB, Redis
       - name: IaaS
         tagline:
           - AWS (EC2, ELB, S3, CloudFront, Lambda, SQS, CloudWatch, CodePipeline, etc)
       - name: Misc
         tagline:
-          - GitHub Action, Docker, Docker Swarm, Nginx, Ansible, Swagger, Supervisor
+          - GitHub Action, Kafka, Docker, Docker Swarm, Nginx, Ansible, Swagger, Supervisor
 
 footer: >
     Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
