@@ -196,16 +196,16 @@ skills:
           - Fastapi, Spring Boot, Django REST Framework (DRF), Vue, Actix, Laravel
       - name: RDBMS
         tagline:
-          - MySQL, MariaDB, SQLite
+          - PostgreSQL, MySQL, MariaDB, SQLite
       - name: NoSQL
         tagline:
           - MongoDB, DocumentDB, DynamoDB, Redis
       - name: IaaS
         tagline:
-          - AWS (EC2, ELB, S3, CloudFront, Lambda, SQS, CloudWatch, CodePipeline, etc)
+          - AWS (EC2, EKS, ELB, S3, CloudFront, Lambda, SQS, CloudWatch, CodePipeline, etc)
       - name: Misc
         tagline:
-          - GitHub Action, Kafka, Docker, Docker Swarm, Nginx, Ansible, Swagger, Supervisor
+          - GitHub Action, Kafka, OpenSearch, Kubernetes, Istio, Docker, Docker Swarm, Nginx, Ansible, Terraform, Helm Chart, Swagger, Supervisor
 
 footer: >
     Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
