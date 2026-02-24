@@ -68,7 +68,7 @@ career-profile:
 experiences:
     title: Experiences
     info:
-      - role: Software Engineer
+      - role: Backend Software Engineer
         time: Dec 2023 - Present
         company: |
           President Chain Store Corporation(PCSC), [Web Portal](https://www.uniopen.com)
@@ -80,58 +80,48 @@ experiences:
           HiSKIO, [Online Learning Platform](https://hiskio.com)
         details: |
           - **Development**:
-            - Developed and maintained RESTful APIs using PHP (Laravel/Lumen).
-              - Built fast unit tests to improve business-logic correctness.
-              - Delivered resilient APIs for both the consumer-facing learning site and the admin portal.
-              - Clarified requirements and proposed multiple solution options with pros/cons to support decision-making.
-              - Improved response time of key endpoints by 20–30%.
-              - Authored and maintained API documentation using Swagger/OpenAPI.
-            - Integrated the OpenAI API to build a customized learning assistant bot.
-            - Developed and maintained SPA features using Vue and Nuxt.
-            - Optimized MySQL queries and reduced execution time by up to 50%.
-            - Built asynchronous workflows with AWS SQS and Lambda.
-              - Implemented an image-generation worker in Python 3.
-              - Implemented an SEO screenshot worker in Node.js.
-            - Integrated the LINE Messaging API with internal services to support customized workflows.
-              - Launched personalized recommendations and improved customer retention by ~20%.
-              - Tracked user-triggered events in LINE and routed them to internal services.
-            - Proposed partial Serverless adoption, evaluated trade-offs, planned the migration approach, and led the implementation.
-            - Built a customer support reply bot by integrating third-party APIs with ChatGPT.
+            - Developed and maintained RESTful APIs using PHP (Laravel, Lumen) for both customer-facing web and admin portal.
+            - Improved API performance by 20-30% through profiling, refactoring, and database query optimization.
+            - Optimized MySQL queries and reduced execution time by up to 50% for high-traffic endpoints.
+            - Built automated unit tests (PHPUnit) to improve business-logic correctness and reduce regression risk.
+            - Authored and maintained API documentation using OpenAPI/Swagger to improve cross-team collaboration.
+            - Implemented asynchronous and event-driven workflows using AWS SQS and AWS Lambda (Python 3, Node.js workers).
+            - Integrated OpenAI API to deliver a customized learning assistant chatbot.
+            - Integrated LINE Messaging API with internal services to support user-triggered workflows and notifications.
+            - Delivered personalized recommendations via LINE chatbot and improved customer retention by ~20%.
+            - Proposed partial Serverless adoption, evaluated trade-offs, planned the migration approach, and led implementation.
 
-          - **Operations & Maintenance**:
-            - Maintained a 3-tier architecture on AWS (ALB, EC2, RDS).
-            - Designed and integrated CI/CD pipelines using AWS CodePipeline, CodeBuild, and CodeDeploy.
-            - Implemented auto scaling using ECR, Auto Scaling Groups (ASG), and CloudWatch Alarms to handle traffic spikes.
-            - Containerized services with Docker to streamline deployments across staging and production.
-              - Reduced Docker image size by ~50%.
-              - Managed deployments with Docker Swarm.
-            - Planned and executed framework/runtime upgrades.
-              - Upgraded Laravel 8 → 9 → 10.
-              - Migrated from PHP-FPM to Laravel Octane (Swoole).
+          - **Operations and Maintenance**:
+            - Operated and maintained a 3-tier architecture on AWS (ALB, EC2, RDS) with reliability and scalability improvements.
+            - Designed and implemented CI/CD pipelines using AWS CodePipeline, CodeBuild, and CodeDeploy for automated deployments.
+            - Implemented autoscaling with EC2 Auto Scaling Groups and CloudWatch Alarms to handle traffic spikes; managed Docker images in Amazon ECR.
+            - Containerized services using Docker and streamlined deployments across staging and production; reduced Docker image size by ~50%.
+            - Managed service deployments using Docker Swarm.
+            - Planned and executed framework/runtime upgrades (Laravel 8/9/10); migrated from PHP-FPM to Laravel Octane (Swoole).
 
-          - **Monitoring & Incident Response**:
-            - Monitored logs and service health metrics using AWS CloudWatch Logs.
-            - Integrated Slack alerts for real-time notifications and reduced bug detection time by ~80%.
-            - Built service health dashboards using AWS CloudWatch Dashboards.
+          - **Monitoring and Incident Response**:
+            - Monitored logs and service health using AWS CloudWatch Logs and CloudWatch Dashboards.
+            - Implemented Slack alerting for production incidents and reduced mean time to detect (MTTD) by ~80%.
 
           - **Search Engine Optimization (SEO)**:
-            - Improved SPA SEO performance by integrating an on-premises prerendering solution.
+            - Improved SPA SEO performance by integrating an on-premises prerendering solution (Prerender).
 
-          - **Tech Stack**:
-             - PHP • Python 3 • JavaScript • Laravel • Lumen • Vue • Nuxt • Docker • MySQL • SQLite
-             - AWS: EC2 • ELB/ALB • RDS • SQS • Lambda • CodePipeline • CodeBuild • CodeDeploy • CloudFormation • API Gateway • ECR • S3 • DynamoDB • Route 53
-             - Third-Party APIs: LINE • Google • YouTube • Facebook • GTM • GA4
+          - **Skills (Keywords)**:
+            - Languages: PHP, Python 3, JavaScript
+            - Frameworks: Laravel, Lumen, Vue, Nuxt
+            - Database: MySQL, SQLite
+            - AWS: EC2, ALB/ELB, RDS, SQS, Lambda, CodePipeline, CodeBuild, CodeDeploy, CloudWatch, CloudFormation, API Gateway, ECR, S3, DynamoDB, Route 53
+            - Tools: Docker, Docker Swarm, OpenAPI/Swagger, PHPUnit
+            - Third-Party APIs: LINE, Google, YouTube, Facebook, GTM, GA4
 
         details_print: |
-          - Developed and maintained RESTful APIs using PHP (Laravel/Lumen).
-          - Integrated the OpenAI API to build a customized learning assistant bot.
-          - Integrated the LINE Messaging API with internal services to support customized workflows.
-          - Maintained a 3-tier architecture on AWS (ALB, EC2, RDS).
-          - Designed and integrated CI/CD pipelines using AWS CodePipeline, CodeBuild, and CodeDeploy.
-          - Containerized services with Docker to streamline deployments across staging and production.
-          - Monitored logs and service health metrics using AWS CloudWatch Logs.
-          - Built service health dashboards using AWS CloudWatch Dashboards.
-          - Improved SPA SEO performance by integrating an on-premises prerendering solution.
+          - Developed and maintained RESTful APIs using PHP (Laravel, Lumen) on AWS.
+          - Improved API performance by 20-30% and optimized MySQL queries (up to 50% faster).
+          - Built asynchronous workflows using AWS SQS and AWS Lambda (Python 3, Node.js workers).
+          - Implemented CI/CD with AWS CodePipeline, CodeBuild, and CodeDeploy; operated ALB, EC2, RDS.
+          - Containerized services with Docker; reduced image size by ~50%; managed deployments with Docker Swarm.
+          - Implemented monitoring and alerting (CloudWatch Logs, Dashboards, Slack) and reduced MTTD by ~80%.
+          - Integrated OpenAI API and LINE Messaging API to deliver chatbots and improved retention by ~20%.
 
       - role: Intern & Software Engineer
         time: Nov 2019 - Mar 2020, Sep 2018 - Jul 2019
