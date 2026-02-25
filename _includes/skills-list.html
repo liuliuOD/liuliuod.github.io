@@ -1,6 +1,22 @@
 {% assign skills = site.data.data.skills %}
 {% if skills %}
 <section class="skills-section section">
+  <style>
+    /* Compact spacing for one-page layout */
+    .skills-section { margin-top: 0; margin-bottom: 6px; padding-top: 0; padding-bottom: 0; }
+    .skills-section .section-title { margin: 0 0 6px 0; line-height: 1.1; }
+    .skills-section .skillset { margin-top: 0; }
+    .skills-section .item { margin-bottom: 4px; }
+    .skills-section .level-title { margin: 0 0 2px 0; line-height: 1.1; font-size: 14px; }
+
+    /* Override theme's float-based skill layout to avoid last-line misalignment */
+    .skills-section .level-title { float: none !important; width: auto !important; }
+    .skills-section .level-bar { float: none !important; width: auto !important; }
+    .skills-section .item::after { content: ""; display: block; clear: both; }
+    .skills-section p { clear: both; }
+
+    .skills-section p { margin: 0 0 2px 0; line-height: 1.2; }
+  </style>
 
   <h2 class="section-title">
     <span class="fa-stack fa-xs">
@@ -10,7 +26,7 @@
     {{ skills.title }}
   </h2>
 
-  <div class="skillset">
+  <div class="skillset" style="margin-top:0;">
 
     {% for skill in skills.toolset %}
     <div class="item">
@@ -18,7 +34,6 @@
       <h3 class="level-title">{{ skill.name }}</h3>
 
       {% for tagline in skill.tagline %}
-      <br />
       <p>{{ tagline }}</p>
       {% endfor %}
 
