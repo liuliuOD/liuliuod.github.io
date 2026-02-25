@@ -63,7 +63,9 @@ education:
 career-profile:
     title: About Me
     summary: |
-      A demand-driven software engineer skilled in building robust, maintainable, and scalable services. Open to relocation.
+      - Backend / Platform Engineer with 6+ years of experience spanning monolith/3-tier systems and Kubernetes-based microservices on AWS.
+      - Operated services at scale (2.5M+ users, ~10K QPS peak) and led reliability/performance improvements (up to -77% latency, +18% QPS).
+      - Strong in CI/CD delivery, observability, and evidence-based incident investigation (e.g., OOM deep dives).
 
 experiences:
     title: Experiences
