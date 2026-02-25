@@ -73,6 +73,37 @@ experiences:
         company: |
           President Chain Store Corporation(PCSC), [Web Portal](https://www.uniopen.com)
         details: |
+          - Built and operated backend services for a microservices web portal (2.5M+ users, peak ~10K QPS) on AWS + Kubernetes (EKS).
+          - Designed end-to-end identity/access and session flows (OIDC/SSO) and implemented core domain services (membership, access, routing).
+          - Partnered with PO to clarify requirements, propose solution options/trade-offs, and align implementation details with mobile app, platform engineering, and frontend teams; shortened requirement-to-implementation cycle time.
+          - Diagnosed recurring OOM in a critical API under sustained load (reproduced via load testing) and drove partial mitigation:
+            - Used container/runtime evidence to pinpoint three issues happening in parallel: off-heap native memory growth, rapid class loading that pressured Metaspace, and a database query bottleneck.
+            - Reduced customer-facing impact by optimizing database access (added/adjusted key indexing).
+          - Led performance baseline, load testing, and iterative optimization for a platform-critical authorization service:
+            - Achieved measurable wins on critical endpoints (up to -77% latency and +18% QPS) and validated SLA targets (500+ QPS for key APIs).
+            - Implemented async and caching improvements and identified service bottlenecks (managed datastore/cache limits, thread pool behavior).
+          - Delivered an event-driven video processing pipeline on AWS (object storage + managed transcoding + messaging) with status tracking, async polling.
+          - Designed multi-app SSO flows across app and web with an extensible, multi-business-unit-friendly approach.
+          - Improved Python container security (non-root runtime, secret handling in builds, hardened runtime settings) and reduced image sizes by ~58%.
+          - Strengthened release reliability and observability with CI/CD quality gates (unit/feature tests, style/static checks) plus CloudWatch dashboards/alarms and centralized log visualization.
+          - Implemented audit logging to support ISO 27001 compliance and improve traceability.
+          - **Skills (Keywords)**:
+            - Languages: Python 3, Java
+            - Frameworks: FastAPI, Spring Boot
+            - Databases: DocumentDB, DynamoDB, PostgreSQL, Redis
+            - AWS: EKS, ALB/ELB, SQS, Lambda, MediaConvert, SNS, CodePipeline, CodeBuild, CloudWatch, ECR, S3, CloudFront
+            - Tools: Docker, Kubernetes, Terraform, Helm
+            - Load Testing: K6, Vegeta
+
+        details_print: |
+          - Built and operated backend services for a microservices web portal (2.5M+ users, peak ~10K QPS) on AWS + Kubernetes (EKS).
+          - Designed end-to-end identity/access flows (OIDC/SSO) and implemented core domain services (membership, access, routing).
+          - Partnered with PO and cross-functional teams to clarify requirements, propose trade-offs, and shorten the requirement-to-implementation cycle time.
+          - Diagnosed recurring OOM under sustained load and drove partial mitigation using container/runtime evidence (off-heap growth, Metaspace pressure, DB bottleneck).
+          - Led a 2-week performance baseline and load-test optimization for a platform-critical authorization service; achieved up to -77% latency and +18% QPS; validated 500+ QPS SLA.
+          - Delivered an event-driven video processing pipeline on AWS (object storage + managed transcoding + messaging).
+          - Improved Python container security and reduced image sizes by ~58%.
+          - Strengthened CI/CD quality gates, observability (CloudWatch + centralized logs), and audit logging for ISO 27001 compliance.
 
       - role: Backend Software Engineer
         time: Apr 2020 - Nov 2023
@@ -193,7 +224,7 @@ skills:
           - Python3, Java, Rust, JavaScript, PHP
       - name: Frameworks
         tagline:
-          - Fastapi, Spring Boot, Django REST Framework (DRF), Vue, Actix, Laravel
+          - FastAPI, Spring Boot, Django REST Framework (DRF), Vue, Actix, Laravel
       - name: RDBMS
         tagline:
           - PostgreSQL, MySQL, MariaDB, SQLite
@@ -205,7 +236,7 @@ skills:
           - AWS (EC2, EKS, ELB, S3, CloudFront, Lambda, SQS, CloudWatch, CodePipeline, etc)
       - name: Misc
         tagline:
-          - GitHub Action, Kafka, OpenSearch, Kubernetes, Istio, Docker, Docker Swarm, Nginx, Ansible, Terraform, Helm Chart, Swagger, Supervisor
+          - GitHub Actions, Kafka, OpenSearch, Kubernetes, Istio, Docker, Docker Swarm, Nginx, Ansible, Terraform, Helm, Swagger, Supervisor
 
 footer: >
     Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
