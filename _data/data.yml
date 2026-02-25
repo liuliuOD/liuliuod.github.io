@@ -156,21 +156,21 @@ experiences:
           - Implemented monitoring and alerting (CloudWatch Logs, Dashboards, Slack) and reduced MTTD by ~80%.
           - Integrated OpenAI API and LINE Messaging API to deliver chatbots and improved retention by ~20%.
 
-      - role: Intern & Software Engineer
-        time: Nov 2019 - Mar 2020, Sep 2018 - Jul 2019
-        company: |
-          Awoo, [SEO](https://www.awoo.org) & [AI Marketing Platform](https://www.awoo.ai/zh-hant)
-        details: |
-          - **Projects**:
-            - Develop & Maintain iteration of RESTful API build by Laravel and CodeIgniter2.
-              - build resiliency API for backstage website.
-              - maintain SEO SaaS tool.
-              - Integrate user behaviour tracking with HubSpot.
-          - **Techniques**:
-            - PHP • Laravel • Code Igniter 2
-            - Third-Party API (HubSpot)
-        details_print: |
-          - Develop & Maintain iteration of RESTful API build by Laravel and CodeIgniter2.
+#      - role: Intern & Software Engineer
+#        time: Nov 2019 - Mar 2020, Sep 2018 - Jul 2019
+#        company: |
+#          Awoo, [SEO](https://www.awoo.org) & [AI Marketing Platform](https://www.awoo.ai/zh-hant)
+#        details: |
+#          - **Projects**:
+#            - Develop & Maintain iteration of RESTful API build by Laravel and CodeIgniter2.
+#              - build resiliency API for backstage website.
+#              - maintain SEO SaaS tool.
+#              - Integrate user behaviour tracking with HubSpot.
+#          - **Techniques**:
+#            - PHP • Laravel • Code Igniter 2
+#            - Third-Party API (HubSpot)
+#        details_print: |
+#          - Develop & Maintain iteration of RESTful API build by Laravel and CodeIgniter2.
 
 certifications:
       title: Certifications

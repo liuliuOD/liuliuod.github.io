@@ -13,5 +13,3 @@ permalink: /print
 </div>
 
 {% include_relative _includes/resume/experiences-print.html %}
-
-{% include_relative _includes/resume/certifications.html %}
