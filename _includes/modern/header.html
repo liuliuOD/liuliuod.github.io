@@ -1,10 +1,6 @@
 {% assign sidebar = site.data.data.sidebar %}
 <header class="modern-header">
   <div class="modern-header__media">
-    {% if sidebar.avatar %}
-    <img class="modern-avatar" src="{{ site.baseurl }}/assets/images/{{ sidebar.avatar }}" alt="profile picture" />
-    {% endif %}
-
     <div class="modern-header__text">
       {% if sidebar.name %}
       <h1 class="modern-name">{{ sidebar.name }}</h1>
