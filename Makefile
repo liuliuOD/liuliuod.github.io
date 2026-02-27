@@ -3,8 +3,17 @@
 JEKYLL_HOST ?= 0.0.0.0
 JEKYLL_PORT ?= 4000
 
-# Prefer Docker Compose v2 (`docker compose`), fall back to v1 (`docker-compose`).
-COMPOSE := $(shell command -v docker >/dev/null 2>&1 && docker compose version >/dev/null 2>&1 && echo "docker compose" || echo "docker-compose")
+# Compose runner used by `make docker-*` targets.
+# - Auto-detect order: `podman-compose` -> `docker compose` -> `docker-compose`
+# - Override explicitly (useful for Podman):
+#     make COMPOSE=podman-compose docker-up
+#     make COMPOSE=podman-compose docker-logs
+#     make COMPOSE=podman-compose docker-down
+COMPOSE ?= $(shell \
+	if command -v podman-compose >/dev/null 2>&1; then echo "podman-compose"; \
+	elif command -v docker >/dev/null 2>&1 && docker compose version >/dev/null 2>&1; then echo "docker compose"; \
+	elif command -v docker-compose >/dev/null 2>&1; then echo "docker-compose"; \
+	else echo ""; fi)
 
 help:
 	@echo "Targets:"
