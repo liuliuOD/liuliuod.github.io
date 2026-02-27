@@ -1,0 +1,39 @@
+{% assign sidebar = site.data.data.sidebar %}
+<header class="modern-header">
+  <div class="modern-header__media">
+    {% if sidebar.avatar %}
+    <img class="modern-avatar" src="{{ site.baseurl }}/assets/images/{{ sidebar.avatar }}" alt="profile picture" />
+    {% endif %}
+
+    <div class="modern-header__text">
+      {% if sidebar.name %}
+      <h1 class="modern-name">{{ sidebar.name }}</h1>
+      {% endif %}
+
+      {% if sidebar.tagline %}
+      <p class="modern-title">{{ sidebar.tagline }}</p>
+      {% endif %}
+
+      <ul class="modern-links">
+        {% if sidebar.email %}
+        <li><i class="fas fa-envelope"></i><a href="mailto:{{ sidebar.email }}">{{ sidebar.email }}</a></li>
+        {% endif %}
+        {% if sidebar.website %}
+        <li><i class="fas fa-globe-americas"></i><a href="http://{{ sidebar.website }}" target="_blank" rel="noopener">{{
+            sidebar.website }}</a></li>
+        {% endif %}
+        {% if sidebar.github %}
+        <li><i class="fab fa-github"></i><a href="http://github.com/{{ sidebar.github }}" target="_blank"
+            rel="noopener">{{ sidebar.github }}</a></li>
+        {% endif %}
+        {% if sidebar.linkedin %}
+        <li><i class="fab fa-linkedin"></i><a href="https://linkedin.com/in/{{ sidebar.linkedin }}" target="_blank"
+            rel="noopener">{{ sidebar.linkedin }}</a></li>
+        {% endif %}
+        {% if sidebar.timezone %}
+        <li><i class="fas fa-clock"></i><span>{{ sidebar.timezone }}</span></li>
+        {% endif %}
+      </ul>
+    </div>
+  </div>
+</header>

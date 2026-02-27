@@ -1,12 +1,12 @@
 ---
-layout: resume
+layout: modern
 title: L2's Resume
 ---
 
 
 {% include_relative _includes/resume/career-profile.html %}
 
-{% include_relative _includes/skills-list.html %}
+{% include_relative _includes/modern/skills.html %}
 
 {% include_relative _includes/resume/experiences.html %}
 

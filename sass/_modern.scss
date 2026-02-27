@@ -1,0 +1,124 @@
+/* ======= Modern resume page ======= */
+.modern-resume {
+  padding: 20px;
+}
+
+.modern-resume .modern-container {
+  max-width: 980px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 28px 34px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.06);
+}
+
+.modern-resume .modern-header {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 18px;
+  margin-bottom: 18px;
+}
+
+.modern-resume .modern-header__media {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+.modern-resume .modern-avatar {
+  width: 96px;
+  height: 96px;
+  border-radius: 999px;
+  object-fit: cover;
+  flex: 0 0 auto;
+}
+
+.modern-resume .modern-name {
+  margin: 0;
+  color: $text-color;
+  font-size: 30px;
+  line-height: 1.15;
+}
+
+.modern-resume .modern-title {
+  margin: 6px 0 10px 0;
+  color: $text-color-secondary;
+  font-size: 15px;
+}
+
+.modern-resume .modern-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 14px;
+  font-size: 13px;
+}
+
+.modern-resume .modern-links li {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.modern-resume .modern-links i {
+  color: $theme-color;
+}
+
+.modern-resume .modern-links a {
+  color: darken($theme-color, 15%);
+}
+
+.modern-resume .modern-skills .item {
+  margin-bottom: 0;
+  overflow: visible;
+}
+
+.modern-resume .modern-skills .skillset {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 10px 16px;
+}
+
+.modern-resume .modern-skills .level-title {
+  margin: 0 0 6px 0;
+  font-size: 14px;
+  float: none;
+  width: auto;
+}
+
+.modern-resume .tag-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.modern-resume .tag {
+  display: inline-block;
+  padding: 2px 10px;
+  border: 1px solid #e1e1e1;
+  border-radius: 999px;
+  background: #fafafa;
+  font-size: 12px;
+  line-height: 1.6;
+  color: $text-color-secondary;
+}
+
+.modern-resume .modern-main .section:first-child {
+  padding-top: 0;
+}
+
+@media (max-width: 768px) {
+  .modern-container {
+    padding: 18px 16px;
+    border-radius: 0;
+  }
+
+  .modern-header__media {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

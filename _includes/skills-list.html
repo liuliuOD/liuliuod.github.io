@@ -5,8 +5,8 @@
     /* Compact spacing for one-page layout */
     .skills-section { margin-top: 0; margin-bottom: 6px; padding-top: 0; padding-bottom: 0; }
     .skills-section .section-title { margin: 0 0 6px 0; line-height: 1.1; }
-    .skills-section .skillset { margin-top: 0; }
-    .skills-section .item { margin-bottom: 4px; }
+    .skills-section .skillset { margin-top: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 8px 16px; }
+    .skills-section .item { margin-bottom: 0; }
     .skills-section .level-title { margin: 0 0 2px 0; line-height: 1.1; font-size: 14px; }
 
     /* Override theme's float-based skill layout to avoid last-line misalignment */
@@ -16,6 +16,10 @@
     .skills-section p { clear: both; }
 
     .skills-section p { margin: 0 0 2px 0; line-height: 1.2; }
+
+    /* Tag-style skills */
+    .skills-section .tag-list { list-style: none; padding: 0; margin: 0 0 2px 0; display: flex; flex-wrap: wrap; gap: 6px; }
+    .skills-section .tag { display: inline-block; padding: 2px 10px; border: 1px solid #e1e1e1; border-radius: 999px; background: #fafafa; font-size: 12px; line-height: 1.6; color: #666; }
   </style>
 
   <h2 class="section-title">
@@ -33,9 +37,19 @@
 
       <h3 class="level-title">{{ skill.name }}</h3>
 
+      {% if skill.items %}
+      <ul class="tag-list">
+        {% for item in skill.items %}
+        {% if item.name %}
+        <li class="tag">{{ item.name }}</li>
+        {% endif %}
+        {% endfor %}
+      </ul>
+      {% else %}
       {% for tagline in skill.tagline %}
       <p>{{ tagline }}</p>
       {% endfor %}
+      {% endif %}
 
     </div><!--//item-->
     {% endfor %}
