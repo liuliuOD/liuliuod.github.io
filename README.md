@@ -10,14 +10,21 @@ $ jekyll new --skip-bundle .
 
 ## How to run existed Jekyll project
 ```shell
-$ bundle install
-$ bundle exec jekyll serve --host 0.0.0.0
+$ make install
+$ make serve
 ```
 
 ## Run by Docker
 ```shell
-$ docker-compose up -d --build
+$ make docker-up
 # this app will serve at port 4000
+```
+
+Other Docker targets:
+```shell
+$ make docker-logs     # tail logs
+$ make docker-restart  # restart container
+$ make docker-down     # stop/remove containers
 ```
 
 ## References
