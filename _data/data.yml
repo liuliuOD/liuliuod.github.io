@@ -63,9 +63,11 @@ education:
 career-profile:
     title: About Me
     summary: |
-      - Backend / platform engineer with 6+ years across 3-tier systems and AWS/EKS microservices.
-      - Operated high-traffic APIs (2.5M+ users, ~10K peak QPS) and led performance work (up to -77% latency, +18% throughput).
-      - Own CI/CD, observability, and incident response; prefer simple, measurable improvements over big rewrites.
+      - Backend / Platform Engineer with 6+ years designing and operating scalable distributed systems on AWS/EKS.
+      - Experienced in owning high-traffic systems (2.5M+ users, ~10K peak QPS), leading performance optimization, and improving system reliability through observability, CI/CD, and infrastructure design.
+      - Strong focus on system-level problem solving — from API design and data modeling to event-driven architectures and cloud-native infrastructure.
+      - Proven ability to collaborate across teams to deliver end-to-end solutions, including identity systems, authorization services, and media processing pipelines.
+      - Prefer pragmatic, measurable improvements over over-engineered solutions.
 
 experiences:
     title: Experiences
