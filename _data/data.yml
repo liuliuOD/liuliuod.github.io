@@ -63,11 +63,13 @@ education:
 career-profile:
     title: About Me
     summary: |
-      - Backend / Platform Engineer with 6+ years designing and operating scalable distributed systems on AWS/EKS.
-      - Experienced in owning high-traffic systems (2.5M+ users, ~10K peak QPS), leading performance optimization, and improving system reliability through observability, CI/CD, and infrastructure design.
-      - Strong focus on system-level problem solving — from API design and data modeling to event-driven architectures and cloud-native infrastructure.
-      - Proven ability to collaborate across teams to deliver end-to-end solutions, including identity systems, authorization services, and media processing pipelines.
-      - Prefer pragmatic, measurable improvements over over-engineered solutions.
+      - Backend / Platform Engineer with 6+ years of experience building and operating cloud-native distributed systems on AWS and EKS.
+      - Owned high-traffic production systems serving 2.5M+ users and ~10K peak QPS, improving performance, reliability, and operational efficiency through scalable architecture and infrastructure design.
+      - Experienced in solving system-level challenges across API design, data modeling, event-driven workflows, observability, and cloud-native platforms.
+      - Delivered end-to-end systems in collaboration with cross-functional teams, including identity, authorization, and media processing capabilities.
+      - Known for pragmatic engineering decisions that reduce complexity, improve maintainability, and deliver measurable outcomes.
+      - Proven ability to collaborate across teams to deliver end-to-end solutions, including identity systems, authorization services, and platform capabilities.
+      - Strong focus on pragmatic, measurable engineering improvements across system design, infrastructure, and delivery workflows.
 
 experiences:
     title: Experiences
@@ -75,15 +77,19 @@ experiences:
       - role: Backend Software Engineer
         time: Dec 2023 - Present
         company: |
-          President Chain Store Corporation(PCSC), [Web Portal](https://www.uniopen.com)
+          President Chain Store Corporation(PCSC), [Web Portal](https://www.uniopen.com), [APP](https://www.uniopen.com/app)
         details: |
-          - Built and operated backend services for a web portal (2.5M+ users, ~10K peak QPS) on AWS + EKS.
-          - Designed OIDC/SSO identity + session flows and shipped core domain services (membership, access, routing).
-          - Led a performance baseline and load-test + tuning cycle for an authorization service; improved critical endpoints by up to -77% latency and +18% QPS; validated 500+ QPS targets.
-          - Investigated recurring OOM under sustained load (reproduced via load testing); isolated off-heap growth + Metaspace pressure + a DB bottleneck; mitigated impact with query/index improvements and runtime tuning.
-          - Delivered an event-driven video processing pipeline (S3 + MediaConvert + SQS/SNS) with status tracking and async polling.
-          - Hardened Python container builds/runtimes (non-root, secrets hygiene) and reduced image sizes by ~58%.
-          - Improved release safety and observability: CI quality gates, CloudWatch dashboards/alarms, centralized logs, and audit logging to support ISO 27001.
+          - Built and operated backend services for a high-traffic web portal serving 2.5M+ users and ~10K peak QPS on AWS + EKS.
+          - Designed OIDC/SSO identity and session flows, and delivered core domain services across membership, access control, and routing.
+          - Led performance baseline defining, load testing, and tuning for an authorization service, improving critical endpoint latency by up to 77%, increasing QPS by 18%, and raising throughput from 300 to 500 RPS through database optimization, async HTTP integration, and multi-layer caching.
+          - Investigated and resolved a complex multi-service production incident by tracing failures across internal services, optimizing a hot query causing full table scans, and adding slow-query alerting; reduced DB CPU from >85% to 20–30%, eliminated timeouts, and prevented recurrence.
+          - Hardened Python container builds and runtimes with non-root execution and BuildKit-based secrets handling, reducing image size by ~58% and ~49% across services.
+          - Investigated recurring OOM under sustained load by reproducing failures through load testing, isolating off-heap growth, Metaspace pressure, and a database bottleneck, and mitigating impact with query/index improvements and runtime tuning.
+          - Delivered an event-driven video processing pipeline using S3, MediaConvert, and SQS/SNS, with status tracking and asynchronous polling for processing workflows.
+          - Built reusable IaC-based CI/CD modules for all Spring Boot and Python backend projects, reducing pipeline time from 40 minutes to 20–25 minutes and standardizing delivery workflows across backend teams.
+          - Developed a reusable, configuration-driven authentication SDK that enabled backend services to integrate in about 1 minute, eliminating repeated per-project implementation of HTTP clients and backpressure controls.
+          - Defined and validated cross-account permission models and assessed cloud service capabilities for auth and infrastructure scenarios, balancing security, functional requirements, and cloud cost trade-offs.
+          - Improved release safety and observability through CI quality gates, CloudWatch dashboards/alarms, centralized logging, and audit logging, supporting operational visibility and ISO 27001 compliance.
           - **Tech**:
             - Languages: Python, Java
             - Frameworks: FastAPI, Spring Boot
@@ -93,12 +99,17 @@ experiences:
             - Testing/Perf: k6, Vegeta
 
         details_print: |
-          - Built and operated backend services for a web portal (2.5M+ users, ~10K peak QPS) on AWS + EKS.
-          - Designed OIDC/SSO identity flows and implemented core services (membership, access, routing).
-          - Led load testing and performance tuning for an authorization service; improved up to -77% latency and +18% QPS; validated 500+ QPS targets.
-          - Diagnosed recurring OOM under sustained load; isolated off-heap growth, Metaspace pressure, and a DB bottleneck; mitigated impact via query/index improvements.
-          - Built an event-driven video processing pipeline (S3 + MediaConvert + SQS/SNS).
-          - Hardened Python containers and reduced image sizes by ~58%; improved CI quality gates, observability, and audit logging for ISO 27001.
+          - Built and operated backend services for a high-traffic web portal serving 2.5M+ users and ~10K peak QPS on AWS + EKS.
+          - Designed OIDC/SSO identity and session flows, and delivered core domain services across membership, access control, and routing.
+          - Led performance baseline defining, load testing, and tuning for an authorization service, improving critical endpoint latency by up to 77%, increasing QPS by 18%, and raising throughput from 300 to 500 RPS through database optimization, async HTTP integration, and multi-layer caching.
+          - Investigated and resolved a complex multi-service production incident by tracing failures across internal services, optimizing a hot query causing full table scans, and adding slow-query alerting; reduced DB CPU from >85% to 20–30%, eliminated timeouts, and prevented recurrence.
+          - Hardened Python container builds and runtimes with non-root execution and BuildKit-based secrets handling, reducing image size by ~58% and ~49% across services.
+          - Investigated recurring OOM under sustained load by reproducing failures through load testing, isolating off-heap growth, Metaspace pressure, and a database bottleneck, and mitigating impact with query/index improvements and runtime tuning.
+          - Delivered an event-driven video processing pipeline using S3, MediaConvert, and SQS/SNS, with status tracking and asynchronous polling for processing workflows.
+          - Built reusable IaC-based CI/CD modules for all Spring Boot and Python backend projects, reducing pipeline time from 40 minutes to 20–25 minutes and standardizing delivery workflows across backend teams.
+          - Developed a reusable, configuration-driven authentication SDK that enabled backend services to integrate in about 1 minute, eliminating repeated per-project implementation of HTTP clients and backpressure controls.
+          - Defined and validated cross-account permission models and assessed cloud service capabilities for auth and infrastructure scenarios, balancing security, functional requirements, and cloud cost trade-offs.
+          - Improved release safety and observability through CI quality gates, CloudWatch dashboards/alarms, centralized logging, and audit logging, supporting operational visibility and ISO 27001 compliance.
           - **Tech**: Python/Java, FastAPI/Spring Boot, PostgreSQL/Redis/DynamoDB, AWS EKS/SQS/Lambda/CloudWatch, Terraform/Helm, k6/Vegeta.
 
       - role: Backend Software Engineer
@@ -106,16 +117,12 @@ experiences:
         company: |
           HiSKIO, [Online Learning Platform](https://hiskio.com)
         details: |
-          - Built and maintained REST APIs in PHP (Laravel/Lumen) for the web product and admin portal.
-          - Improved API performance by ~20–30% through profiling, refactoring, and query optimization; reduced MySQL hot-path queries by up to 50%.
-          - Added PHPUnit coverage for key business logic and kept OpenAPI/Swagger docs up to date for smoother handoffs.
-          - Built async workflows with SQS + Lambda (Python/Node.js) for background processing.
-          - Integrated LINE Messaging API for user-triggered workflows/notifications; shipped personalized recommendations and improved retention by ~20%.
-          - Integrated OpenAI API for a learning assistant chatbot.
-          - Operated a 3-tier AWS stack (ALB/EC2/RDS) and owned CI/CD (CodePipeline/CodeBuild/CodeDeploy) plus autoscaling and CloudWatch alarms.
-          - Containerized services with Docker, managed images in ECR, and ran deployments via Docker Swarm; reduced image size by ~50%.
-          - Improved monitoring and incident response with Slack alerting; reduced MTTD by ~80%.
-          - Improved SPA SEO via prerendering.
+          - Built and maintained REST APIs in PHP (Laravel/Lumen) for a web product and admin portal serving 100K+ users with ~4K DAU, owning end-to-end delivery from development to production rollout and monitoring.
+          - Upgraded an entire Laravel monolith from v7 to v10 over 2 months through incremental migration, compatibility validation, and unit-test protection, restoring framework support and improving API p99 latency by 20%.
+          - Resolved critical MySQL performance bottlenecks by profiling request paths, analyzing EXPLAIN plans, and refactoring indexes and table design, reducing hot-path query time from 10–20 seconds to ~1 second.
+          - Owned a 3-tier AWS stack (ALB / EC2 / RDS) and service operations, including CI/CD, autoscaling, CloudWatch dashboards/alarms, load testing, and post-release monitoring.
+          - Improved monitoring and incident response with Slack alerting, reducing MTTD by ~80%.
+          - Built asynchronous backend workflows with SQS + Lambda, and delivered user-facing integrations including LINE Messaging API notifications and personalized recommendations that improved retention by ~20%.
           - **Tech**:
             - Languages: PHP, JavaScript, Python
             - Frameworks: Laravel, Lumen, Vue, Nuxt
@@ -125,14 +132,12 @@ experiences:
             - Testing: PHPUnit
 
         details_print: |
-          - Developed and maintained RESTful APIs using PHP (Laravel, Lumen) on AWS.
-          - Improved API performance by 20-30% and optimized MySQL queries (up to 50% faster).
-          - Built asynchronous workflows using AWS SQS and AWS Lambda (Python 3, Node.js workers).
-          - Implemented CI/CD with AWS CodePipeline, CodeBuild, and CodeDeploy; operated ALB, EC2, RDS.
-          - Containerized services with Docker; reduced image size by ~50%; managed deployments with Docker Swarm.
-          - Implemented monitoring and alerting (CloudWatch Logs, Dashboards, Slack) and reduced MTTD by ~80%.
-          - Integrated OpenAI API and LINE Messaging API to deliver chatbots and improved retention by ~20%.
-          - **Tech**: PHP/Laravel, MySQL, AWS EC2/ALB/RDS/SQS/Lambda/CloudWatch/ECR, Docker/Docker Swarm, OpenAPI/Swagger, PHPUnit.
+          - Built and maintained REST APIs in PHP (Laravel/Lumen) for a web product and admin portal serving 100K+ users with ~4K DAU, owning end-to-end delivery from development to production rollout and monitoring.
+          - Upgraded an entire Laravel monolith from v7 to v10 over 2 months through incremental migration, compatibility validation, and unit-test protection, restoring framework support and improving API p99 latency by 20%.
+          - Resolved critical MySQL performance bottlenecks by profiling request paths, analyzing EXPLAIN plans, and refactoring indexes and table design, reducing hot-path query time from 10–20 seconds to ~1 second.
+          - Owned a 3-tier AWS stack (ALB / EC2 / RDS) and service operations, including CI/CD, autoscaling, CloudWatch dashboards/alarms, load testing, and post-release monitoring.
+          - Improved monitoring and incident response with Slack alerting, reducing MTTD by ~80%.
+          - Built asynchronous backend workflows with SQS + Lambda, and delivered user-facing integrations including LINE Messaging API notifications and personalized recommendations that improved retention by ~20%.
 
 #      - role: Intern & Software Engineer
 #        time: Nov 2019 - Mar 2020, Sep 2018 - Jul 2019
