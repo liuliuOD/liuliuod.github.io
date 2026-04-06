@@ -269,13 +269,13 @@ zh:
             - 建立影片處理流程與可重用的 IaC-based CI/CD 模組，支援 S3/MediaConvert/SQS/SNS 非同步處理，並將 CI 流程壓到 20~25 分鐘。
             - 開發可重用的身分驗證 SDK，讓後端服務可在約 1 分鐘內完成整合。
             - 透過 CI 品質門檻、CloudWatch 儀表板/警示、集中式 logging 與 audit logging，提升發版安全性與可觀測性。
-            - **Tech**:
-              - Languages: Python, Java
-              - Frameworks: FastAPI, Spring Boot
-              - Datastores: PostgreSQL, Redis, DynamoDB, DocumentDB
-              - Cloud/Infra: AWS (EKS, S3, SQS, SNS, Lambda, CloudWatch, MediaConvert)
-              - Tooling: Terraform, Helm, Docker, Kubernetes
-              - Testing/Perf: k6, Vegeta
+            - **技術**:
+              - 語言: Python, Java
+              - 框架: FastAPI, Spring Boot
+              - 資料庫: PostgreSQL, Redis, DynamoDB, DocumentDB
+              - 雲端與基礎設施: AWS (EKS, S3, SQS, SNS, Lambda, CloudWatch, MediaConvert)
+              - 工具: Terraform, Helm, Docker, Kubernetes
+              - 測試與效能: k6, Vegeta
 
           details_print: |
             - 負責高流量入口網站與 APP 的後端服務建置與營運，支援超過 250 萬用戶、峰值約 1 萬 QPS，部署於 AWS + EKS。
@@ -286,7 +286,7 @@ zh:
             - 建立影片處理流程與可重用的 IaC-based CI/CD 模組，支援 S3/MediaConvert/SQS/SNS 非同步處理，並將 CI 流程壓到 20~25 分鐘。
             - 開發可重用的身分驗證 SDK，讓後端服務可在約 1 分鐘內完成整合。
             - 透過 CI 品質門檻、CloudWatch 儀表板/警示、集中式 logging 與 audit logging，提升發版安全性與可觀測性。
-            - **Tech**: Python/Java, FastAPI/Spring Boot, PostgreSQL/Redis/DynamoDB, AWS EKS/SQS/Lambda/CloudWatch, Terraform/Helm, k6/Vegeta.
+            - **技術**: Python/Java, FastAPI/Spring Boot, PostgreSQL/Redis/DynamoDB, AWS EKS/SQS/Lambda/CloudWatch, Terraform/Helm, k6/Vegeta.
 
         - role: 後端軟體工程師
           time: 2020/04 - 2023/11
@@ -299,13 +299,13 @@ zh:
             - 負責 3-tier AWS stack 與系統維運，涵蓋 CI/CD、自動擴縮與上線後監控。
             - 導入 Slack 告警強化監控與 incident response，使 MTTD 約降低 80%。
             - 以 SQS + Lambda 建立非同步後端流程，串接 LINE Messaging API 通知與個人化推薦，使留存率提升約 20%。
-            - **Tech**:
-              - Languages: PHP, JavaScript, Python
-              - Frameworks: Laravel, Lumen, Vue, Nuxt
-              - Datastores: MySQL, SQLite
-              - Cloud/Infra: AWS (EC2, ALB, RDS, SQS, Lambda, CloudWatch, ECR, S3)
-              - Tooling: Docker, Docker Swarm, OpenAPI/Swagger
-              - Testing: PHPUnit
+            - **技術**:
+              - 語言: PHP, JavaScript, Python
+              - 框架: Laravel, Lumen, Vue, Nuxt
+              - 資料庫: MySQL, SQLite
+              - 雲端與基礎設施: AWS (EC2, ALB, RDS, SQS, Lambda, CloudWatch, ECR, S3)
+              - 工具: Docker, Docker Swarm, OpenAPI/Swagger
+              - 測試: PHPUnit
 
           details_print: |
             - 以 PHP (Laravel/Lumen) 維護 REST APIs，服務超過 10 萬用戶、約 4K DAU。
