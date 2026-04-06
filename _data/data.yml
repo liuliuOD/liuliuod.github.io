@@ -256,7 +256,7 @@ zh:
   experiences:
       title: 經歷
       info:
-        - role: 資深後端軟體工程師
+        - role: 資深後端與平台工程師
           time: 2023/12 - 現在
           company: |
             統一超商股份有限公司（PCSC）, [入口網站](https://www.uniopen.com), [APP](https://www.uniopen.com/app)
@@ -288,7 +288,7 @@ zh:
             - 透過 CI 品質門檻、CloudWatch 儀表板/警示、集中式 logging 與 audit logging，提升發版安全性與可觀測性。
             - **Tech**: Python/Java, FastAPI/Spring Boot, PostgreSQL/Redis/DynamoDB, AWS EKS/SQS/Lambda/CloudWatch, Terraform/Helm, k6/Vegeta.
 
-        - role: Backend Software Engineer
+        - role: 後端軟體工程師
           time: 2020/04 - 2023/11
           company: |
             HiSKIO, [線上學習平台](https://hiskio.com)
@@ -314,3 +314,52 @@ zh:
             - 負責 3-tier AWS stack 與系統維運，涵蓋 CI/CD、自動擴縮與上線後監控。
             - 導入 Slack 告警強化監控與 incident response，使 MTTD 約降低 80%。
             - 以 SQS + Lambda 建立非同步後端流程，串接 LINE Messaging API 通知與個人化推薦，使留存率提升約 20%。
+
+  skills:
+      title: 技能
+      toolset:
+        - name: 程式語言
+          items:
+            - name: Python
+            - name: Java
+            - name: Rust
+            - name: JavaScript
+            - name: PHP
+        - name: 框架
+          items:
+            - name: FastAPI
+            - name: Spring Boot
+            - name: Django REST Framework (DRF)
+            - name: Vue
+            - name: Actix
+            - name: Laravel
+        - name: 關聯式資料庫
+          items:
+            - name: PostgreSQL
+            - name: MySQL
+            - name: MariaDB
+            - name: SQLite
+        - name: NoSQL
+          items:
+            - name: MongoDB
+            - name: DocumentDB
+            - name: DynamoDB
+            - name: Redis
+        - name: 雲端與基礎設施
+          items:
+            - name: AWS (EC2, EKS, ELB, S3, CloudFront, Lambda, SQS, CloudWatch, CodePipeline, etc.)
+        - name: 其他工具
+          items:
+            - name: GitHub Actions
+            - name: Kafka
+            - name: OpenSearch
+            - name: Kubernetes
+            - name: Istio
+            - name: Docker
+            - name: Docker Swarm
+            - name: Nginx
+            - name: Ansible
+            - name: Terraform
+            - name: Helm
+            - name: Swagger
+            - name: Supervisor
