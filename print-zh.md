@@ -112,4 +112,8 @@ resume_lang: zh
   </div>
 
   {% include_relative _includes/resume/experiences-print.html %}
+
+  {% unless site.data.data.sidebar.education %}
+    {% include education.html %}
+  {% endunless %}
 </div>
