@@ -1,4 +1,6 @@
-{% assign education = site.data.data.education %}
+{% assign resume_data_key = page.resume_lang | default: "default" %}
+{% assign education = site.data.data[resume_data_key].education | default: site.data.data.education %}
+
 {% if education %}
   {% if site.data.data.sidebar.education %}
   <div class="education-container container-block">

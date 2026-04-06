@@ -1,10 +1,8 @@
 ---
 layout: modern
 title: L2's Resume
-resume_lang: default
+resume_lang: zh
 ---
-
-
 {% include_relative _includes/resume/career-profile.html %}
 
 {% include_relative _includes/modern/skills.html %}

@@ -1,4 +1,6 @@
-{% assign oss = site.data.data.oss %}
+{% assign resume_data_key = page.resume_lang | default: "default" %}
+{% assign oss = site.data.data[resume_data_key].oss | default: site.data.data.oss %}
+
 {% if oss %}
 <section class="section oss-section">
   <h2 class="section-title">

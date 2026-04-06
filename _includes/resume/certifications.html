@@ -1,4 +1,7 @@
-{% assign certifications = site.data.data.certifications %} {% if certifications %}
+{% assign resume_data_key = page.resume_lang | default: "default" %}
+{% assign certifications = site.data.data[resume_data_key].certifications | default: site.data.data.certifications %}
+
+{% if certifications %}
 <section class="section certifications-section">
   <h2 class="section-title">
     <span class="fa-stack fa-xs">

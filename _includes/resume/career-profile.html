@@ -1,4 +1,6 @@
-{% assign career-profile = site.data.data.career-profile %}
+{% assign resume_data_key = page.resume_lang | default: "default" %}
+{% assign career-profile = site.data.data[resume_data_key].career-profile | default: site.data.data.career-profile %}
+
 {% if career-profile %}
 <section class="section summary-section">
 

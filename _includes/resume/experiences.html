@@ -1,4 +1,6 @@
-{% assign experiences = site.data.data.experiences %}
+{% assign resume_data_key = page.resume_lang | default: "default" %}
+{% assign experiences = site.data.data[resume_data_key].experiences | default: site.data.data.experiences %}
+
 {% if experiences %}
 <section class="section experiences-section">
   <h2 class="section-title">
