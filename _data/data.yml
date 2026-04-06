@@ -261,7 +261,7 @@ zh:
           company: |
             統一超商股份有限公司（PCSC）, [入口網站](https://www.uniopen.com), [APP](https://www.uniopen.com/app)
           details: |
-            - 負責高流量入口網站與 APP 的後端服務建置與營運，支援超過 250 萬用戶、峰值約 1 萬 QPS，部署於 AWS + EKS。
+            - 主導部署於 AWS + EKS 的高流量入口網站與 APP 後端服務建置與營運，支援超過 250 萬用戶、峰值約 1 萬 QPS。
             - 設計 OIDC/SSO 與 session 流程，涵蓋會員、權限控管與路由等核心服務。
             - 主導權限服務的效能調校，使關鍵 endpoint latency 最多降低 77%，QPS 提升 18%。
             - 排查並解決正式環境事故，將 DB CPU 從 85% 以上降至 20~30%，並消除 timeout。
@@ -278,7 +278,7 @@ zh:
               - 測試與效能: k6, Vegeta
 
           details_print: |
-            - 負責高流量入口網站與 APP 的後端服務建置與營運，支援超過 250 萬用戶、峰值約 1 萬 QPS，部署於 AWS + EKS。
+            - 主導部署於 AWS + EKS 的高流量入口網站與 APP 後端服務建置與營運，支援超過 250 萬用戶、峰值約 1 萬 QPS。
             - 設計 OIDC/SSO 與 session 流程，涵蓋會員、權限控管與路由等核心服務。
             - 主導權限服務的效能調校，使關鍵 endpoint latency 最多降低 77%，QPS 提升 18%。
             - 排查並解決正式環境事故，將 DB CPU 從 85% 以上降至 20~30%，並消除 timeout。
