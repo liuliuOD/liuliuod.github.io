@@ -1,7 +1,7 @@
 ---
 layout: print
-permalink: /print
-resume_lang: default
+permalink: /print-zh
+resume_lang: zh
 ---
 
 <style>
