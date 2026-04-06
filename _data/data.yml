@@ -294,10 +294,10 @@ zh:
             HiSKIO, [線上學習平台](https://hiskio.com)
           details: |
             - 以 PHP (Laravel/Lumen) 維護 REST APIs，服務超過 10 萬用戶、約 4K DAU。
-            - 完成 Laravel monolith 從 v7 升級至 v10，使 API p99 latency 改善 20%。
+            - 完成 Laravel monolith 服務從 v7 升級至 v10，使 API p99 latency 改善 20%。
             - 透過 index 與 table schema 重構，將 MySQL 熱點查詢時間從 10~20 秒降至約 1 秒。
             - 負責 3-tier AWS stack 與系統維運，涵蓋 CI/CD、自動擴縮與上線後監控。
-            - 導入 Slack 告警與 incident response，將 MTTD 約降低 80%。
+            - 導入 Slack 告警與 incident response，將 MTTD 降低約 80%。
             - 以 SQS + Lambda 建立非同步後端流程，串接 LINE Messaging API 通知與個人化推薦，使留存率提升約 20%。
             - **技術**:
               - 語言: PHP, JavaScript, Python
@@ -309,11 +309,56 @@ zh:
 
           details_print: |
             - 以 PHP (Laravel/Lumen) 維護 REST APIs，服務超過 10 萬用戶、約 4K DAU。
-            - 完成 Laravel monolith 從 v7 升級至 v10，使 API p99 latency 改善 20%。
+            - 完成 Laravel monolith 服務從 v7 升級至 v10，使 API p99 latency 改善 20%。
             - 透過 index 與 table schema 重構，將 MySQL 熱點查詢時間從 10~20 秒降至約 1 秒。
             - 負責 3-tier AWS stack 與系統維運，涵蓋 CI/CD、自動擴縮與上線後監控。
-            - 導入 Slack 告警強化監控與 incident response，使 MTTD 約降低 80%。
+            - 導入 Slack 告警強化監控與 incident response，將 MTTD 降低約 80%。
             - 以 SQS + Lambda 建立非同步後端流程，串接 LINE Messaging API 通知與個人化推薦，使留存率提升約 20%。
+
+  certifications:
+      title: 證照
+      list:
+        - name: AWS Certified Solutions Architect - Associate (SAA)
+          start: 2023
+          end: 2026
+          organization: AWS
+          credentialid: AWS03666006
+          credentialurl: www.credly.com/badges/5fa62ede-8f8b-4b70-9976-daa0a4fee3a2/public_url
+          credentialname: Badge
+          details: |
+            證明具備 AWS 架構核心能力，涵蓋網路、運算、儲存、安全性與可靠性等最佳實務。
+
+  projects:
+      title: 專案
+      intro: >
+        個人專案與工具。
+      assignments:
+        - title: （RUST）文件向量化
+          link: "https://github.com/liuliuOD/Documentation-Embedding"
+          tagline: "以 Rust 撰寫的 CLI 工具，可將文件向量化並儲存至 Qdrant，用於語意搜尋。"
+        - title: （Python3）ChatGPT Token 用量計算器
+          link: "https://github.com/liuliuOD/ChatGPT-Token-Usage-Pre-Calculator"
+          tagline: "在送出請求前，用來估算 prompt token 使用量的小工具。"
+        - title: （Docker）Docker 範本
+          link: "https://github.com/liuliuOD/Dockerize-Templates"
+          tagline: "整理常見技術棧的 Docker 範本，方便快速建立專案骨架。"
+
+  oss:
+      title: 開源貢獻
+      intro: >
+        開源專案貢獻。
+      contributions:
+        - title: actix/examples
+          link: "https://github.com/actix/examples"
+          tagline: "展示 Actix 生態系常見用法的社群範例。"
+
+        - title: openai-cookbook
+          link: "https://github.com/openai/openai-cookbook"
+          tagline: "OpenAI API 的實作範例與使用指南。"
+
+        - title: design-patterns-for-humans-zh-TW
+          link: "https://github.com/liuliuOD/design-patterns-for-humans-zh-TW"
+          tagline: "Design Patterns for Humans 的繁體中文翻譯。"
 
   skills:
       title: 技能
