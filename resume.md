@@ -20,5 +20,5 @@ resume_lang: default
 {% include_relative _includes/resume/publications.html %}
 
 {% unless site.data.data.sidebar.education %}
-  {% include education.html %}
+  {% include_relative _includes/resume/education.html %}
 {% endunless %}

@@ -75,11 +75,10 @@ experiences:
         details: |
           - Built and operated backend services for a high-traffic web portal and mobile app serving 2.5M+ users and ~10K peak QPS on AWS + EKS.
           - Designed OIDC/SSO identity and session flows, and delivered core services for membership, access control, and routing.
-          - Led performance baselining, load testing, and tuning for an authorization service, reducing critical endpoint latency by up to 77% and increasing QPS by 18% while raising throughput from 300 to 500 RPS.
+          - Led performance baselining, load testing, and tuning for an authorization service, reducing critical endpoint latency by up to 77% and increasing throughput from 300 to 500 RPS.
           - Traced and resolved a complex multi-service production incident, reducing DB CPU from >85% to 20–30%, eliminating timeouts, and preventing recurrence.
           - Hardened Python container builds and runtimes with non-root execution and BuildKit-based secrets handling, reducing image size by ~58% and ~49% across services.
           - Reproduced recurring OOM issues under sustained load, isolated off-heap growth, Metaspace pressure, and database bottlenecks, and mitigated impact through query/index improvements and runtime tuning.
-          - Delivered an event-driven video processing pipeline using S3, MediaConvert, and SQS/SNS.
           - Built reusable IaC-based CI/CD modules for Spring Boot and Python backend projects, cutting pipeline time from 40 minutes to 20–25 minutes and standardizing delivery workflows across backend teams.
           - Developed a reusable, configuration-driven authentication SDK that allowed backend services to integrate in about 1 minute.
           - Defined and validated cross-account permission models and evaluated cloud service capabilities for auth and infrastructure use cases, balancing security, functional requirements, and cloud cost.
@@ -95,11 +94,10 @@ experiences:
         details_print: |
           - Built and operated backend services for a high-traffic web portal serving 2.5M+ users and ~10K peak QPS on AWS + EKS.
           - Designed OIDC/SSO identity and session flows, and delivered core services for membership, access control, and routing.
-          - Led performance baselining, load testing, and tuning for an authorization service, improving critical endpoint latency by up to 77%, increasing QPS by 18%, and raising throughput from 300 to 500 RPS.
+          - Led performance baselining, load testing, and tuning for an authorization service, reducing critical endpoint latency by up to 77% and increasing throughput from 300 to 500 RPS.
           - Traced and resolved a complex multi-service production incident, reducing DB CPU from >85% to 20–30%, eliminating timeouts, and preventing recurrence.
           - Hardened Python container builds and runtimes with non-root execution and BuildKit-based secrets handling, reducing image size by ~58% and ~49% across services.
           - Reproduced recurring OOM issues under sustained load, isolated off-heap growth, Metaspace pressure, and database bottlenecks, and mitigated impact through query/index improvements and runtime tuning.
-          - Delivered an event-driven video processing pipeline using S3, MediaConvert, and SQS/SNS.
           - Built reusable IaC-based CI/CD modules for Spring Boot and Python backend projects, cutting pipeline time from 40 minutes to 20–25 minutes and standardizing delivery workflows across backend teams.
           - Developed a reusable, configuration-driven authentication SDK that allowed backend services to integrate in about 1 minute.
           - Defined and validated cross-account permission models and evaluated cloud service capabilities for auth and infrastructure use cases, balancing security, functional requirements, and cloud cost.
@@ -250,7 +248,7 @@ footer: >
 zh:
   sidebar:
       name: 劉佳旻（劉劉）
-      tagline: 資深後端／平台工程師
+      tagline: 資深後端 / 平台工程師
   career-profile:
       title: 關於我
       summary: >
@@ -264,12 +262,12 @@ zh:
           company: |
             統一超商股份有限公司（PCSC）, [入口網站](https://www.uniopen.com), [APP](https://www.uniopen.com/app)
           details: |
-            - 主導部署於 AWS + EKS 的高流量入口網站與 APP 後端服務建置與營運，支援超過 250 萬用戶、峰值約 1 萬 QPS。
+            - 主導高流量入口網站與 APP 後端服務的建置與營運，系統部署於 AWS + EKS，支援超過 250 萬用戶、峰值約 1 萬 QPS。
             - 設計 OIDC/SSO 與 session 流程，涵蓋會員、權限控管與路由等核心服務。
-            - 主導權限服務的效能調校，使關鍵 endpoint latency 最多降低 77%，QPS 提升 18%。
+            - 主導權限服務的效能基準測試、壓測與調校，使關鍵 endpoint latency 最多降低 77%，並將吞吐量從 300 提升至 500 RPS。
             - 排查並解決正式環境事故，將 DB CPU 從 85% 以上降至 20~30%，並消除 timeout。
             - 透過壓測定位 OOM 與 database bottleneck，並以查詢與索引優化、執行環境調校改善瓶頸。
-            - 建立影片處理流程與可重用的 IaC-based CI/CD 模組，支援 S3/MediaConvert/SQS/SNS 非同步處理，並將 CI 流程縮短至 20~25 分鐘。
+            - 主導共用型 IaC-based CI/CD 平台優化，將 Spring Boot 後端專案的交付流程標準化；在過程中透過模組化、平行化與建置步驟重整等優化機制，將 pipeline 時間從 40 分鐘縮短至 20~25 分鐘，並讓所有導入團隊持續受益。
             - 開發可重用的身分驗證 SDK，讓後端服務可在約 1 分鐘內完成整合。
             - 建立 CI 品質門檻、CloudWatch 儀表板/警示、集中式 logging 與 audit logging，提升發版安全性與可觀測性。
             - **技術**:
@@ -281,12 +279,12 @@ zh:
               - 測試與效能: k6, Vegeta
 
           details_print: |
-            - 主導部署於 AWS + EKS 的高流量入口網站與 APP 後端服務建置與營運，支援超過 250 萬用戶、峰值約 1 萬 QPS。
+            - 主導高流量入口網站與 APP 後端服務的建置與營運，系統部署於 AWS + EKS，支援超過 250 萬用戶、峰值約 1 萬 QPS。
             - 設計 OIDC/SSO 與 session 流程，涵蓋會員、權限控管與路由等核心服務。
-            - 主導權限服務的效能調校，使關鍵 endpoint latency 最多降低 77%，QPS 提升 18%。
+            - 主導權限服務的效能基準測試、壓測與調校，使關鍵 endpoint latency 最多降低 77%，並將吞吐量從 300 提升至 500 RPS。
             - 排查並解決正式環境事故，將 DB CPU 從 85% 以上降至 20~30%，並消除 timeout。
             - 透過壓測定位 OOM 與 database bottleneck，並以查詢與索引優化、執行環境調校改善瓶頸。
-            - 建立影片處理流程與可重用的 IaC-based CI/CD 模組，支援 S3/MediaConvert/SQS/SNS 非同步處理，並將 CI 流程縮短至 20~25 分鐘。
+            - 主導共用型 IaC-based CI/CD 平台優化，將 Spring Boot 後端專案的交付流程標準化；在過程中透過模組化、平行化與建置步驟重整等優化機制，將 pipeline 時間從 40 分鐘縮短至 20~25 分鐘，並讓所有導入團隊持續受益。
             - 開發可重用的身分驗證 SDK，讓後端服務可在約 1 分鐘內完成整合。
             - 建立 CI 品質門檻、CloudWatch 儀表板/警示、集中式 logging 與 audit logging，提升發版安全性與可觀測性。
             - **技術**: Python/Java, FastAPI/Spring Boot, PostgreSQL/Redis/DynamoDB, AWS EKS/SQS/Lambda/CloudWatch, Terraform/Helm, k6/Vegeta.
@@ -300,7 +298,7 @@ zh:
             - 完成 Laravel monolith 服務從 v7 升級至 v10，使 API p99 latency 改善 20%。
             - 透過 index 與 table schema 重構，將 MySQL 熱點查詢時間從 10~20 秒降至約 1 秒。
             - 負責 3-tier AWS stack 與系統維運，涵蓋 CI/CD、自動擴縮與上線後監控。
-            - 導入 Slack 告警與 incident response，將 MTTD 降低約 80%。
+            - 導入 Slack 告警機制與 incident response，將 MTTD 降低約 80%。
             - 以 SQS + Lambda 建立非同步後端流程，串接 LINE Messaging API 通知與個人化推薦，使留存率提升約 20%。
             - **技術**:
               - 語言: PHP, JavaScript, Python
@@ -315,7 +313,7 @@ zh:
             - 完成 Laravel monolith 服務從 v7 升級至 v10，使 API p99 latency 改善 20%。
             - 透過 index 與 table schema 重構，將 MySQL 熱點查詢時間從 10~20 秒降至約 1 秒。
             - 負責 3-tier AWS stack 與系統維運，涵蓋 CI/CD、自動擴縮與上線後監控。
-            - 導入 Slack 告警強化監控與 incident response，將 MTTD 降低約 80%。
+            - 導入 Slack 告警機制與 incident response，將 MTTD 降低約 80%。
             - 以 SQS + Lambda 建立非同步後端流程，串接 LINE Messaging API 通知與個人化推薦，使留存率提升約 20%。
 
   certifications:
@@ -329,7 +327,7 @@ zh:
           credentialurl: www.credly.com/badges/5fa62ede-8f8b-4b70-9976-daa0a4fee3a2/public_url
           credentialname: Badge
           details: |
-            證明具備 AWS 架構核心能力，涵蓋網路、運算、儲存、安全性與可靠性等最佳實務。
+            具備 AWS 架構核心能力，涵蓋網路、運算、儲存、安全性與可靠性等最佳實務。
 
   projects:
       title: 專案

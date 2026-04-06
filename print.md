@@ -114,6 +114,6 @@ resume_lang: default
   {% include_relative _includes/resume/experiences-print.html %}
 
   {% unless site.data.data.sidebar.education %}
-    {% include education.html %}
+    {% include_relative _includes/resume/education.html %}
   {% endunless %}
 </div>
