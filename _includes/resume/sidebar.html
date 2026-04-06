@@ -1,4 +1,7 @@
+{% assign resume_data_key = page.resume_lang | default: "default" %}
 {% assign sidebar = site.data.data.sidebar %}
+{% assign sidebar_name = site.data.data[resume_data_key].sidebar.name | default: sidebar.name %}
+{% assign sidebar_tagline = site.data.data[resume_data_key].sidebar.tagline | default: sidebar.tagline %}
 <div class="sidebar-wrapper">
 
   <div class="profile-container">
@@ -7,12 +10,12 @@
     <img class="avatar" src="{{ site.baseurl }}/assets/images/{{ sidebar.avatar }}" alt="profile picture" />
     {% endif %}
 
-    {% if sidebar.name %}
-    <h1 class="name">{{ sidebar.name }}</h1>
+    {% if sidebar_name %}
+    <h1 class="name">{{ sidebar_name }}</h1>
     {% endif %}
 
-    {% if sidebar.tagline %}
-    <h3 class="tagline">{{ sidebar.tagline }}</h3>
+    {% if sidebar_tagline %}
+    <h3 class="tagline">{{ sidebar_tagline }}</h3>
     {% endif %}
 
   </div><!--//profile-container-->

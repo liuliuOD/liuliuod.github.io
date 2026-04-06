@@ -9,7 +9,7 @@ sidebar:
 
     # Profile information
     name: ChiaMin Liu (liuliu)
-    tagline: Backend Software Engineer
+    tagline: Senior Backend / Platform Engineer
     avatar: avatar.jpg
     qrcode: qrcode.png
 
@@ -248,6 +248,9 @@ footer: >
     Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
 
 zh:
+  sidebar:
+      name: 劉佳旻（劉劉）
+      tagline: 資深後端／平台工程師
   career-profile:
       title: 關於我
       summary: >

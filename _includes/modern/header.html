@@ -1,13 +1,16 @@
+{% assign resume_data_key = page.resume_lang | default: "default" %}
 {% assign sidebar = site.data.data.sidebar %}
+{% assign sidebar_name = site.data.data[resume_data_key].sidebar.name | default: sidebar.name %}
+{% assign sidebar_tagline = site.data.data[resume_data_key].sidebar.tagline | default: sidebar.tagline %}
 <header class="modern-header">
   <div class="modern-header__media">
     <div class="modern-header__text">
-      {% if sidebar.name %}
-      <h1 class="modern-name">{{ sidebar.name }}</h1>
+      {% if sidebar_name %}
+      <h1 class="modern-name">{{ sidebar_name }}</h1>
       {% endif %}
 
-      {% if sidebar.tagline %}
-      <p class="modern-title">{{ sidebar.tagline }}</p>
+      {% if sidebar_tagline %}
+      <p class="modern-title">{{ sidebar_tagline }}</p>
       {% endif %}
 
       <ul class="modern-links">
