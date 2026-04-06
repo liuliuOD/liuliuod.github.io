@@ -62,12 +62,8 @@ education:
 
 career-profile:
     title: About Me
-    summary: |
-      - Backend / Platform Engineer with 6+ years of experience designing, building, and operating cloud-native distributed systems on AWS and EKS.
-      - Led high-traffic production systems serving 2.5M+ users and ~10K peak QPS, with a focus on performance, reliability, and operational efficiency.
-      - Strong track record in API design, data modeling, event-driven workflows, observability, and cloud-native platform work.
-      - Comfortable partnering with cross-functional teams to deliver end-to-end capabilities across identity, authorization, and media processing.
-      - Pragmatic engineer who prioritizes simplicity, maintainability, and measurable impact.
+    summary: >
+      Backend / Platform Engineer with 6+ years of experience building and operating cloud-native distributed systems on AWS and EKS. I have led high-traffic production systems serving 2.5M+ users and ~10K peak QPS, with a focus on performance, reliability, and operational efficiency. My work spans API design, data modeling, event-driven workflows, observability, and cross-functional delivery across backend and platform capabilities.
 
 experiences:
     title: Experiences
@@ -254,11 +250,8 @@ footer: >
 zh:
   career-profile:
       title: 關於我
-      summary: |
-        - 我是一位專注於後端與平台的軟體工程師，具備 6 年以上在 AWS 與 EKS 上設計、建置與營運雲原生分散式系統的經驗。
-        - 曾負責服務超過 250 萬用戶、峰值約 1 萬 QPS 的高流量系統，能從架構與基礎設施設計的角度持續提升效能、穩定性與營運效率。
-        - 熟悉 API 設計、資料模型、事件驅動流程與可觀測性等系統級議題，也能與跨部門團隊協作，推動 identity、authorization 與 platform 相關方案落地。
-        - 重視可驗證、可維護且可擴充的工程決策，習慣以降低複雜度、提升可維護性與量化成效為目標。
+      summary: >
+        我是一位專注於後端與平台的軟體工程師，具備 6 年以上在 AWS 與 EKS 上設計、建置與營運雲原生分散式系統的經驗。曾負責服務超過 250 萬用戶、峰值約 1 萬 QPS 的高流量系統，長期聚焦效能、穩定性與營運效率。熟悉 API 設計、資料模型、事件驅動流程與可觀測性，也能與跨部門團隊協作，推動身分驗證、權限控管與平台能力落地。
 
   experiences:
       title: 經歷
@@ -269,16 +262,13 @@ zh:
             統一超商股份有限公司（PCSC）, [入口網站](https://www.uniopen.com), [APP](https://www.uniopen.com/app)
           details: |
             - 負責高流量入口網站與 APP 的後端服務建置與營運，支援超過 250 萬用戶、峰值約 1 萬 QPS，部署於 AWS + EKS。
-            - 設計 OIDC/SSO 身分驗證與 session flow，交付會員、權限控管與 routing 等核心服務。
-            - 主導 authorization service 效能調校，將關鍵 endpoint latency 最多降低 77%，QPS 提升 18%，throughput 由 300 提升至 500 RPS。
-            - 排查並解決正式環境事故，將 DB CPU 從 85% 以上降至 20–30%，消除 timeout，並避免同類事故再發。
-            - 強化 Python container 的建置與執行環境，將 image size 分別縮小約 58% 與 49%。
-            - 透過 load testing 找出 OOM 與 database bottleneck，並以查詢與索引優化、runtime tuning 降低影響。
-            - 建立影片處理流程，使用 S3、MediaConvert 與 SQS/SNS 完成非同步處理。
-            - 建立可重用的 IaC-based CI/CD modules，將 pipeline 時間從 40 分鐘縮短至 20–25 分鐘，並標準化交付流程。
-            - 開發可重用的 authentication SDK，讓 backend services 約 1 分鐘即可完成整合。
-            - 定義並驗證 cross-account permission model，並在安全性、功能需求與 cloud cost 之間取得平衡。
-            - 建立 CI quality gates、CloudWatch dashboards/alarms、集中式 logging 與 audit logging，提升 release safety 與 observability。
+            - 設計 OIDC/SSO 與 session 流程，支援會員、權限控管與路由等核心服務落地。
+            - 主導權限服務的效能調校，使關鍵 endpoint latency 最多降低 77%，QPS 提升 18%。
+            - 排查並解決正式環境事故，將 DB CPU 從 85% 以上降至 20~30%，並消除 timeout。
+            - 透過壓測定位 OOM 與 database bottleneck，並以查詢與索引優化、執行環境調校改善瓶頸。
+            - 建立影片處理流程與可重用的 IaC-based CI/CD 模組，支援 S3/MediaConvert/SQS/SNS 非同步處理，並將 CI 流程壓到 20~25 分鐘。
+            - 開發可重用的身分驗證 SDK，讓後端服務可在約 1 分鐘內完成整合。
+            - 透過 CI 品質門檻、CloudWatch 儀表板/警示、集中式 logging 與 audit logging，提升發版安全性與可觀測性。
             - **Tech**:
               - Languages: Python, Java
               - Frameworks: FastAPI, Spring Boot
@@ -289,15 +279,13 @@ zh:
 
           details_print: |
             - 負責高流量入口網站與 APP 的後端服務建置與營運，支援超過 250 萬用戶、峰值約 1 萬 QPS，部署於 AWS + EKS。
-            - 設計 OIDC/SSO 身分驗證與 session flow，交付會員、權限控管與 routing 等核心服務。
-            - 主導 authorization service 的效能調校，將關鍵 endpoint latency 最多降低 77%，QPS 提升 18%，throughput 由 300 提升至 500 RPS。
-            - 排查並解決正式環境事故，將 DB CPU 從 85% 以上降至 20–30%，消除 timeout，並避免同類事故再發。
-            - 強化 Python container 的建置與執行環境，將 image size 分別縮小約 58% 與 49%。
-            - 透過 load testing 找出 OOM 與 database bottleneck，並以查詢與索引優化、runtime tuning 降低影響。
-            - 以 S3、MediaConvert 與 SQS/SNS 建立影片處理流程。
-            - 為 Spring Boot 與 Python backend 專案建立可重用的 IaC-based CI/CD modules，將 pipeline 時間從 40 分鐘縮短至 20–25 分鐘。
-            - 開發可重用的 authentication SDK，讓 backend services 約 1 分鐘即可完成整合。
-            - 透過 CI quality gates、CloudWatch dashboards/alarms、集中式 logging 與 audit logging 提升 release safety 與 observability。
+            - 設計 OIDC/SSO 與 session 流程，支援會員、權限控管與路由等核心服務落地。
+            - 主導權限服務的效能調校，使關鍵 endpoint latency 最多降低 77%，QPS 提升 18%。
+            - 排查並解決正式環境事故，將 DB CPU 從 85% 以上降至 20~30%，並消除 timeout。
+            - 透過壓測定位 OOM 與 database bottleneck，並以查詢與索引優化、執行環境調校改善瓶頸。
+            - 建立影片處理流程與可重用的 IaC-based CI/CD 模組，支援 S3/MediaConvert/SQS/SNS 非同步處理，並將 CI 流程壓到 20~25 分鐘。
+            - 開發可重用的身分驗證 SDK，讓後端服務可在約 1 分鐘內完成整合。
+            - 透過 CI 品質門檻、CloudWatch 儀表板/警示、集中式 logging 與 audit logging，提升發版安全性與可觀測性。
             - **Tech**: Python/Java, FastAPI/Spring Boot, PostgreSQL/Redis/DynamoDB, AWS EKS/SQS/Lambda/CloudWatch, Terraform/Helm, k6/Vegeta.
 
         - role: Backend Software Engineer
@@ -305,12 +293,12 @@ zh:
           company: |
             HiSKIO, [線上學習平台](https://hiskio.com)
           details: |
-            - 以 PHP (Laravel/Lumen) 建置與維護 REST APIs，服務超過 10 萬用戶、約 4K DAU，負責從開發、上線到監控的端到端交付。
-            - 完成 Laravel monolith 從 v7 升級至 v10，讓 API p99 latency 改善 20%。
-            - 透過 index 與 table schema 重構，將 MySQL 熱點查詢時間從 10–20 秒降至約 1 秒。
-            - 負責 3-tier AWS stack 與 service operations，涵蓋 CI/CD、自動擴縮與上線後監控。
-            - 透過 Slack 告警強化監控與 incident response，使 MTTD 約降低 80%。
-            - 使用 SQS + Lambda 建立非同步流程，並完成 LINE Messaging API 通知與 personalized recommendations，將 retention 提升約 20%。
+            - 以 PHP (Laravel/Lumen) 維護 REST APIs，服務超過 10 萬用戶、約 4K DAU。
+            - 完成 Laravel monolith 從 v7 升級至 v10，使 API p99 latency 改善 20%。
+            - 透過 index 與 table schema 重構，將 MySQL 熱點查詢時間從 10~20 秒降至約 1 秒。
+            - 負責 3-tier AWS stack 與系統維運，涵蓋 CI/CD、自動擴縮與上線後監控。
+            - 導入 Slack 告警強化監控與 incident response，使 MTTD 約降低 80%。
+            - 以 SQS + Lambda 建立非同步後端流程，串接 LINE Messaging API 通知與個人化推薦，使留存率提升約 20%。
             - **Tech**:
               - Languages: PHP, JavaScript, Python
               - Frameworks: Laravel, Lumen, Vue, Nuxt
@@ -320,9 +308,9 @@ zh:
               - Testing: PHPUnit
 
           details_print: |
-            - 以 PHP (Laravel/Lumen) 建置與維護 REST APIs，服務超過 10 萬用戶、約 4K DAU。
-            - 完成 Laravel monolith 從 v7 升級至 v10，讓 API p99 latency 改善 20%。
-            - 透過 index 與 table schema 重構，將 MySQL 熱點查詢時間從 10–20 秒降至約 1 秒。
-            - 負責 3-tier AWS stack 與 service operations，涵蓋 CI/CD、自動擴縮與上線後監控。
-            - 透過 Slack 告警強化監控與 incident response，使 MTTD 約降低 80%。
-            - 使用 SQS + Lambda 建立非同步流程，並完成 LINE Messaging API 通知與 personalized recommendations，將 retention 提升約 20%。
+            - 以 PHP (Laravel/Lumen) 維護 REST APIs，服務超過 10 萬用戶、約 4K DAU。
+            - 完成 Laravel monolith 從 v7 升級至 v10，使 API p99 latency 改善 20%。
+            - 透過 index 與 table schema 重構，將 MySQL 熱點查詢時間從 10~20 秒降至約 1 秒。
+            - 負責 3-tier AWS stack 與系統維運，涵蓋 CI/CD、自動擴縮與上線後監控。
+            - 導入 Slack 告警強化監控與 incident response，使 MTTD 約降低 80%。
+            - 以 SQS + Lambda 建立非同步後端流程，串接 LINE Messaging API 通知與個人化推薦，使留存率提升約 20%。
