@@ -5,9 +5,9 @@ resume_lang: zh
 ---
 {% include_relative _includes/resume/career-profile.html %}
 
-{% include_relative _includes/modern/skills.html %}
-
 {% include_relative _includes/resume/experiences.html %}
+
+{% include_relative _includes/modern/skills.html %}
 
 {% include_relative _includes/resume/projects.html %}
 

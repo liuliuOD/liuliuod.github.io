@@ -109,7 +109,7 @@ experiences:
         company: |
           HiSKIO, [Online Learning Platform](https://hiskio.com)
         details: |
-          - Built and maintained REST APIs in PHP (Laravel/Lumen) for a web product and admin portal serving 100K+ users and ~4K DAU, owning delivery from development through production rollout and monitoring.
+          - Built and maintained RESTful APIs in PHP (Laravel/Lumen) for a web product and admin portal serving 100K+ users and ~4K DAU, owning delivery from development through production rollout and monitoring.
           - Upgraded a Laravel monolith from v7 to v10 in 2 months through incremental migration, compatibility validation, and unit-test coverage, restoring framework support and improving API p99 latency by 20%.
           - Resolved critical MySQL performance bottlenecks by profiling request paths, analyzing EXPLAIN plans, and refactoring indexes and table design, reducing hot-path query time from 10–20 seconds to ~1 second.
           - Owned a 3-tier AWS stack (ALB / EC2 / RDS) and service operations, including CI/CD, autoscaling, CloudWatch dashboards/alarms, load testing, and post-release monitoring.
@@ -124,7 +124,7 @@ experiences:
             - Testing: PHPUnit
 
         details_print: |
-          - Built and maintained REST APIs in PHP (Laravel/Lumen) for a web product and admin portal serving 100K+ users and ~4K DAU, owning delivery from development through production rollout and monitoring.
+          - Built and maintained RESTful APIs in PHP (Laravel/Lumen) for a web product and admin portal serving 100K+ users and ~4K DAU, owning delivery from development through production rollout and monitoring.
           - Upgraded a Laravel monolith from v7 to v10 in 2 months through incremental migration, compatibility validation, and unit-test coverage, restoring framework support and improving API p99 latency by 20%.
           - Resolved critical MySQL performance bottlenecks by profiling request paths, analyzing EXPLAIN plans, and refactoring indexes and table design, reducing hot-path query time from 10–20 seconds to ~1 second.
           - Owned a 3-tier AWS stack (ALB / EC2 / RDS) and service operations, including CI/CD, autoscaling, CloudWatch dashboards/alarms, load testing, and post-release monitoring.
@@ -249,6 +249,12 @@ zh:
   sidebar:
       name: 劉佳旻（劉劉）
       tagline: 資深後端 / 平台工程師
+  education:
+      title: 學歷
+      info:
+        - degree: 資訊工程學士
+          university: 嘉義大學
+          time: 2015 - 2019
   career-profile:
       title: 關於我
       summary: >
@@ -294,7 +300,7 @@ zh:
           company: |
             HiSKIO, [線上學習平台](https://hiskio.com)
           details: |
-            - 以 PHP (Laravel/Lumen) 維護 REST APIs，服務超過 10 萬用戶、約 4K DAU。
+            - 以 PHP (Laravel/Lumen) 維護 RESTful APIs，服務超過 10 萬用戶、約 4K DAU。
             - 完成 Laravel monolith 服務從 v7 升級至 v10，使 API p99 latency 改善 20%。
             - 透過 index 與 table schema 重構，將 MySQL 熱點查詢時間從 10~20 秒降至約 1 秒。
             - 負責 3-tier AWS stack 與系統維運，涵蓋 CI/CD、自動擴縮與上線後監控。
@@ -309,7 +315,7 @@ zh:
               - 測試: PHPUnit
 
           details_print: |
-            - 以 PHP (Laravel/Lumen) 維護 REST APIs，服務超過 10 萬用戶、約 4K DAU。
+            - 以 PHP (Laravel/Lumen) 維護 RESTful APIs，服務超過 10 萬用戶、約 4K DAU。
             - 完成 Laravel monolith 服務從 v7 升級至 v10，使 API p99 latency 改善 20%。
             - 透過 index 與 table schema 重構，將 MySQL 熱點查詢時間從 10~20 秒降至約 1 秒。
             - 負責 3-tier AWS stack 與系統維運，涵蓋 CI/CD、自動擴縮與上線後監控。
