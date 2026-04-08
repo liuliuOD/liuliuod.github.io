@@ -83,6 +83,9 @@ experiences:
           - Developed a reusable, configuration-driven authentication SDK that allowed backend services to integrate in about 1 minute.
           - Defined and validated cross-account permission models and evaluated cloud service capabilities for auth and infrastructure use cases, balancing security, functional requirements, and cloud cost.
           - Improved release safety and observability through CI quality gates, CloudWatch dashboards/alarms, centralized logging, and audit logging.
+          - Designed and operated a multi-product redirect service for uniopen web, uniopen app, and Open Point APP entry pages, covering hundreds of pages, dozens of brands, and millions of product cards.
+          - Implemented redirect flow controls including Kafka-based async event delivery, whitelist domain validation, and SSO interaction with downstream services.
+          - Applied deep EKS / Kubernetes / Istio knowledge to capacity planning and production debugging, including requests/limits sizing, topology spread constraints, and bottleneck analysis for Istio gateway, LB, and pod placement issues.
           - **Tech**:
             - Languages: Python, Java
             - Frameworks: FastAPI, Spring Boot
@@ -102,6 +105,9 @@ experiences:
           - Developed a reusable, configuration-driven authentication SDK that allowed backend services to integrate in about 1 minute.
           - Defined and validated cross-account permission models and evaluated cloud service capabilities for auth and infrastructure use cases, balancing security, functional requirements, and cloud cost.
           - Improved release safety and observability through CI quality gates, CloudWatch dashboards/alarms, centralized logging, and audit logging.
+          - Designed and operated a multi-product redirect service for uniopen web, uniopen app, and Open Point APP entry pages, covering hundreds of pages, dozens of brands, and millions of product cards.
+          - Implemented redirect flow controls including Kafka-based async event delivery, whitelist domain validation, and SSO interaction with downstream services.
+          - Applied deep EKS / Kubernetes / Istio knowledge to capacity planning and production debugging, including requests/limits sizing, topology spread constraints, and bottleneck analysis for Istio gateway, LB, and pod placement issues.
           - **Tech**: Python/Java, FastAPI/Spring Boot, PostgreSQL/Redis/DynamoDB, AWS EKS/SQS/Lambda/CloudWatch, Terraform/Helm, k6/Vegeta.
 
       - role: Backend Software Engineer
@@ -276,6 +282,9 @@ zh:
             - 主導共用型 IaC-based CI/CD 平台優化，將 Spring Boot 後端專案的交付流程標準化；在過程中透過模組化、平行化與建置步驟重整等優化機制，將 pipeline 時間從 40 分鐘縮短至 20~25 分鐘，並讓所有導入團隊持續受益。
             - 開發可重用的身分驗證 SDK，讓後端服務可在約 1 分鐘內完成整合。
             - 建立 CI 品質門檻、CloudWatch 儀表板/警示、集中式 logging 與 audit logging，提升發版安全性與可觀測性。
+            - 設計並維運多產品共用的 redirect service，服務於 uniopen web、uniopen app 與 Open Point APP 入口頁面，覆蓋數百個頁面、數十個品牌與數百萬個商品卡片。
+            - 在 redirect 流程中導入 Kafka 非同步事件傳遞、白名單網域驗證，以及與下游服務的 SSO 互動整合。
+            - 深入掌握 EKS / Kubernetes / Istio 架構，能用於 requests/limits 規劃與正式環境排查，並透過 topology spread constraints、Istio gateway、LB 與 pod placement 分析定位瓶頸。
             - **技術**:
               - 語言: Python, Java
               - 框架: FastAPI, Spring Boot
@@ -293,6 +302,9 @@ zh:
             - 主導共用型 IaC-based CI/CD 平台優化，將 Spring Boot 後端專案的交付流程標準化；在過程中透過模組化、平行化與建置步驟重整等優化機制，將 pipeline 時間從 40 分鐘縮短至 20~25 分鐘，並讓所有導入團隊持續受益。
             - 開發可重用的身分驗證 SDK，讓後端服務可在約 1 分鐘內完成整合。
             - 建立 CI 品質門檻、CloudWatch 儀表板/警示、集中式 logging 與 audit logging，提升發版安全性與可觀測性。
+            - 設計並維運多產品共用的 redirect service，服務於 uniopen web、uniopen app 與 Open Point APP 入口頁面，覆蓋數百個頁面、數十個品牌與數百萬個商品卡片。
+            - 在 redirect 流程中導入 Kafka 非同步事件傳遞、白名單網域驗證，以及與下游服務的 SSO 互動整合。
+            - 深入掌握 EKS / Kubernetes / Istio 架構，能用於 requests/limits 規劃與正式環境排查，並透過 topology spread constraints、Istio gateway、LB 與 pod placement 分析定位瓶頸。
             - **技術**: Python/Java, FastAPI/Spring Boot, PostgreSQL/Redis/DynamoDB, AWS EKS/SQS/Lambda/CloudWatch, Terraform/Helm, k6/Vegeta.
 
         - role: 後端軟體工程師
