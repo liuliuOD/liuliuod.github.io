@@ -73,19 +73,18 @@ experiences:
         company: |
           President Chain Store Corporation(PCSC), [Web Portal](https://www.uniopen.com), [APP](https://www.uniopen.com/app)
         details: |
-          - Built and operated backend services for a high-traffic web portal and mobile app serving 2.5M+ users and ~10K peak RPS on AWS + EKS, including activity launches and push-notification-driven traffic spikes of ~200K users.
-          - Designed OIDC/SSO identity and session flows, and delivered core services for membership, access control, and routing, with a reusable authentication SDK that let backend services integrate in about 1 minute.
+          - Built and operated backend services for a high-traffic web portal and mobile app serving 2.5M+ users and ~10K peak RPS on AWS + EKS, including activity launches and push-notification-driven traffic spikes of ~200K users; complete request tracing improved customer-support investigation and response speed by 30% and helped identify malicious behavior.
+          - Designed OIDC/SSO identity and session flows, and delivered core services for membership, access control, and routing, with a reusable authentication SDK and API service template that let backend services integrate in about 1 minute and helped a ~20-person team reduce project bootstrap time by 80%.
           - Led performance baselining, load testing, and tuning for a core authorization service supporting login-protected APIs, reducing critical endpoint latency by up to 77% and increasing throughput from 300 to 500 RPS.
           - Traced and resolved a complex multi-service production incident, reducing DB CPU from >85% to 20–30%, eliminating timeouts, and preventing recurrence during login-dependent traffic spikes.
           - Hardened Python container builds and runtimes with non-root execution and BuildKit-based secrets handling, reducing image size by ~58% and ~49% across services.
           - Reproduced recurring OOM issues under sustained load, isolated off-heap growth, Metaspace pressure, and database bottlenecks, and mitigated impact through query/index improvements and runtime tuning to improve peak-load resilience.
-          - Built reusable IaC-based CI/CD modules for Spring Boot and Python backend projects, cutting pipeline time from 40 minutes to 20–25 minutes and standardizing delivery workflows across backend teams.
-          - Developed a reusable, configuration-driven authentication SDK that allowed backend services to integrate in about 1 minute.
+          - Built reusable IaC-based CI/CD modules for Spring Boot and Python backend projects, cutting pipeline time from 40 minutes to 20–25 minutes; the modularized pipeline was adopted by at least 10 services and reduced ongoing delivery setup and maintenance cost.
           - Defined and validated cross-account permission models and evaluated cloud service capabilities for auth and infrastructure use cases, balancing security, functional requirements, and cloud cost.
-          - Improved release safety and observability through CI quality gates, CloudWatch dashboards/alarms, centralized logging, and audit logging, improving troubleshooting speed and audit traceability.
-          - Designed and operated a multi-product redirect service for uniopen web, uniopen app, and Open Point APP entry pages, covering hundreds of pages, dozens of brands, and millions of product cards for traffic routing and landing-page delivery.
-          - Implemented redirect flow controls including Kafka-based async event delivery, whitelist domain validation, and SSO interaction with downstream services.
-          - Applied deep EKS / Kubernetes / Istio knowledge to capacity planning and production debugging, including requests/limits sizing, topology spread constraints, and bottleneck analysis for Istio gateway, LB, and pod placement issues.
+          - Improved release safety and observability through CI quality gates, CloudWatch dashboards/alarms, centralized logging, and audit logging, strengthening user-action traceability, detecting malicious operations, and reducing incident investigation time by 30%.
+          - Designed and operated a multi-product redirect service for uniopen web, uniopen app, and Open Point APP entry pages, covering hundreds of pages, dozens of brands, and millions of product cards; the service delivered click events to Kafka within 200ms, blocked malicious links through domain validation, and supported SSO redirects to improve user experience.
+          - Applied EKS / Kubernetes / Istio expertise to capacity planning and production debugging, including requests/limits sizing and bottleneck analysis for Istio gateway, LB, and pod placement issues, improving peak-period stability.
+          - Served as Scrum Master across PM, engineering, and marketing stakeholders, clarifying requirement gaps, evaluating technical options, and improving cross-team delivery quality for business-driven initiatives.
           - **Tech**:
             - Languages: Python, Java
             - Frameworks: FastAPI, Spring Boot
@@ -95,19 +94,18 @@ experiences:
             - Testing/Perf: k6, Vegeta
 
         details_print: |
-          - Built and operated backend services for a high-traffic web portal serving 2.5M+ users and ~10K peak RPS on AWS + EKS, including activity launches and push-notification-driven traffic spikes of ~200K users.
-          - Designed OIDC/SSO identity and session flows, and delivered core services for membership, access control, and routing, with a reusable authentication SDK that let backend services integrate in about 1 minute.
+          - Built and operated backend services for a high-traffic web portal serving 2.5M+ users and ~10K peak RPS on AWS + EKS, including activity launches and push-notification-driven traffic spikes of ~200K users; complete request tracing improved customer-support investigation and response speed by 30% and helped identify malicious behavior.
+          - Designed OIDC/SSO identity and session flows, and delivered core services for membership, access control, and routing, with a reusable authentication SDK and API service template that let backend services integrate in about 1 minute and helped a ~20-person team reduce project bootstrap time by 80%.
           - Led performance baselining, load testing, and tuning for a core authorization service supporting login-protected APIs, reducing critical endpoint latency by up to 77% and increasing throughput from 300 to 500 RPS.
           - Traced and resolved a complex multi-service production incident, reducing DB CPU from >85% to 20–30%, eliminating timeouts, and preventing recurrence during login-dependent traffic spikes.
           - Hardened Python container builds and runtimes with non-root execution and BuildKit-based secrets handling, reducing image size by ~58% and ~49% across services.
           - Reproduced recurring OOM issues under sustained load, isolated off-heap growth, Metaspace pressure, and database bottlenecks, and mitigated impact through query/index improvements and runtime tuning to improve peak-load resilience.
-          - Built reusable IaC-based CI/CD modules for Spring Boot and Python backend projects, cutting pipeline time from 40 minutes to 20–25 minutes and standardizing delivery workflows across backend teams.
-          - Developed a reusable, configuration-driven authentication SDK that allowed backend services to integrate in about 1 minute.
+          - Built reusable IaC-based CI/CD modules for Spring Boot and Python backend projects, cutting pipeline time from 40 minutes to 20–25 minutes; the modularized pipeline was adopted by at least 10 services and reduced ongoing delivery setup and maintenance cost.
           - Defined and validated cross-account permission models and evaluated cloud service capabilities for auth and infrastructure use cases, balancing security, functional requirements, and cloud cost.
-          - Improved release safety and observability through CI quality gates, CloudWatch dashboards/alarms, centralized logging, and audit logging, improving troubleshooting speed and audit traceability.
-          - Designed and operated a multi-product redirect service for uniopen web, uniopen app, and Open Point APP entry pages, covering hundreds of pages, dozens of brands, and millions of product cards for traffic routing and landing-page delivery.
-          - Implemented redirect flow controls including Kafka-based async event delivery, whitelist domain validation, and SSO interaction with downstream services.
-          - Applied deep EKS / Kubernetes / Istio knowledge to capacity planning and production debugging, including requests/limits sizing, topology spread constraints, and bottleneck analysis for Istio gateway, LB, and pod placement issues.
+          - Improved release safety and observability through CI quality gates, CloudWatch dashboards/alarms, centralized logging, and audit logging, strengthening user-action traceability, detecting malicious operations, and reducing incident investigation time by 30%.
+          - Designed and operated a multi-product redirect service for uniopen web, uniopen app, and Open Point APP entry pages, covering hundreds of pages, dozens of brands, and millions of product cards; the service delivered click events to Kafka within 200ms, blocked malicious links through domain validation, and supported SSO redirects to improve user experience.
+          - Applied EKS / Kubernetes / Istio expertise to capacity planning and production debugging, including requests/limits sizing and bottleneck analysis for Istio gateway, LB, and pod placement issues, improving peak-period stability.
+          - Served as Scrum Master across PM, engineering, and marketing stakeholders, clarifying requirement gaps, evaluating technical options, and improving cross-team delivery quality for business-driven initiatives.
           - **Tech**: Python/Java, FastAPI/Spring Boot, PostgreSQL/Redis/DynamoDB, AWS EKS/SQS/Lambda/CloudWatch, Terraform/Helm, k6/Vegeta.
 
       - role: Backend Software Engineer
@@ -115,10 +113,10 @@ experiences:
         company: |
           HiSKIO, [Online Learning Platform](https://hiskio.com)
         details: |
-          - Built and maintained RESTful APIs in PHP (Laravel/Lumen) for a web product and admin portal serving 100K+ users and ~4K DAU, supporting core learning and operations workflows from development through production rollout and monitoring.
+          - Built and maintained RESTful APIs in PHP (Laravel/Lumen) for a web product and admin portal serving 100K+ users and ~4K DAU, supporting core learning and operations workflows including cart, payment, learning progress tracking, membership, internal/admin back office, revenue sharing, and coupon systems.
           - Upgraded a Laravel monolith from v7 to v10 in 2 months through incremental migration, compatibility validation, and unit-test coverage, reducing framework risk and improving API p99 latency by 20%.
           - Resolved critical MySQL performance bottlenecks by profiling request paths, analyzing EXPLAIN plans, and refactoring indexes and table design, reducing hot-path query time from 10–20 seconds to ~1 second and improving key workflow responsiveness.
-          - Owned a 3-tier AWS stack (ALB / EC2 / RDS) and service operations, including CI/CD, autoscaling, CloudWatch dashboards/alarms, load testing, and post-release monitoring, to keep product delivery predictable during growth.
+          - Owned a 3-tier AWS stack (ALB / EC2 / RDS) and service operations, including CI/CD, autoscaling, CloudWatch dashboards/alarms, load testing, and post-release monitoring, improving elasticity, service availability, and rolling-upgrade safety while keeping product delivery predictable during growth.
           - Improved monitoring and incident response with Slack alerting, reducing MTTD by ~80%.
           - Built asynchronous backend workflows with SQS + Lambda, and delivered user-facing integrations including LINE Messaging API notifications and personalized recommendations that improved retention by ~20%.
           - **Tech**:
@@ -130,10 +128,10 @@ experiences:
             - Testing: PHPUnit
 
         details_print: |
-          - Built and maintained RESTful APIs in PHP (Laravel/Lumen) for a web product and admin portal serving 100K+ users and ~4K DAU, supporting core learning and operations workflows from development through production rollout and monitoring.
+          - Built and maintained RESTful APIs in PHP (Laravel/Lumen) for a web product and admin portal serving 100K+ users and ~4K DAU, supporting core learning and operations workflows including cart, payment, learning progress tracking, membership, internal/admin back office, revenue sharing, and coupon systems.
           - Upgraded a Laravel monolith from v7 to v10 in 2 months through incremental migration, compatibility validation, and unit-test coverage, reducing framework risk and improving API p99 latency by 20%.
           - Resolved critical MySQL performance bottlenecks by profiling request paths, analyzing EXPLAIN plans, and refactoring indexes and table design, reducing hot-path query time from 10–20 seconds to ~1 second and improving key workflow responsiveness.
-          - Owned a 3-tier AWS stack (ALB / EC2 / RDS) and service operations, including CI/CD, autoscaling, CloudWatch dashboards/alarms, load testing, and post-release monitoring, to keep product delivery predictable during growth.
+          - Owned a 3-tier AWS stack (ALB / EC2 / RDS) and service operations, including CI/CD, autoscaling, CloudWatch dashboards/alarms, load testing, and post-release monitoring, improving elasticity, service availability, and rolling-upgrade safety while keeping product delivery predictable during growth.
           - Improved monitoring and incident response with Slack alerting, reducing MTTD by ~80%.
           - Built asynchronous backend workflows with SQS + Lambda, and delivered user-facing integrations including LINE Messaging API notifications and personalized recommendations that improved retention by ~20%.
 
@@ -274,17 +272,16 @@ zh:
         company: |
           統一超商股份有限公司（PCSC）, [入口網站](https://www.uniopen.com), [APP](https://www.uniopen.com/app)
         details: |
-            - 從 0 到 1 建置公司登入授權核心服務，負責所有登入後 API 的存取驗證與 OIDC 身分生命週期管理，支援活動上線、訊息推播等約 20 萬用戶瞬時湧入的業務情境。系統部署於 AWS + EKS，支援超過 250 萬用戶、峰值約 1 萬 RPS，並透過完整請求歷程紀錄加快客服回覆速度與問題查找時間。
-            - 設計 OIDC/SSO 與 session 流程，作為會員登入、權限控管與跨服務路由的共用核心；搭配可重用的 authentication SDK，讓後端服務整合時間縮短至約 1 分鐘，降低多系統整合成本。
+            - 從 0 到 1 建置公司登入授權核心服務，負責所有登入後 API 的存取驗證與 OIDC 身分生命週期管理，支援活動上線、訊息推播等約 20 萬用戶瞬時湧入的業務情境。系統部署於 AWS + EKS，支援超過 250 萬用戶、峰值約 1 萬 RPS，並透過完整請求歷程紀錄將客服查案與回覆速度提升 30%，同時協助識別惡意行為。
+            - 設計 OIDC/SSO 與 session 流程，作為會員登入、權限控管與跨服務路由的共用核心；並提供跨團隊共用的 authentication SDK 與 API service template，讓後端服務可在約 1 分鐘內完成整合，協助約 20 人團隊將專案建置時間降低 80%。
             - 主導登入後核心權限服務的效能基準測試、壓測與調校，使關鍵 endpoint latency 最多降低 77%，並將吞吐量從 300 提升至 500 RPS，改善高峰期使用體驗。
             - 排查並解決登入依賴流量尖峰下的正式環境事故，將 DB CPU 從 85% 以上降至 20~30%，並消除 timeout，降低營運風險與客服壓力。
             - 透過持續壓測定位 OOM、off-heap 成長、Metaspace 壓力與 database bottleneck，並以查詢與索引優化、執行環境調校改善瓶頸，提升系統在尖峰流量與行銷檔期下的承載能力。
-            - 主導共用型 IaC-based CI/CD 平台優化，將 Spring Boot 與 Python 後端專案的交付流程標準化，讓多個 backend 團隊共用同一套交付模組；並透過模組化、平行化與建置步驟重整，將 pipeline 時間從 40 分鐘縮短至 20~25 分鐘，讓導入團隊持續受益。
-            - 開發可重用的身分驗證 SDK，讓後端服務可在約 1 分鐘內完成整合，降低新服務接入與重工成本，並加速共用身份能力的落地。
-            - 建立 CI 品質門檻、CloudWatch 儀表板/警示、集中式 logging 與 audit logging，提升發版安全性、故障追蹤效率與稽核可追溯性。
-            - 設計並維運多產品共用的 redirect service，覆蓋 uniopen web、uniopen app 與 Open Point APP 等入口頁面，支援數百個頁面、數十個品牌與數百萬個商品卡片的導流與落地頁承接需求。
-            - 負責外站導流治理、白名單驗證、Kafka 非同步事件傳遞，以及與子服務 SSO 流程的整合，確保導流與登入流程在產品活動高峰期仍能穩定運作並避免錯誤流量進入。
-            - 深入掌握 EKS / Kubernetes / Istio 架構，能依工作負載設計資源 requests / limits，並透過壓測與線上排查定位 Istio gateway、LB 與 pod placement 相關瓶頸，支援容量規劃與故障排除。
+            - 主導共用型 IaC-based CI/CD 平台優化，將 Spring Boot 與 Python 後端專案的交付流程標準化，讓至少 10 個服務的 pipeline 共用同一套模組化交付機制；並透過模組化、平行化與建置步驟重整，將 pipeline 時間從 40 分鐘縮短至 20~25 分鐘，持續降低後續服務擴展與維護成本。
+            - 建立 CI 品質門檻、CloudWatch 儀表板/警示、集中式 logging 與 audit logging，強化使用者操作歷程追蹤與惡意行為識別，並將 incident 調查時間降低 30%，提升發版安全性與稽核可追溯性。
+            - 設計並維運多產品共用的 redirect service，覆蓋 uniopen web、uniopen app 與 Open Point APP 等入口頁面，支援數百個頁面、數十個品牌與數百萬個商品卡片的導流與落地頁承接需求；系統可於 200ms 內完成點擊事件送入 Kafka、驗證網址合法性避免惡意連結出現在網站內，並支援跳轉至 SSO 頁面優化使用者體驗。
+            - 依工作負載特性設計 EKS / Kubernetes / Istio 的資源 requests / limits，並透過壓測與線上排查定位 Istio gateway、LB 與 pod placement 瓶頸，支援容量規劃、故障排除與高峰期穩定性優化。
+            - 擔任 Scrum Master 協助 PM、開發與行銷團隊跨部門合作，主動釐清需求缺漏、評估技術選型，並與非技術利害關係人討論不同方案對業務情境的優缺點與影響，降低跨團隊溝通成本並提高需求落地品質。
             - **技術**:
               - 語言: Python, Java
               - 框架: FastAPI, Spring Boot
@@ -294,17 +291,16 @@ zh:
               - 測試與效能: k6, Vegeta
 
         details_print: |
-            - 從 0 到 1 建置公司登入授權核心服務，負責所有登入後 API 的存取驗證與 OIDC 身分生命週期管理，支援活動上線、訊息推播等約 20 萬用戶瞬時湧入的業務情境。系統部署於 AWS + EKS，支援超過 250 萬用戶、峰值約 1 萬 RPS，並透過完整請求歷程紀錄加快客服回覆速度與問題查找時間。
-            - 設計 OIDC/SSO 與 session 流程，作為會員登入、權限控管與跨服務路由的共用核心；搭配可重用的 authentication SDK，讓後端服務整合時間縮短至約 1 分鐘，降低多系統整合成本。
+            - 從 0 到 1 建置公司登入授權核心服務，負責所有登入後 API 的存取驗證與 OIDC 身分生命週期管理，支援活動上線、訊息推播等約 20 萬用戶瞬時湧入的業務情境。系統部署於 AWS + EKS，支援超過 250 萬用戶、峰值約 1 萬 RPS，並透過完整請求歷程紀錄將客服查案與回覆速度提升 30%，同時協助識別惡意行為。
+            - 設計 OIDC/SSO 與 session 流程，作為會員登入、權限控管與跨服務路由的共用核心；並提供跨團隊共用的 authentication SDK 與 API service template，讓後端服務可在約 1 分鐘內完成整合，協助約 20 人團隊將專案建置時間降低 80%。
             - 主導登入後核心權限服務的效能基準測試、壓測與調校，使關鍵 endpoint latency 最多降低 77%，並將吞吐量從 300 提升至 500 RPS，改善高峰期使用體驗。
             - 排查並解決登入依賴流量尖峰下的正式環境事故，將 DB CPU 從 85% 以上降至 20~30%，並消除 timeout，降低營運風險與客服壓力。
             - 透過持續壓測定位 OOM、off-heap 成長、Metaspace 壓力與 database bottleneck，並以查詢與索引優化、執行環境調校改善瓶頸，提升系統在尖峰流量與行銷檔期下的承載能力。
-            - 主導共用型 IaC-based CI/CD 平台優化，將 Spring Boot 與 Python 後端專案的交付流程標準化，讓多個 backend 團隊共用同一套交付模組；並透過模組化、平行化與建置步驟重整，將 pipeline 時間從 40 分鐘縮短至 20~25 分鐘，讓導入團隊持續受益。
-            - 開發可重用的身分驗證 SDK，讓後端服務可在約 1 分鐘內完成整合，降低新服務接入與重工成本，並加速共用身份能力的落地。
-            - 建立 CI 品質門檻、CloudWatch 儀表板/警示、集中式 logging 與 audit logging，提升發版安全性、故障追蹤效率與稽核可追溯性。
-            - 設計並維運多產品共用的 redirect service，覆蓋 uniopen web、uniopen app 與 Open Point APP 等入口頁面，支援數百個頁面、數十個品牌與數百萬個商品卡片的導流與落地頁承接需求。
-            - 負責外站導流治理、白名單驗證、Kafka 非同步事件傳遞，以及與子服務 SSO 流程的整合，確保導流與登入流程在產品活動高峰期仍能穩定運作並避免錯誤流量進入。
-            - 深入掌握 EKS / Kubernetes / Istio 架構，能依工作負載設計資源 requests / limits，並透過壓測與線上排查定位 Istio gateway、LB 與 pod placement 相關瓶頸，支援容量規劃與故障排除。
+            - 主導共用型 IaC-based CI/CD 平台優化，將 Spring Boot 與 Python 後端專案的交付流程標準化，讓至少 10 個服務的 pipeline 共用同一套模組化交付機制；並透過模組化、平行化與建置步驟重整，將 pipeline 時間從 40 分鐘縮短至 20~25 分鐘，持續降低後續服務擴展與維護成本。
+            - 建立 CI 品質門檻、CloudWatch 儀表板/警示、集中式 logging 與 audit logging，強化使用者操作歷程追蹤與惡意行為識別，並將 incident 調查時間降低 30%，提升發版安全性與稽核可追溯性。
+            - 設計並維運多產品共用的 redirect service，覆蓋 uniopen web、uniopen app 與 Open Point APP 等入口頁面，支援數百個頁面、數十個品牌與數百萬個商品卡片的導流與落地頁承接需求；系統可於 200ms 內完成點擊事件送入 Kafka、驗證網址合法性避免惡意連結出現在網站內，並支援跳轉至 SSO 頁面優化使用者體驗。
+            - 依工作負載特性設計 EKS / Kubernetes / Istio 的資源 requests / limits，並透過壓測與線上排查定位 Istio gateway、LB 與 pod placement 瓶頸，支援容量規劃、故障排除與高峰期穩定性優化。
+            - 擔任 Scrum Master 協助 PM、開發與行銷團隊跨部門合作，主動釐清需求缺漏、評估技術選型，並與非技術利害關係人討論不同方案對業務情境的優缺點與影響，降低跨團隊溝通成本並提高需求落地品質。
             - **技術**: Python/Java, FastAPI/Spring Boot, PostgreSQL/Redis/DynamoDB, AWS EKS/SQS/Lambda/CloudWatch, Terraform/Helm, k6/Vegeta.
 
       - role: 後端軟體工程師
@@ -312,10 +308,10 @@ zh:
         company: |
             HiSKIO, [線上學習平台](https://hiskio.com)
         details: |
-            - 以 PHP (Laravel/Lumen) 維護 RESTful APIs，支撐超過 10 萬用戶、約 4K DAU 的產品與管理後台，確保核心學習與營運流程持續運作。
+            - 以 PHP (Laravel/Lumen) 建置並維運 RESTful APIs，支撐購物車、金流、學習歷程追蹤、會員功能、內部人員與老師使用的後台、分潤系統與優惠券系統等核心學習與營運流程，服務超過 10 萬用戶、約 4K DAU。
             - 完成 Laravel monolith 服務從 v7 升級至 v10，歷時 2 個月並透過 incremental migration、相容性驗證與 unit-test coverage，降低 framework 風險並使 API p99 latency 改善 20%。
             - 透過 index 與 table schema 重構，將 MySQL 熱點查詢時間從 10~20 秒降至約 1 秒，直接改善關鍵流程反應速度與轉換體驗。
-            - 負責 3-tier AWS stack 與系統維運，涵蓋 CI/CD、自動擴縮與上線後監控，讓產品需求能在成長期間維持可預期的交付節奏。
+            - 負責 3-tier AWS stack 與系統維運，涵蓋 CI/CD、自動擴縮與上線後監控，提升服務自動擴展彈性、確保高可用，並透過 rolling upgrade 降低發版中斷風險，讓產品需求在成長期間仍能維持可預期的交付節奏。
             - 導入 Slack 告警機制與 incident response，將 MTTD 降低約 80%，縮短故障發現與處理時間，減少對使用者與營運的影響。
             - 以 SQS + Lambda 建立非同步後端流程，串接 LINE Messaging API 通知與個人化推薦，提升回訪與互動效果，並帶動約 20% 的留存成長。
             - **技術**:
@@ -327,10 +323,10 @@ zh:
               - 測試: PHPUnit
 
         details_print: |
-            - 以 PHP (Laravel/Lumen) 維護 RESTful APIs，支撐超過 10 萬用戶、約 4K DAU 的產品與管理後台，確保核心學習與營運流程持續運作。
+            - 以 PHP (Laravel/Lumen) 建置並維運 RESTful APIs，支撐購物車、金流、學習歷程追蹤、會員功能、內部人員與老師使用的後台、分潤系統與優惠券系統等核心學習與營運流程，服務超過 10 萬用戶、約 4K DAU。
             - 完成 Laravel monolith 服務從 v7 升級至 v10，歷時 2 個月並透過 incremental migration、相容性驗證與 unit-test coverage，降低 framework 風險並使 API p99 latency 改善 20%。
             - 透過 index 與 table schema 重構，將 MySQL 熱點查詢時間從 10~20 秒降至約 1 秒，直接改善關鍵流程反應速度與轉換體驗。
-            - 負責 3-tier AWS stack 與系統維運，涵蓋 CI/CD、自動擴縮與上線後監控，讓產品需求能在成長期間維持可預期的交付節奏。
+            - 負責 3-tier AWS stack 與系統維運，涵蓋 CI/CD、自動擴縮與上線後監控，提升服務自動擴展彈性、確保高可用，並透過 rolling upgrade 降低發版中斷風險，讓產品需求在成長期間仍能維持可預期的交付節奏。
             - 導入 Slack 告警機制與 incident response，將 MTTD 降低約 80%，縮短故障發現與處理時間，減少對使用者與營運的影響。
             - 以 SQS + Lambda 建立非同步後端流程，串接 LINE Messaging API 通知與個人化推薦，提升回訪與互動效果，並帶動約 20% 的留存成長。
 
