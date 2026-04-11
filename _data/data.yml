@@ -269,22 +269,22 @@ zh:
   experiences:
       title: 經歷
       info:
-        - role: 資深後端與平台工程師
-          time: 2023/12 - 現在
-          company: |
-            統一超商股份有限公司（PCSC）, [入口網站](https://www.uniopen.com), [APP](https://www.uniopen.com/app)
-          details: |
-            - 主導高流量入口網站與 APP 後端服務的建置與營運，系統部署於 AWS + EKS，支援超過 250 萬用戶、峰值約 1 萬 RPS。
-            - 設計 OIDC/SSO 與 session 流程，涵蓋會員、權限控管與路由等核心服務。
-            - 主導權限服務的效能基準測試、壓測與調校，使關鍵 endpoint latency 最多降低 77%，並將吞吐量從 300 提升至 500 RPS。
-            - 排查並解決正式環境事故，將 DB CPU 從 85% 以上降至 20~30%，並消除 timeout。
-            - 透過壓測定位 OOM 與 database bottleneck，並以查詢與索引優化、執行環境調校改善瓶頸。
-            - 主導共用型 IaC-based CI/CD 平台優化，將 Spring Boot 後端專案的交付流程標準化；在過程中透過模組化、平行化與建置步驟重整等優化機制，將 pipeline 時間從 40 分鐘縮短至 20~25 分鐘，並讓所有導入團隊持續受益。
-            - 開發可重用的身分驗證 SDK，讓後端服務可在約 1 分鐘內完成整合。
-            - 建立 CI 品質門檻、CloudWatch 儀表板/警示、集中式 logging 與 audit logging，提升發版安全性與可觀測性。
-            - 設計並維運多產品共用的 redirect service，服務於 uniopen web、uniopen app 與 Open Point APP 入口頁面，覆蓋數百個頁面、數十個品牌與數百萬個商品卡片。
-            - 在 redirect 流程中導入 Kafka 非同步事件傳遞、白名單網域驗證，以及與下游服務的 SSO 互動整合。
-            - 深入掌握 EKS / Kubernetes / Istio 架構，能用於 requests/limits 規劃與正式環境排查，並透過 topology spread constraints、Istio gateway、LB 與 pod placement 分析定位瓶頸。
+      - role: 資深後端與平台工程師
+        time: 2023/12 - 現在
+        company: |
+          統一超商股份有限公司（PCSC）, [入口網站](https://www.uniopen.com), [APP](https://www.uniopen.com/app)
+        details: |
+            - 從 0 到 1 建置公司登入授權核心服務，負責所有登入後 API 的存取驗證與 OIDC 身分生命週期管理，支援活動上線、訊息推播等約 20 萬用戶瞬時湧入的業務情境。系統部署於 AWS + EKS，支援超過 250 萬用戶、峰值約 1 萬 RPS，並透過完整請求歷程紀錄加快客服回覆速度與問題查找時間。
+            - 設計 OIDC/SSO 與 session 流程，作為會員登入、權限控管與跨服務路由的共用核心；搭配可重用的 authentication SDK，讓後端服務整合時間縮短至約 1 分鐘，降低多系統整合成本。
+            - 主導登入後核心權限服務的效能基準測試、壓測與調校，使關鍵 endpoint latency 最多降低 77%，並將吞吐量從 300 提升至 500 RPS，改善高峰期使用體驗。
+            - 排查並解決登入依賴流量尖峰下的正式環境事故，將 DB CPU 從 85% 以上降至 20~30%，並消除 timeout，降低營運風險與客服壓力。
+            - 透過持續壓測定位 OOM、off-heap 成長、Metaspace 壓力與 database bottleneck，並以查詢與索引優化、執行環境調校改善瓶頸，提升系統在尖峰流量與行銷檔期下的承載能力。
+            - 主導共用型 IaC-based CI/CD 平台優化，將 Spring Boot 與 Python 後端專案的交付流程標準化，讓多個 backend 團隊共用同一套交付模組；並透過模組化、平行化與建置步驟重整，將 pipeline 時間從 40 分鐘縮短至 20~25 分鐘，讓導入團隊持續受益。
+            - 開發可重用的身分驗證 SDK，讓後端服務可在約 1 分鐘內完成整合，降低新服務接入與重工成本，並加速共用身份能力的落地。
+            - 建立 CI 品質門檻、CloudWatch 儀表板/警示、集中式 logging 與 audit logging，提升發版安全性、故障追蹤效率與稽核可追溯性。
+            - 設計並維運多產品共用的 redirect service，覆蓋 uniopen web、uniopen app 與 Open Point APP 等入口頁面，支援數百個頁面、數十個品牌與數百萬個商品卡片的導流與落地頁承接需求。
+            - 負責外站導流治理、白名單驗證、Kafka 非同步事件傳遞，以及與子服務 SSO 流程的整合，確保導流與登入流程在產品活動高峰期仍能穩定運作並避免錯誤流量進入。
+            - 深入掌握 EKS / Kubernetes / Istio 架構，能依工作負載設計資源 requests / limits，並透過壓測與線上排查定位 Istio gateway、LB 與 pod placement 相關瓶頸，支援容量規劃與故障排除。
             - **技術**:
               - 語言: Python, Java
               - 框架: FastAPI, Spring Boot
@@ -293,31 +293,31 @@ zh:
               - 工具: Terraform, Helm, Docker, Kubernetes
               - 測試與效能: k6, Vegeta
 
-          details_print: |
-            - 主導高流量入口網站與 APP 後端服務的建置與營運，系統部署於 AWS + EKS，支援超過 250 萬用戶、峰值約 1 萬 RPS。
-            - 設計 OIDC/SSO 與 session 流程，涵蓋會員、權限控管與路由等核心服務。
-            - 主導權限服務的效能基準測試、壓測與調校，使關鍵 endpoint latency 最多降低 77%，並將吞吐量從 300 提升至 500 RPS。
-            - 排查並解決正式環境事故，將 DB CPU 從 85% 以上降至 20~30%，並消除 timeout。
-            - 透過壓測定位 OOM 與 database bottleneck，並以查詢與索引優化、執行環境調校改善瓶頸。
-            - 主導共用型 IaC-based CI/CD 平台優化，將 Spring Boot 後端專案的交付流程標準化；在過程中透過模組化、平行化與建置步驟重整等優化機制，將 pipeline 時間從 40 分鐘縮短至 20~25 分鐘，並讓所有導入團隊持續受益。
-            - 開發可重用的身分驗證 SDK，讓後端服務可在約 1 分鐘內完成整合。
-            - 建立 CI 品質門檻、CloudWatch 儀表板/警示、集中式 logging 與 audit logging，提升發版安全性與可觀測性。
-            - 設計並維運多產品共用的 redirect service，服務於 uniopen web、uniopen app 與 Open Point APP 入口頁面，覆蓋數百個頁面、數十個品牌與數百萬個商品卡片。
-            - 在 redirect 流程中導入 Kafka 非同步事件傳遞、白名單網域驗證，以及與下游服務的 SSO 互動整合。
-            - 深入掌握 EKS / Kubernetes / Istio 架構，能用於 requests/limits 規劃與正式環境排查，並透過 topology spread constraints、Istio gateway、LB 與 pod placement 分析定位瓶頸。
+        details_print: |
+            - 從 0 到 1 建置公司登入授權核心服務，負責所有登入後 API 的存取驗證與 OIDC 身分生命週期管理，支援活動上線、訊息推播等約 20 萬用戶瞬時湧入的業務情境。系統部署於 AWS + EKS，支援超過 250 萬用戶、峰值約 1 萬 RPS，並透過完整請求歷程紀錄加快客服回覆速度與問題查找時間。
+            - 設計 OIDC/SSO 與 session 流程，作為會員登入、權限控管與跨服務路由的共用核心；搭配可重用的 authentication SDK，讓後端服務整合時間縮短至約 1 分鐘，降低多系統整合成本。
+            - 主導登入後核心權限服務的效能基準測試、壓測與調校，使關鍵 endpoint latency 最多降低 77%，並將吞吐量從 300 提升至 500 RPS，改善高峰期使用體驗。
+            - 排查並解決登入依賴流量尖峰下的正式環境事故，將 DB CPU 從 85% 以上降至 20~30%，並消除 timeout，降低營運風險與客服壓力。
+            - 透過持續壓測定位 OOM、off-heap 成長、Metaspace 壓力與 database bottleneck，並以查詢與索引優化、執行環境調校改善瓶頸，提升系統在尖峰流量與行銷檔期下的承載能力。
+            - 主導共用型 IaC-based CI/CD 平台優化，將 Spring Boot 與 Python 後端專案的交付流程標準化，讓多個 backend 團隊共用同一套交付模組；並透過模組化、平行化與建置步驟重整，將 pipeline 時間從 40 分鐘縮短至 20~25 分鐘，讓導入團隊持續受益。
+            - 開發可重用的身分驗證 SDK，讓後端服務可在約 1 分鐘內完成整合，降低新服務接入與重工成本，並加速共用身份能力的落地。
+            - 建立 CI 品質門檻、CloudWatch 儀表板/警示、集中式 logging 與 audit logging，提升發版安全性、故障追蹤效率與稽核可追溯性。
+            - 設計並維運多產品共用的 redirect service，覆蓋 uniopen web、uniopen app 與 Open Point APP 等入口頁面，支援數百個頁面、數十個品牌與數百萬個商品卡片的導流與落地頁承接需求。
+            - 負責外站導流治理、白名單驗證、Kafka 非同步事件傳遞，以及與子服務 SSO 流程的整合，確保導流與登入流程在產品活動高峰期仍能穩定運作並避免錯誤流量進入。
+            - 深入掌握 EKS / Kubernetes / Istio 架構，能依工作負載設計資源 requests / limits，並透過壓測與線上排查定位 Istio gateway、LB 與 pod placement 相關瓶頸，支援容量規劃與故障排除。
             - **技術**: Python/Java, FastAPI/Spring Boot, PostgreSQL/Redis/DynamoDB, AWS EKS/SQS/Lambda/CloudWatch, Terraform/Helm, k6/Vegeta.
 
-        - role: 後端軟體工程師
-          time: 2020/04 - 2023/11
-          company: |
+      - role: 後端軟體工程師
+        time: 2020/04 - 2023/11
+        company: |
             HiSKIO, [線上學習平台](https://hiskio.com)
-          details: |
-            - 以 PHP (Laravel/Lumen) 維護 RESTful APIs，服務超過 10 萬用戶、約 4K DAU。
-            - 完成 Laravel monolith 服務從 v7 升級至 v10，使 API p99 latency 改善 20%。
-            - 透過 index 與 table schema 重構，將 MySQL 熱點查詢時間從 10~20 秒降至約 1 秒。
-            - 負責 3-tier AWS stack 與系統維運，涵蓋 CI/CD、自動擴縮與上線後監控。
-            - 導入 Slack 告警機制與 incident response，將 MTTD 降低約 80%。
-            - 以 SQS + Lambda 建立非同步後端流程，串接 LINE Messaging API 通知與個人化推薦，使留存率提升約 20%。
+        details: |
+            - 以 PHP (Laravel/Lumen) 維護 RESTful APIs，支撐超過 10 萬用戶、約 4K DAU 的產品與管理後台，確保核心學習與營運流程持續運作。
+            - 完成 Laravel monolith 服務從 v7 升級至 v10，歷時 2 個月並透過 incremental migration、相容性驗證與 unit-test coverage，降低 framework 風險並使 API p99 latency 改善 20%。
+            - 透過 index 與 table schema 重構，將 MySQL 熱點查詢時間從 10~20 秒降至約 1 秒，直接改善關鍵流程反應速度與轉換體驗。
+            - 負責 3-tier AWS stack 與系統維運，涵蓋 CI/CD、自動擴縮與上線後監控，讓產品需求能在成長期間維持可預期的交付節奏。
+            - 導入 Slack 告警機制與 incident response，將 MTTD 降低約 80%，縮短故障發現與處理時間，減少對使用者與營運的影響。
+            - 以 SQS + Lambda 建立非同步後端流程，串接 LINE Messaging API 通知與個人化推薦，提升回訪與互動效果，並帶動約 20% 的留存成長。
             - **技術**:
               - 語言: PHP, JavaScript, Python
               - 框架: Laravel, Lumen, Vue, Nuxt
@@ -326,13 +326,13 @@ zh:
               - 工具: Docker, Docker Swarm, OpenAPI/Swagger
               - 測試: PHPUnit
 
-          details_print: |
-            - 以 PHP (Laravel/Lumen) 維護 RESTful APIs，服務超過 10 萬用戶、約 4K DAU。
-            - 完成 Laravel monolith 服務從 v7 升級至 v10，使 API p99 latency 改善 20%。
-            - 透過 index 與 table schema 重構，將 MySQL 熱點查詢時間從 10~20 秒降至約 1 秒。
-            - 負責 3-tier AWS stack 與系統維運，涵蓋 CI/CD、自動擴縮與上線後監控。
-            - 導入 Slack 告警機制與 incident response，將 MTTD 降低約 80%。
-            - 以 SQS + Lambda 建立非同步後端流程，串接 LINE Messaging API 通知與個人化推薦，使留存率提升約 20%。
+        details_print: |
+            - 以 PHP (Laravel/Lumen) 維護 RESTful APIs，支撐超過 10 萬用戶、約 4K DAU 的產品與管理後台，確保核心學習與營運流程持續運作。
+            - 完成 Laravel monolith 服務從 v7 升級至 v10，歷時 2 個月並透過 incremental migration、相容性驗證與 unit-test coverage，降低 framework 風險並使 API p99 latency 改善 20%。
+            - 透過 index 與 table schema 重構，將 MySQL 熱點查詢時間從 10~20 秒降至約 1 秒，直接改善關鍵流程反應速度與轉換體驗。
+            - 負責 3-tier AWS stack 與系統維運，涵蓋 CI/CD、自動擴縮與上線後監控，讓產品需求能在成長期間維持可預期的交付節奏。
+            - 導入 Slack 告警機制與 incident response，將 MTTD 降低約 80%，縮短故障發現與處理時間，減少對使用者與營運的影響。
+            - 以 SQS + Lambda 建立非同步後端流程，串接 LINE Messaging API 通知與個人化推薦，提升回訪與互動效果，並帶動約 20% 的留存成長。
 
   certifications:
       title: 證照
