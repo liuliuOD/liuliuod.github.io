@@ -63,7 +63,7 @@ education:
 career-profile:
     title: About Me
     summary: >
-      Backend / Platform Engineer with 6+ years of experience building and operating cloud-native distributed systems on AWS and EKS. I have led high-traffic production systems serving 2.5M+ users and ~10K peak QPS, with a focus on performance, reliability, and operational efficiency. My work spans API design, data modeling, event-driven workflows, observability, and cross-functional delivery across backend and platform capabilities.
+      Backend / Platform Engineer with 6+ years of experience building and operating cloud-native distributed systems on AWS and EKS. I have led high-traffic production systems serving 2.5M+ users and ~10K peak RPS, with a focus on performance, reliability, and operational efficiency. My work spans API design, data modeling, event-driven workflows, observability, and cross-functional delivery across backend and platform capabilities.
 
 experiences:
     title: Experiences
@@ -73,7 +73,7 @@ experiences:
         company: |
           President Chain Store Corporation(PCSC), [Web Portal](https://www.uniopen.com), [APP](https://www.uniopen.com/app)
         details: |
-          - Built and operated backend services for a high-traffic web portal and mobile app serving 2.5M+ users and ~10K peak QPS on AWS + EKS.
+          - Built and operated backend services for a high-traffic web portal and mobile app serving 2.5M+ users and ~10K peak RPS on AWS + EKS.
           - Designed OIDC/SSO identity and session flows, and delivered core services for membership, access control, and routing.
           - Led performance baselining, load testing, and tuning for an authorization service, reducing critical endpoint latency by up to 77% and increasing throughput from 300 to 500 RPS.
           - Traced and resolved a complex multi-service production incident, reducing DB CPU from >85% to 20–30%, eliminating timeouts, and preventing recurrence.
@@ -95,7 +95,7 @@ experiences:
             - Testing/Perf: k6, Vegeta
 
         details_print: |
-          - Built and operated backend services for a high-traffic web portal serving 2.5M+ users and ~10K peak QPS on AWS + EKS.
+          - Built and operated backend services for a high-traffic web portal serving 2.5M+ users and ~10K peak RPS on AWS + EKS.
           - Designed OIDC/SSO identity and session flows, and delivered core services for membership, access control, and routing.
           - Led performance baselining, load testing, and tuning for an authorization service, reducing critical endpoint latency by up to 77% and increasing throughput from 300 to 500 RPS.
           - Traced and resolved a complex multi-service production incident, reducing DB CPU from >85% to 20–30%, eliminating timeouts, and preventing recurrence.
@@ -264,7 +264,7 @@ zh:
   career-profile:
       title: 關於我
       summary: >
-        我是一位專注於後端與平台的軟體工程師，具備 6 年以上在 AWS 與 EKS 上建置與營運雲原生分散式系統的經驗。曾主導服務超過 250 萬用戶、峰值約 1 萬 QPS 的高流量系統，持續聚焦效能、穩定性與營運效率。工作範圍涵蓋 API 設計、資料模型、事件驅動流程與可觀測性，也能與跨部門團隊協作，推動後端與平台能力落地。
+        我是一位專注於後端與平台的軟體工程師，具備 6 年以上在 AWS 與 EKS 上建置與營運雲原生分散式系統的經驗。曾主導服務超過 250 萬用戶、峰值約 1 萬 RPS 的高流量系統，持續聚焦效能、穩定性與營運效率。工作範圍涵蓋 API 設計、資料模型、事件驅動流程與可觀測性，也能與跨部門團隊協作，推動後端與平台能力落地。
 
   experiences:
       title: 經歷
@@ -274,7 +274,7 @@ zh:
           company: |
             統一超商股份有限公司（PCSC）, [入口網站](https://www.uniopen.com), [APP](https://www.uniopen.com/app)
           details: |
-            - 主導高流量入口網站與 APP 後端服務的建置與營運，系統部署於 AWS + EKS，支援超過 250 萬用戶、峰值約 1 萬 QPS。
+            - 主導高流量入口網站與 APP 後端服務的建置與營運，系統部署於 AWS + EKS，支援超過 250 萬用戶、峰值約 1 萬 RPS。
             - 設計 OIDC/SSO 與 session 流程，涵蓋會員、權限控管與路由等核心服務。
             - 主導權限服務的效能基準測試、壓測與調校，使關鍵 endpoint latency 最多降低 77%，並將吞吐量從 300 提升至 500 RPS。
             - 排查並解決正式環境事故，將 DB CPU 從 85% 以上降至 20~30%，並消除 timeout。
@@ -294,7 +294,7 @@ zh:
               - 測試與效能: k6, Vegeta
 
           details_print: |
-            - 主導高流量入口網站與 APP 後端服務的建置與營運，系統部署於 AWS + EKS，支援超過 250 萬用戶、峰值約 1 萬 QPS。
+            - 主導高流量入口網站與 APP 後端服務的建置與營運，系統部署於 AWS + EKS，支援超過 250 萬用戶、峰值約 1 萬 RPS。
             - 設計 OIDC/SSO 與 session 流程，涵蓋會員、權限控管與路由等核心服務。
             - 主導權限服務的效能基準測試、壓測與調校，使關鍵 endpoint latency 最多降低 77%，並將吞吐量從 300 提升至 500 RPS。
             - 排查並解決正式環境事故，將 DB CPU 從 85% 以上降至 20~30%，並消除 timeout。
