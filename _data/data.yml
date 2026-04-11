@@ -73,17 +73,17 @@ experiences:
         company: |
           President Chain Store Corporation(PCSC), [Web Portal](https://www.uniopen.com), [APP](https://www.uniopen.com/app)
         details: |
-          - Built and operated backend services for a high-traffic web portal and mobile app serving 2.5M+ users and ~10K peak RPS on AWS + EKS.
-          - Designed OIDC/SSO identity and session flows, and delivered core services for membership, access control, and routing.
-          - Led performance baselining, load testing, and tuning for an authorization service, reducing critical endpoint latency by up to 77% and increasing throughput from 300 to 500 RPS.
-          - Traced and resolved a complex multi-service production incident, reducing DB CPU from >85% to 20–30%, eliminating timeouts, and preventing recurrence.
+          - Built and operated backend services for a high-traffic web portal and mobile app serving 2.5M+ users and ~10K peak RPS on AWS + EKS, including activity launches and push-notification-driven traffic spikes of ~200K users.
+          - Designed OIDC/SSO identity and session flows, and delivered core services for membership, access control, and routing, with a reusable authentication SDK that let backend services integrate in about 1 minute.
+          - Led performance baselining, load testing, and tuning for a core authorization service supporting login-protected APIs, reducing critical endpoint latency by up to 77% and increasing throughput from 300 to 500 RPS.
+          - Traced and resolved a complex multi-service production incident, reducing DB CPU from >85% to 20–30%, eliminating timeouts, and preventing recurrence during login-dependent traffic spikes.
           - Hardened Python container builds and runtimes with non-root execution and BuildKit-based secrets handling, reducing image size by ~58% and ~49% across services.
-          - Reproduced recurring OOM issues under sustained load, isolated off-heap growth, Metaspace pressure, and database bottlenecks, and mitigated impact through query/index improvements and runtime tuning.
+          - Reproduced recurring OOM issues under sustained load, isolated off-heap growth, Metaspace pressure, and database bottlenecks, and mitigated impact through query/index improvements and runtime tuning to improve peak-load resilience.
           - Built reusable IaC-based CI/CD modules for Spring Boot and Python backend projects, cutting pipeline time from 40 minutes to 20–25 minutes and standardizing delivery workflows across backend teams.
           - Developed a reusable, configuration-driven authentication SDK that allowed backend services to integrate in about 1 minute.
           - Defined and validated cross-account permission models and evaluated cloud service capabilities for auth and infrastructure use cases, balancing security, functional requirements, and cloud cost.
-          - Improved release safety and observability through CI quality gates, CloudWatch dashboards/alarms, centralized logging, and audit logging.
-          - Designed and operated a multi-product redirect service for uniopen web, uniopen app, and Open Point APP entry pages, covering hundreds of pages, dozens of brands, and millions of product cards.
+          - Improved release safety and observability through CI quality gates, CloudWatch dashboards/alarms, centralized logging, and audit logging, improving troubleshooting speed and audit traceability.
+          - Designed and operated a multi-product redirect service for uniopen web, uniopen app, and Open Point APP entry pages, covering hundreds of pages, dozens of brands, and millions of product cards for traffic routing and landing-page delivery.
           - Implemented redirect flow controls including Kafka-based async event delivery, whitelist domain validation, and SSO interaction with downstream services.
           - Applied deep EKS / Kubernetes / Istio knowledge to capacity planning and production debugging, including requests/limits sizing, topology spread constraints, and bottleneck analysis for Istio gateway, LB, and pod placement issues.
           - **Tech**:
@@ -95,17 +95,17 @@ experiences:
             - Testing/Perf: k6, Vegeta
 
         details_print: |
-          - Built and operated backend services for a high-traffic web portal serving 2.5M+ users and ~10K peak RPS on AWS + EKS.
-          - Designed OIDC/SSO identity and session flows, and delivered core services for membership, access control, and routing.
-          - Led performance baselining, load testing, and tuning for an authorization service, reducing critical endpoint latency by up to 77% and increasing throughput from 300 to 500 RPS.
-          - Traced and resolved a complex multi-service production incident, reducing DB CPU from >85% to 20–30%, eliminating timeouts, and preventing recurrence.
+          - Built and operated backend services for a high-traffic web portal serving 2.5M+ users and ~10K peak RPS on AWS + EKS, including activity launches and push-notification-driven traffic spikes of ~200K users.
+          - Designed OIDC/SSO identity and session flows, and delivered core services for membership, access control, and routing, with a reusable authentication SDK that let backend services integrate in about 1 minute.
+          - Led performance baselining, load testing, and tuning for a core authorization service supporting login-protected APIs, reducing critical endpoint latency by up to 77% and increasing throughput from 300 to 500 RPS.
+          - Traced and resolved a complex multi-service production incident, reducing DB CPU from >85% to 20–30%, eliminating timeouts, and preventing recurrence during login-dependent traffic spikes.
           - Hardened Python container builds and runtimes with non-root execution and BuildKit-based secrets handling, reducing image size by ~58% and ~49% across services.
-          - Reproduced recurring OOM issues under sustained load, isolated off-heap growth, Metaspace pressure, and database bottlenecks, and mitigated impact through query/index improvements and runtime tuning.
+          - Reproduced recurring OOM issues under sustained load, isolated off-heap growth, Metaspace pressure, and database bottlenecks, and mitigated impact through query/index improvements and runtime tuning to improve peak-load resilience.
           - Built reusable IaC-based CI/CD modules for Spring Boot and Python backend projects, cutting pipeline time from 40 minutes to 20–25 minutes and standardizing delivery workflows across backend teams.
           - Developed a reusable, configuration-driven authentication SDK that allowed backend services to integrate in about 1 minute.
           - Defined and validated cross-account permission models and evaluated cloud service capabilities for auth and infrastructure use cases, balancing security, functional requirements, and cloud cost.
-          - Improved release safety and observability through CI quality gates, CloudWatch dashboards/alarms, centralized logging, and audit logging.
-          - Designed and operated a multi-product redirect service for uniopen web, uniopen app, and Open Point APP entry pages, covering hundreds of pages, dozens of brands, and millions of product cards.
+          - Improved release safety and observability through CI quality gates, CloudWatch dashboards/alarms, centralized logging, and audit logging, improving troubleshooting speed and audit traceability.
+          - Designed and operated a multi-product redirect service for uniopen web, uniopen app, and Open Point APP entry pages, covering hundreds of pages, dozens of brands, and millions of product cards for traffic routing and landing-page delivery.
           - Implemented redirect flow controls including Kafka-based async event delivery, whitelist domain validation, and SSO interaction with downstream services.
           - Applied deep EKS / Kubernetes / Istio knowledge to capacity planning and production debugging, including requests/limits sizing, topology spread constraints, and bottleneck analysis for Istio gateway, LB, and pod placement issues.
           - **Tech**: Python/Java, FastAPI/Spring Boot, PostgreSQL/Redis/DynamoDB, AWS EKS/SQS/Lambda/CloudWatch, Terraform/Helm, k6/Vegeta.
@@ -115,10 +115,10 @@ experiences:
         company: |
           HiSKIO, [Online Learning Platform](https://hiskio.com)
         details: |
-          - Built and maintained RESTful APIs in PHP (Laravel/Lumen) for a web product and admin portal serving 100K+ users and ~4K DAU, owning delivery from development through production rollout and monitoring.
-          - Upgraded a Laravel monolith from v7 to v10 in 2 months through incremental migration, compatibility validation, and unit-test coverage, restoring framework support and improving API p99 latency by 20%.
-          - Resolved critical MySQL performance bottlenecks by profiling request paths, analyzing EXPLAIN plans, and refactoring indexes and table design, reducing hot-path query time from 10–20 seconds to ~1 second.
-          - Owned a 3-tier AWS stack (ALB / EC2 / RDS) and service operations, including CI/CD, autoscaling, CloudWatch dashboards/alarms, load testing, and post-release monitoring.
+          - Built and maintained RESTful APIs in PHP (Laravel/Lumen) for a web product and admin portal serving 100K+ users and ~4K DAU, supporting core learning and operations workflows from development through production rollout and monitoring.
+          - Upgraded a Laravel monolith from v7 to v10 in 2 months through incremental migration, compatibility validation, and unit-test coverage, reducing framework risk and improving API p99 latency by 20%.
+          - Resolved critical MySQL performance bottlenecks by profiling request paths, analyzing EXPLAIN plans, and refactoring indexes and table design, reducing hot-path query time from 10–20 seconds to ~1 second and improving key workflow responsiveness.
+          - Owned a 3-tier AWS stack (ALB / EC2 / RDS) and service operations, including CI/CD, autoscaling, CloudWatch dashboards/alarms, load testing, and post-release monitoring, to keep product delivery predictable during growth.
           - Improved monitoring and incident response with Slack alerting, reducing MTTD by ~80%.
           - Built asynchronous backend workflows with SQS + Lambda, and delivered user-facing integrations including LINE Messaging API notifications and personalized recommendations that improved retention by ~20%.
           - **Tech**:
@@ -130,10 +130,10 @@ experiences:
             - Testing: PHPUnit
 
         details_print: |
-          - Built and maintained RESTful APIs in PHP (Laravel/Lumen) for a web product and admin portal serving 100K+ users and ~4K DAU, owning delivery from development through production rollout and monitoring.
-          - Upgraded a Laravel monolith from v7 to v10 in 2 months through incremental migration, compatibility validation, and unit-test coverage, restoring framework support and improving API p99 latency by 20%.
-          - Resolved critical MySQL performance bottlenecks by profiling request paths, analyzing EXPLAIN plans, and refactoring indexes and table design, reducing hot-path query time from 10–20 seconds to ~1 second.
-          - Owned a 3-tier AWS stack (ALB / EC2 / RDS) and service operations, including CI/CD, autoscaling, CloudWatch dashboards/alarms, load testing, and post-release monitoring.
+          - Built and maintained RESTful APIs in PHP (Laravel/Lumen) for a web product and admin portal serving 100K+ users and ~4K DAU, supporting core learning and operations workflows from development through production rollout and monitoring.
+          - Upgraded a Laravel monolith from v7 to v10 in 2 months through incremental migration, compatibility validation, and unit-test coverage, reducing framework risk and improving API p99 latency by 20%.
+          - Resolved critical MySQL performance bottlenecks by profiling request paths, analyzing EXPLAIN plans, and refactoring indexes and table design, reducing hot-path query time from 10–20 seconds to ~1 second and improving key workflow responsiveness.
+          - Owned a 3-tier AWS stack (ALB / EC2 / RDS) and service operations, including CI/CD, autoscaling, CloudWatch dashboards/alarms, load testing, and post-release monitoring, to keep product delivery predictable during growth.
           - Improved monitoring and incident response with Slack alerting, reducing MTTD by ~80%.
           - Built asynchronous backend workflows with SQS + Lambda, and delivered user-facing integrations including LINE Messaging API notifications and personalized recommendations that improved retention by ~20%.
 
