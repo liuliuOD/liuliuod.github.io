@@ -63,7 +63,7 @@ education:
 career-profile:
     title: About Me
     summary: >
-      Senior Backend / Platform Engineer with 6+ years of experience building and operating cloud-native distributed systems on AWS and EKS. I have led and delivered business-critical backend and platform initiatives for products serving 2.5M+ users and ~10K peak RPS, with a focus on reliability, performance, operational efficiency, and reusable engineering capabilities. My work spans identity and access flows, API design, event-driven systems, observability, and platform standardization, and I work effectively across engineering, product, and business stakeholders to turn technical improvements into measurable user and organizational impact.
+      Senior Backend / Platform Engineer with 6+ years of experience building cloud-native backend systems, platform capabilities, and production infrastructure on AWS and EKS. Experienced in owning high-traffic services serving 2.5M+ users and ~10K peak RPS, with a focus on authentication, API design, performance, reliability, CI/CD, and observability. Selected outcomes include reducing critical endpoint latency by up to 77%, improving throughput from 300 to 500 RPS, resolving high-traffic DB bottlenecks, and reducing CI/CD pipeline time from 40 minutes to 20–25 minutes.
 
 experiences:
     title: Experiences
@@ -74,37 +74,27 @@ experiences:
           President Chain Store Corporation(PCSC), [Web Portal](https://www.uniopen.com), [APP](https://www.uniopen.com/app)
         details: |
           - Built and operated backend services for a high-traffic web portal and mobile app serving 2.5M+ users and ~10K peak RPS on AWS + EKS, supporting login-protected user journeys and campaign or push-notification traffic spikes of ~200K users.
-          - Built the company’s core post-login authorization service from 0 to 1, owning API access validation and OIDC identity lifecycle management for business-critical flows; complete request tracing improved customer-support investigation and response speed by 30% and strengthened malicious-behavior detection.
-          - Designed OIDC/SSO identity and session flows as a shared foundation for membership, access control, and cross-service routing, and delivered a reusable authentication SDK plus API service template that enabled backend services to integrate in about 1 minute and helped a ~20-person team reduce project bootstrap time by 80%.
-          - Led performance baselining, load testing, and tuning for a core authorization service supporting login-protected APIs, reducing critical endpoint latency by up to 77% and increasing throughput from 300 to 500 RPS to improve peak-period user experience.
+          - Built the company’s core post-login authorization service from 0 to 1, owning API access validation, token handling, and OIDC identity lifecycle management for business-critical membership and access-control flows.
+          - Designed OIDC/SSO identity and session flows as a shared foundation for membership, authorization, and cross-service routing; provided reusable authentication SDKs and API service templates adopted by ~20 backend services, reducing initial integration and project bootstrap time by ~80%.
+          - Led performance baselining, load testing, and tuning for login-protected authorization services, reducing critical endpoint latency by up to 77% and increasing throughput from 300 to 500 RPS to improve peak-period user experience.
           - Traced and resolved a complex multi-service production incident during traffic spikes, reducing DB CPU from >85% to 20–30%, eliminating timeouts, and lowering operational risk for login-dependent flows.
-          - Hardened Python container builds and runtimes with non-root execution and BuildKit-based secrets handling, reducing image size by ~58% and ~49% across services.
-          - Reproduced recurring OOM issues under sustained load, isolated off-heap growth, Metaspace pressure, and database bottlenecks, and mitigated them through query/index improvements and runtime tuning to improve peak-load resilience and reduce production failure risk.
-          - Built reusable IaC-based CI/CD modules for Spring Boot and Python backend projects, cutting pipeline time from 40 minutes to 20–25 minutes; the modularized pipeline was adopted by at least 10 services and reduced ongoing delivery setup and maintenance cost.
-          - Improved release safety and observability through CI quality gates, CloudWatch dashboards/alarms, centralized logging, and audit logging, strengthening user-action traceability, detecting malicious operations, and reducing incident investigation time by 30%.
-          - Designed and operated a multi-product redirect service for uniopen web, uniopen app, and Open Point APP entry pages, covering hundreds of pages, dozens of brands, and millions of product cards; the service delivered click events to Kafka within 200ms, blocked malicious links through domain validation, and improved user-journey continuity through SSO-aware redirects.
-          - Applied EKS / Kubernetes / Istio expertise to capacity planning and production debugging, including requests/limits sizing and bottleneck analysis for Istio gateway, load balancers, and pod placement issues, improving peak-period stability.
+          - Standardized IaC-based CI/CD workflows, CloudWatch dashboards/alarms, centralized logging, and audit logging across Spring Boot and Python backend services, cutting pipeline time from 40 minutes to 20–25 minutes and reducing incident investigation time by ~30%.
           - **Tech**:
             - Languages: Python, Java
             - Frameworks: FastAPI, Spring Boot
             - Datastores: PostgreSQL, Redis, DynamoDB, DocumentDB
             - Cloud/Infra: AWS (EKS, S3, SQS, SNS, Lambda, CloudWatch, MediaConvert)
-            - Tooling: Terraform, Helm, Docker, Kubernetes
+            - Tooling: Terraform, Helm, Docker, Kubernetes, Istio
             - Testing/Perf: k6, Vegeta
 
         details_print: |
           - Built and operated backend services for a high-traffic web portal and mobile app serving 2.5M+ users and ~10K peak RPS on AWS + EKS, supporting login-protected user journeys and campaign or push-notification traffic spikes of ~200K users.
-          - Built the company’s core post-login authorization service from 0 to 1, owning API access validation and OIDC identity lifecycle management for business-critical flows; complete request tracing improved customer-support investigation and response speed by 30% and strengthened malicious-behavior detection.
-          - Designed OIDC/SSO identity and session flows as a shared foundation for membership, access control, and cross-service routing, and delivered a reusable authentication SDK plus API service template that enabled backend services to integrate in about 1 minute and helped a ~20-person team reduce project bootstrap time by 80%.
-          - Led performance baselining, load testing, and tuning for a core authorization service supporting login-protected APIs, reducing critical endpoint latency by up to 77% and increasing throughput from 300 to 500 RPS to improve peak-period user experience.
+          - Built the company’s core post-login authorization service from 0 to 1, owning API access validation, token handling, and OIDC identity lifecycle management for business-critical membership and access-control flows.
+          - Designed OIDC/SSO identity and session flows as a shared foundation for membership, authorization, and cross-service routing; provided reusable authentication SDKs and API service templates adopted by ~20 backend services, reducing initial integration and project bootstrap time by ~80%.
+          - Led performance baselining, load testing, and tuning for login-protected authorization services, reducing critical endpoint latency by up to 77% and increasing throughput from 300 to 500 RPS to improve peak-period user experience.
           - Traced and resolved a complex multi-service production incident during traffic spikes, reducing DB CPU from >85% to 20–30%, eliminating timeouts, and lowering operational risk for login-dependent flows.
-          - Hardened Python container builds and runtimes with non-root execution and BuildKit-based secrets handling, reducing image size by ~58% and ~49% across services.
-          - Reproduced recurring OOM issues under sustained load, isolated off-heap growth, Metaspace pressure, and database bottlenecks, and mitigated them through query/index improvements and runtime tuning to improve peak-load resilience and reduce production failure risk.
-          - Built reusable IaC-based CI/CD modules for Spring Boot and Python backend projects, cutting pipeline time from 40 minutes to 20–25 minutes; the modularized pipeline was adopted by at least 10 services and reduced ongoing delivery setup and maintenance cost.
-          - Improved release safety and observability through CI quality gates, CloudWatch dashboards/alarms, centralized logging, and audit logging, strengthening user-action traceability, detecting malicious operations, and reducing incident investigation time by 30%.
-          - Designed and operated a multi-product redirect service for uniopen web, uniopen app, and Open Point APP entry pages, covering hundreds of pages, dozens of brands, and millions of product cards; the service delivered click events to Kafka within 200ms, blocked malicious links through domain validation, and improved user-journey continuity through SSO-aware redirects.
-          - Applied EKS / Kubernetes / Istio expertise to capacity planning and production debugging, including requests/limits sizing and bottleneck analysis for Istio gateway, load balancers, and pod placement issues, improving peak-period stability.
-          - **Tech**: Python/Java, FastAPI/Spring Boot, PostgreSQL/Redis/DynamoDB, AWS EKS/SQS/Lambda/CloudWatch, Terraform/Helm, k6/Vegeta.
+          - Standardized IaC-based CI/CD workflows, CloudWatch dashboards/alarms, centralized logging, and audit logging across Spring Boot and Python backend services, cutting pipeline time from 40 minutes to 20–25 minutes and reducing incident investigation time by ~30%.
+          - **Tech**: Python/Java, FastAPI/Spring Boot, PostgreSQL/Redis/DynamoDB, AWS EKS/SQS/Lambda/CloudWatch, Terraform/Helm, Kubernetes/Istio, k6/Vegeta.
 
       - role: Backend Software Engineer
         time: Apr 2020 - Nov 2023
@@ -198,51 +188,68 @@ skills:
     title: Skills
 
     toolset:
-      - name: Programming Languages
+      - name: Backend Engineering
         items:
-          - name: Python
           - name: Java
-          - name: Rust
-          - name: JavaScript
-          - name: PHP
-      - name: Frameworks
-        items:
-          - name: FastAPI
           - name: Spring Boot
-          - name: Django REST Framework (DRF)
-          - name: Vue
-          - name: Actix
+          - name: Python
+          - name: FastAPI
+          - name: PHP
           - name: Laravel
-      - name: RDBMS
+          - name: RESTful API Design
+          - name: Authentication & Authorization
+          - name: OIDC / SSO
+      - name: Cloud & Infrastructure
         items:
-          - name: PostgreSQL
-          - name: MySQL
-          - name: MariaDB
-          - name: SQLite
-      - name: NoSQL
-        items:
-          - name: MongoDB
-          - name: DocumentDB
-          - name: DynamoDB
-          - name: Redis
-      - name: IaaS
-        items:
-          - name: AWS (EC2, EKS, ELB, S3, CloudFront, Lambda, SQS, CloudWatch, CodePipeline, etc.)
-      - name: Misc
-        items:
-          - name: GitHub Actions
-          - name: Kafka
-          - name: OpenSearch
+          - name: AWS
+          - name: Amazon EKS
           - name: Kubernetes
           - name: Istio
           - name: Docker
-          - name: Docker Swarm
-          - name: Nginx
-          - name: Ansible
           - name: Terraform
           - name: Helm
-          - name: Swagger
-          - name: Supervisor
+          - name: ALB / ELB
+          - name: EC2
+          - name: Lambda
+          - name: S3
+      - name: Databases & Caching
+        items:
+          - name: PostgreSQL
+          - name: MySQL
+          - name: Redis
+          - name: DynamoDB
+          - name: DocumentDB
+          - name: Query Optimization
+          - name: Index Tuning
+          - name: EXPLAIN Plan Analysis
+      - name: Platform, Reliability & Observability
+        items:
+          - name: CI/CD
+          - name: Infrastructure as Code (IaC)
+          - name: CloudWatch
+          - name: Centralized Logging
+          - name: Audit Logging
+          - name: Load Testing
+          - name: Incident Response
+          - name: Performance Tuning
+      - name: Architecture & Integration
+        items:
+          - name: Distributed Systems
+          - name: Event-driven Workflows
+          - name: Kafka
+          - name: SQS
+          - name: SNS
+          - name: API Service Templates
+          - name: Cross-team Platform Enablement
+      - name: Tools
+        items:
+          - name: GitHub Actions
+          - name: OpenSearch
+          - name: Nginx
+          - name: Ansible
+          - name: Swagger / OpenAPI
+          - name: k6
+          - name: Vegeta
 
 footer: >
     Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
@@ -260,7 +267,7 @@ zh:
   career-profile:
       title: 關於我
       summary: >
-        我是一位專注於後端與平台的軟體工程師，具備 6 年以上在 AWS 與 EKS 上建置與營運雲原生分散式系統的經驗。曾主導並落地多項 business-critical 的後端與平台能力，服務超過 250 萬用戶、峰值約 1 萬 RPS 的產品，持續聚焦穩定性、效能、營運效率與可複用工程能力。工作範圍涵蓋身分驗證與授權流程、API 設計、事件驅動系統、可觀測性與平台標準化，也能與工程、產品與商業利害關係人有效協作，把技術改善轉成可衡量的使用者與組織價值。
+        資深後端與平台工程師，具備 6 年以上在 AWS 與 EKS 上建置雲原生後端系統、平台能力與正式環境基礎設施的經驗。曾負責支撐超過 250 萬用戶、峰值約 1 萬 RPS 的高流量服務，專注於身份驗證、API 設計、效能、可靠性、CI/CD 與可觀測性。代表成果包含核心 endpoint latency 最多降低 77%、吞吐量從 300 提升至 500 RPS、排除高流量 DB bottleneck，並將 CI/CD pipeline 從 40 分鐘縮短至 20～25 分鐘。
 
   experiences:
       title: 經歷
@@ -271,37 +278,27 @@ zh:
           統一超商股份有限公司（PCSC）, [入口網站](https://www.uniopen.com), [APP](https://www.uniopen.com/app)
         details: |
             - 建置並維運高流量 web portal 與 mobile app 的後端服務，系統部署於 AWS + EKS，支援超過 250 萬用戶、峰值約 1 萬 RPS，並承接活動與推播帶來約 20 萬用戶瞬時湧入的登入後流量情境。
-            - 從 0 到 1 建置公司登入後授權核心服務，負責 API 存取驗證與 OIDC 身分生命週期管理，支撐 business-critical 流程；並透過完整請求歷程紀錄將客服查案與回覆速度提升 30%，同時強化惡意行為識別能力。
-            - 設計 OIDC/SSO 與 session 流程，作為會員登入、權限控管與跨服務路由的共用基礎；並提供 reusable authentication SDK 與 API service template，讓後端服務可在約 1 分鐘內完成整合，協助約 20 人團隊將專案建置時間降低 80%。
+            - 從 0 到 1 建置公司登入後授權核心服務，負責 API 存取驗證、token handling 與 OIDC 身分生命週期管理，支撐 business-critical 的會員與權限控管流程。
+            - 設計 OIDC/SSO 與 session 流程，作為會員登入、授權與跨服務路由的共用基礎；並提供 reusable authentication SDK 與 API service template，支援約 20 個後端服務完成初始整合，將整合與專案建置時間降低約 80%。
             - 主導登入後核心權限服務的效能基準測試、壓測與調校，使關鍵 endpoint latency 最多降低 77%，並將吞吐量從 300 提升至 500 RPS，改善高峰期使用體驗。
-            - 排查並解決流量尖峰下的複雜正式環境事故，將 DB CPU 從 85% 以上降至 20~30%，並消除 timeout，降低登入依賴流程的營運風險。
-            - 透過 non-root execution 與 BuildKit-based secrets handling 強化 Python container build 與 runtime 安全性，並將不同服務的 image size 分別降低約 58% 與 49%。
-            - 透過持續壓測重現 recurring OOM，定位 off-heap 成長、Metaspace 壓力與 database bottleneck，並以查詢與索引優化、執行環境調校改善瓶頸，提升尖峰負載承載能力並降低正式環境失敗風險。
-            - 主導共用型 IaC-based CI/CD 平台優化，將 Spring Boot 與 Python 後端專案的交付流程標準化，讓至少 10 個服務的 pipeline 共用同一套模組化交付機制；並透過模組化、平行化與建置步驟重整，將 pipeline 時間從 40 分鐘縮短至 20~25 分鐘，持續降低交付建置與維護成本。
-            - 建立 CI 品質門檻、CloudWatch 儀表板/警示、集中式 logging 與 audit logging，強化使用者操作歷程追蹤與惡意行為識別，並將 incident 調查時間降低 30%。
-            - 設計並維運多產品共用的 redirect service，覆蓋 uniopen web、uniopen app 與 Open Point APP 等入口頁面，支援數百個頁面、數十個品牌與數百萬個商品卡片的導流與落地頁承接需求；系統可於 200ms 內完成點擊事件送入 Kafka、驗證網址合法性避免惡意連結出現在網站內，並透過支援 SSO-aware redirects 改善使用者旅程連續性。
-            - 依工作負載特性設計 EKS / Kubernetes / Istio 的資源 requests / limits，並透過壓測與線上排查定位 Istio gateway、LB 與 pod placement 瓶頸，支援容量規劃、故障排除與高峰期穩定性優化。
+            - 排查並解決流量尖峰下的複雜正式環境事故，將 DB CPU 從 85% 以上降至 20～30%，並消除 timeout，降低登入依賴流程的營運風險。
+            - 標準化 Spring Boot 與 Python 後端服務的 IaC-based CI/CD、CloudWatch 儀表板/警示、集中式 logging 與 audit logging，將 pipeline 時間從 40 分鐘縮短至 20～25 分鐘，並將 incident 調查時間降低約 30%。
             - **技術**:
               - 語言: Python, Java
               - 框架: FastAPI, Spring Boot
               - 資料庫: PostgreSQL, Redis, DynamoDB, DocumentDB
               - 雲端與基礎設施: AWS (EKS, S3, SQS, SNS, Lambda, CloudWatch, MediaConvert)
-              - 工具: Terraform, Helm, Docker, Kubernetes
+              - 工具: Terraform, Helm, Docker, Kubernetes, Istio
               - 測試與效能: k6, Vegeta
 
         details_print: |
             - 建置並維運高流量 web portal 與 mobile app 的後端服務，系統部署於 AWS + EKS，支援超過 250 萬用戶、峰值約 1 萬 RPS，並承接活動與推播帶來約 20 萬用戶瞬時湧入的登入後流量情境。
-            - 從 0 到 1 建置公司登入後授權核心服務，負責 API 存取驗證與 OIDC 身分生命週期管理，支撐 business-critical 流程；並透過完整請求歷程紀錄將客服查案與回覆速度提升 30%，同時強化惡意行為識別能力。
-            - 設計 OIDC/SSO 與 session 流程，作為會員登入、權限控管與跨服務路由的共用基礎；並提供 reusable authentication SDK 與 API service template，讓後端服務可在約 1 分鐘內完成整合，協助約 20 人團隊將專案建置時間降低 80%。
+            - 從 0 到 1 建置公司登入後授權核心服務，負責 API 存取驗證、token handling 與 OIDC 身分生命週期管理，支撐 business-critical 的會員與權限控管流程。
+            - 設計 OIDC/SSO 與 session 流程，作為會員登入、授權與跨服務路由的共用基礎；並提供 reusable authentication SDK 與 API service template，支援約 20 個後端服務完成初始整合，將整合與專案建置時間降低約 80%。
             - 主導登入後核心權限服務的效能基準測試、壓測與調校，使關鍵 endpoint latency 最多降低 77%，並將吞吐量從 300 提升至 500 RPS，改善高峰期使用體驗。
-            - 排查並解決流量尖峰下的複雜正式環境事故，將 DB CPU 從 85% 以上降至 20~30%，並消除 timeout，降低登入依賴流程的營運風險。
-            - 透過 non-root execution 與 BuildKit-based secrets handling 強化 Python container build 與 runtime 安全性，並將不同服務的 image size 分別降低約 58% 與 49%。
-            - 透過持續壓測重現 recurring OOM，定位 off-heap 成長、Metaspace 壓力與 database bottleneck，並以查詢與索引優化、執行環境調校改善瓶頸，提升尖峰負載承載能力並降低正式環境失敗風險。
-            - 主導共用型 IaC-based CI/CD 平台優化，將 Spring Boot 與 Python 後端專案的交付流程標準化，讓至少 10 個服務的 pipeline 共用同一套模組化交付機制；並透過模組化、平行化與建置步驟重整，將 pipeline 時間從 40 分鐘縮短至 20~25 分鐘，持續降低交付建置與維護成本。
-            - 建立 CI 品質門檻、CloudWatch 儀表板/警示、集中式 logging 與 audit logging，強化使用者操作歷程追蹤與惡意行為識別，並將 incident 調查時間降低 30%。
-            - 設計並維運多產品共用的 redirect service，覆蓋 uniopen web、uniopen app 與 Open Point APP 等入口頁面，支援數百個頁面、數十個品牌與數百萬個商品卡片的導流與落地頁承接需求；系統可於 200ms 內完成點擊事件送入 Kafka、驗證網址合法性避免惡意連結出現在網站內，並透過支援 SSO-aware redirects 改善使用者旅程連續性。
-            - 依工作負載特性設計 EKS / Kubernetes / Istio 的資源 requests / limits，並透過壓測與線上排查定位 Istio gateway、LB 與 pod placement 瓶頸，支援容量規劃、故障排除與高峰期穩定性優化。
-            - **技術**: Python/Java, FastAPI/Spring Boot, PostgreSQL/Redis/DynamoDB, AWS EKS/SQS/Lambda/CloudWatch, Terraform/Helm, k6/Vegeta.
+            - 排查並解決流量尖峰下的複雜正式環境事故，將 DB CPU 從 85% 以上降至 20～30%，並消除 timeout，降低登入依賴流程的營運風險。
+            - 標準化 Spring Boot 與 Python 後端服務的 IaC-based CI/CD、CloudWatch 儀表板/警示、集中式 logging 與 audit logging，將 pipeline 時間從 40 分鐘縮短至 20～25 分鐘，並將 incident 調查時間降低約 30%。
+            - **技術**: Python/Java, FastAPI/Spring Boot, PostgreSQL/Redis/DynamoDB, AWS EKS/SQS/Lambda/CloudWatch, Terraform/Helm, Kubernetes/Istio, k6/Vegeta.
 
       - role: 後端軟體工程師
         time: 2020/04 - 2023/11
@@ -378,48 +375,65 @@ zh:
   skills:
       title: 技能
       toolset:
-        - name: 程式語言
+        - name: Backend Engineering
           items:
-            - name: Python
             - name: Java
-            - name: Rust
-            - name: JavaScript
-            - name: PHP
-        - name: 框架
-          items:
-            - name: FastAPI
             - name: Spring Boot
-            - name: Django REST Framework (DRF)
-            - name: Vue
-            - name: Actix
+            - name: Python
+            - name: FastAPI
+            - name: PHP
             - name: Laravel
-        - name: 關聯式資料庫
+            - name: RESTful API Design
+            - name: Authentication & Authorization
+            - name: OIDC / SSO
+        - name: Cloud & Infrastructure
           items:
-            - name: PostgreSQL
-            - name: MySQL
-            - name: MariaDB
-            - name: SQLite
-        - name: 非關聯式資料庫
-          items:
-            - name: MongoDB
-            - name: DocumentDB
-            - name: DynamoDB
-            - name: Redis
-        - name: 雲端與基礎設施
-          items:
-            - name: AWS (EC2, EKS, ELB, S3, CloudFront, Lambda, SQS, CloudWatch, CodePipeline, etc.)
-        - name: 其他工具
-          items:
-            - name: GitHub Actions
-            - name: Kafka
-            - name: OpenSearch
+            - name: AWS
+            - name: Amazon EKS
             - name: Kubernetes
             - name: Istio
             - name: Docker
-            - name: Docker Swarm
-            - name: Nginx
-            - name: Ansible
             - name: Terraform
             - name: Helm
-            - name: Swagger
-            - name: Supervisor
+            - name: ALB / ELB
+            - name: EC2
+            - name: Lambda
+            - name: S3
+        - name: Databases & Caching
+          items:
+            - name: PostgreSQL
+            - name: MySQL
+            - name: Redis
+            - name: DynamoDB
+            - name: DocumentDB
+            - name: Query Optimization
+            - name: Index Tuning
+            - name: EXPLAIN Plan Analysis
+        - name: Platform, Reliability & Observability
+          items:
+            - name: CI/CD
+            - name: Infrastructure as Code (IaC)
+            - name: CloudWatch
+            - name: Centralized Logging
+            - name: Audit Logging
+            - name: Load Testing
+            - name: Incident Response
+            - name: Performance Tuning
+        - name: Architecture & Integration
+          items:
+            - name: Distributed Systems
+            - name: Event-driven Workflows
+            - name: Kafka
+            - name: SQS
+            - name: SNS
+            - name: API Service Templates
+            - name: Cross-team Platform Enablement
+        - name: Tools
+          items:
+            - name: GitHub Actions
+            - name: OpenSearch
+            - name: Nginx
+            - name: Ansible
+            - name: Swagger / OpenAPI
+            - name: k6
+            - name: Vegeta
