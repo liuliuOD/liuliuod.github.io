@@ -63,7 +63,9 @@ education:
 career-profile:
     title: About Me
     summary: >
-      Senior Backend / Platform Engineer with 6+ years of experience building cloud-native backend systems, platform capabilities, and production infrastructure on AWS and EKS. Experienced in operating high-traffic services serving 2.5M+ users and ~10K peak RPS, with a focus on authentication, API design, performance, reliability, CI/CD, and observability. Delivered measurable improvements across production systems, including reducing critical service endpoint latency by up to 77%, improving throughput from 300 to 500 RPS, resolving database bottlenecks under high traffic, and reducing CI/CD pipeline time from 40 minutes to 20–25 minutes.
+      Senior Backend / Platform Engineer with 6+ years of experience designing and building cloud-native backend systems, shared platform capabilities, and production infrastructure on AWS and EKS. Experienced in operating high-traffic services serving 2.5M+ users and ~10K peak RPS, with deep focus on system design, authentication, authorization, API design, performance, reliability, CI/CD, and observability.
+
+      Strong track record of turning ambiguous business requirements, production bottlenecks, and repeated integration work into scalable engineering systems: designed reusable authentication and service bootstrap patterns across ~20 backend services, reduced critical service latency by up to 77%, improved throughput from 300 to 500 RPS, resolved high-traffic database bottlenecks, and reduced CI/CD pipeline time from 40 minutes to 20–25 minutes.
 
 experiences:
     title: Experiences
@@ -73,12 +75,13 @@ experiences:
         company: |
           President Chain Store Corporation(PCSC), [Web Portal](https://www.uniopen.com), [APP](https://www.uniopen.com/app)
         details: |
-          - Built and operated backend and platform services for a high-traffic web portal and mobile app serving 2.5M+ users and ~10K peak RPS on AWS + EKS, supporting authenticated user journeys and campaign or push-notification traffic spikes of ~200K users.
-          - Built the company’s core post-login authorization service from 0 to 1, owning API access validation, token handling, and identity lifecycle management for business-critical membership and authorization flows.
-          - Standardized OIDC/SSO integration through reusable authentication SDKs and API service templates adopted by ~20 backend services, reducing initial integration and service bootstrap time by ~80%.
-          - Led performance baselining, load testing, and tuning for authenticated authorization services, reducing critical service endpoint latency by up to 77% and increasing throughput from 300 to 500 RPS to improve peak-period user experience.
+          - Owned backend and platform services for a high-traffic web portal and mobile app serving 2.5M+ users and ~10K peak RPS on AWS + EKS, ensuring reliable authenticated user journeys during campaign and push-notification traffic spikes of ~200K users.
+          - Designed and built the company’s core post-login authorization service from 0 to 1, defining service boundaries, API access validation, token handling, and identity lifecycle management for business-critical membership and authorization flows.
+          - Designed reusable OIDC/SSO integration patterns through authentication SDKs and API service templates adopted by ~20 backend services, reducing authentication integration and service bootstrap effort by ~80% while improving consistency across teams.
+          - Led performance baselining, load testing, and tuning for authenticated authorization services, reducing critical endpoint latency by up to 77% and increasing throughput from 300 to 500 RPS.
           - Investigated and resolved a complex multi-service production incident during traffic spikes, reducing DB CPU from >85% to 20–30%, eliminating timeouts, and lowering operational risk for login-dependent flows.
           - Standardized IaC-based CI/CD workflows, CloudWatch dashboards/alarms, centralized logging, and audit logging across Spring Boot and Python backend services, cutting pipeline time from 40 minutes to 20–25 minutes and reducing incident investigation time by ~30%.
+          - Designed and operated a shared redirect service across web and mobile entry points, covering routing rules, whitelist validation, SSO handoff, Kafka-based asynchronous event delivery, and click-tracking flows for hundreds of pages, dozens of brands, and millions of product cards.
           - **Tech**:
             - Languages: Python, Java
             - Frameworks: FastAPI, Spring Boot
@@ -88,13 +91,14 @@ experiences:
             - Testing/Perf: k6, Vegeta
 
         details_print: |
-          - Built and operated backend and platform services for a high-traffic web portal and mobile app serving 2.5M+ users and ~10K peak RPS on AWS + EKS, supporting authenticated user journeys and campaign or push-notification traffic spikes of ~200K users.
-          - Built the company’s core post-login authorization service from 0 to 1, owning API access validation, token handling, and identity lifecycle management for business-critical membership and authorization flows.
-          - Standardized OIDC/SSO integration through reusable authentication SDKs and API service templates adopted by ~20 backend services, reducing initial integration and service bootstrap time by ~80%.
-          - Led performance baselining, load testing, and tuning for authenticated authorization services, reducing critical service endpoint latency by up to 77% and increasing throughput from 300 to 500 RPS to improve peak-period user experience.
+          - Owned backend and platform services for a high-traffic web portal and mobile app serving 2.5M+ users and ~10K peak RPS on AWS + EKS, ensuring reliable authenticated user journeys during campaign and push-notification traffic spikes of ~200K users.
+          - Designed and built the company’s core post-login authorization service from 0 to 1, defining service boundaries, API access validation, token handling, and identity lifecycle management for business-critical membership and authorization flows.
+          - Designed reusable OIDC/SSO integration patterns through authentication SDKs and API service templates adopted by ~20 backend services, reducing authentication integration and service bootstrap effort by ~80% while improving consistency across teams.
+          - Led performance baselining, load testing, and tuning for authenticated authorization services, reducing critical endpoint latency by up to 77% and increasing throughput from 300 to 500 RPS.
           - Investigated and resolved a complex multi-service production incident during traffic spikes, reducing DB CPU from >85% to 20–30%, eliminating timeouts, and lowering operational risk for login-dependent flows.
           - Standardized IaC-based CI/CD workflows, CloudWatch dashboards/alarms, centralized logging, and audit logging across Spring Boot and Python backend services, cutting pipeline time from 40 minutes to 20–25 minutes and reducing incident investigation time by ~30%.
-          - **Tech**: Python/Java, FastAPI/Spring Boot, PostgreSQL/Redis/DynamoDB, AWS EKS/SQS/Lambda/CloudWatch, Terraform/Helm, Kubernetes/Istio, k6/Vegeta.
+          - Designed and operated a shared redirect service across web and mobile entry points, covering routing rules, whitelist validation, SSO handoff, Kafka-based asynchronous event delivery, and click-tracking flows for hundreds of pages, dozens of brands, and millions of product cards.
+          - **Tech**: Python/Java, FastAPI/Spring Boot, PostgreSQL/Redis/DynamoDB, AWS EKS/SQS/Lambda/CloudWatch, Terraform/Helm, Kubernetes/Istio, Kafka, k6/Vegeta.
 
       - role: Backend Software Engineer
         time: Apr 2020 - Nov 2023
@@ -234,6 +238,8 @@ skills:
           - name: Performance Tuning
       - name: Architecture & Integration
         items:
+          - name: System Design
+          - name: Service Boundary Design
           - name: Distributed Systems
           - name: Event-driven Workflows
           - name: Kafka
@@ -267,7 +273,9 @@ zh:
   career-profile:
       title: 關於我
       summary: >
-        資深後端與平台工程師，具備 6 年以上在 AWS 與 EKS 上建置雲原生後端系統、平台能力與正式環境基礎設施的經驗。曾維運支撐超過 250 萬用戶、峰值約 1 萬 RPS 的高流量服務，專注於身份驗證、API 設計、效能、可靠性、CI/CD 與可觀測性。代表成果包含核心 service endpoint latency 最多降低 77%、吞吐量從 300 提升至 500 RPS、排除高流量下的 database bottleneck，並將 CI/CD pipeline 從 40 分鐘縮短至 20～25 分鐘。
+        資深後端 / 平台工程師，具備 6 年以上在 AWS 與 EKS 上設計並建置雲原生後端系統、shared platform capabilities 與 production infrastructure 的經驗。曾維運支撐超過 250 萬用戶、峰值約 1 萬 RPS 的高流量服務，專注於 system design、authentication、authorization、API design、performance、reliability、CI/CD 與 observability。
+
+        擅長將模糊業務需求、production bottlenecks 與重複性整合工作轉化為可擴展的工程系統：設計 reusable authentication 與 service bootstrap patterns 並推廣至約 20 個後端服務、核心服務 latency 最多降低 77%、throughput 從 300 提升至 500 RPS、排除高流量 database bottlenecks，並將 CI/CD pipeline 從 40 分鐘縮短至 20～25 分鐘。
 
   experiences:
       title: 經歷
@@ -277,12 +285,13 @@ zh:
         company: |
           統一超商股份有限公司（PCSC）, [入口網站](https://www.uniopen.com), [APP](https://www.uniopen.com/app)
         details: |
-            - 建置並維運高流量 web portal 與 mobile app 的後端與平台服務，系統部署於 AWS + EKS，支援超過 250 萬用戶、峰值約 1 萬 RPS，並承接活動與推播帶來約 20 萬用戶瞬時湧入的登入後流量情境。
-            - 從 0 到 1 建置公司級登入後授權核心服務，負責 API 存取驗證、token handling 與身份生命週期管理，支撐核心會員與授權流程。
-            - 透過 reusable authentication SDK 與 API service template 標準化 OIDC/SSO 整合流程，支援約 20 個後端服務完成初始整合，將整合與服務建置時間降低約 80%。
-            - 主導登入後核心授權服務的效能基準測試、壓測與調校，使關鍵 service endpoint latency 最多降低 77%，並將吞吐量從 300 提升至 500 RPS，改善高峰期使用體驗。
-            - 排查並解決流量尖峰下的複雜正式環境事故，將 DB CPU 從 85% 以上降至 20～30%，並消除 timeout，降低登入依賴流程的營運風險。
-            - 標準化 Spring Boot 與 Python 後端服務的 IaC-based CI/CD、CloudWatch 儀表板/警示、集中式 logging 與 audit logging，將 pipeline 時間從 40 分鐘縮短至 20～25 分鐘，並將 incident 調查時間降低約 30%。
+            - 負責高流量 web portal 與 mobile app 的後端與平台服務，系統部署於 AWS + EKS，支援超過 250 萬用戶、峰值約 1 萬 RPS，並在活動與推播帶來約 20 萬用戶流量尖峰時維持穩定的 authenticated user journeys。
+            - 從 0 到 1 設計並建置公司級登入後授權核心服務，定義 service boundaries、API access validation、token handling 與 identity lifecycle management，支撐 business-critical membership 與 authorization flows。
+            - 設計 reusable OIDC/SSO integration patterns，透過 authentication SDKs 與 API service templates 推廣至約 20 個後端服務，將 authentication integration 與 service bootstrap effort 降低約 80%，並提升跨團隊整合一致性。
+            - 主導 authenticated authorization services 的 performance baselining、load testing 與 tuning，使 critical endpoint latency 最多降低 77%，並將 throughput 從 300 提升至 500 RPS。
+            - 排查並解決流量尖峰下的複雜 multi-service production incident，將 DB CPU 從 85% 以上降至 20～30%，消除 timeouts，並降低 login-dependent flows 的營運風險。
+            - 標準化 Spring Boot 與 Python 後端服務的 IaC-based CI/CD workflows、CloudWatch dashboards/alarms、centralized logging 與 audit logging，將 pipeline time 從 40 分鐘縮短至 20～25 分鐘，並將 incident investigation time 降低約 30%。
+            - 設計並維運 web 與 mobile entry points 共用的 shared redirect service，涵蓋 routing rules、whitelist validation、SSO handoff、Kafka-based asynchronous event delivery 與 click-tracking flows，支援數百個 pages、數十個 brands 與數百萬 product cards。
             - **技術**:
               - 語言: Python, Java
               - 框架: FastAPI, Spring Boot
@@ -292,13 +301,14 @@ zh:
               - 測試與效能: k6, Vegeta
 
         details_print: |
-            - 建置並維運高流量 web portal 與 mobile app 的後端與平台服務，系統部署於 AWS + EKS，支援超過 250 萬用戶、峰值約 1 萬 RPS，並承接活動與推播帶來約 20 萬用戶瞬時湧入的登入後流量情境。
-            - 從 0 到 1 建置公司級登入後授權核心服務，負責 API 存取驗證、token handling 與身份生命週期管理，支撐核心會員與授權流程。
-            - 透過 reusable authentication SDK 與 API service template 標準化 OIDC/SSO 整合流程，支援約 20 個後端服務完成初始整合，將整合與服務建置時間降低約 80%。
-            - 主導登入後核心授權服務的效能基準測試、壓測與調校，使關鍵 service endpoint latency 最多降低 77%，並將吞吐量從 300 提升至 500 RPS，改善高峰期使用體驗。
-            - 排查並解決流量尖峰下的複雜正式環境事故，將 DB CPU 從 85% 以上降至 20～30%，並消除 timeout，降低登入依賴流程的營運風險。
-            - 標準化 Spring Boot 與 Python 後端服務的 IaC-based CI/CD、CloudWatch 儀表板/警示、集中式 logging 與 audit logging，將 pipeline 時間從 40 分鐘縮短至 20～25 分鐘，並將 incident 調查時間降低約 30%。
-            - **技術**: Python/Java, FastAPI/Spring Boot, PostgreSQL/Redis/DynamoDB, AWS EKS/SQS/Lambda/CloudWatch, Terraform/Helm, Kubernetes/Istio, k6/Vegeta.
+            - 負責高流量 web portal 與 mobile app 的後端與平台服務，系統部署於 AWS + EKS，支援超過 250 萬用戶、峰值約 1 萬 RPS，並在活動與推播帶來約 20 萬用戶流量尖峰時維持穩定的 authenticated user journeys。
+            - 從 0 到 1 設計並建置公司級登入後授權核心服務，定義 service boundaries、API access validation、token handling 與 identity lifecycle management，支撐 business-critical membership 與 authorization flows。
+            - 設計 reusable OIDC/SSO integration patterns，透過 authentication SDKs 與 API service templates 推廣至約 20 個後端服務，將 authentication integration 與 service bootstrap effort 降低約 80%，並提升跨團隊整合一致性。
+            - 主導 authenticated authorization services 的 performance baselining、load testing 與 tuning，使 critical endpoint latency 最多降低 77%，並將 throughput 從 300 提升至 500 RPS。
+            - 排查並解決流量尖峰下的複雜 multi-service production incident，將 DB CPU 從 85% 以上降至 20～30%，消除 timeouts，並降低 login-dependent flows 的營運風險。
+            - 標準化 Spring Boot 與 Python 後端服務的 IaC-based CI/CD workflows、CloudWatch dashboards/alarms、centralized logging 與 audit logging，將 pipeline time 從 40 分鐘縮短至 20～25 分鐘，並將 incident investigation time 降低約 30%。
+            - 設計並維運 web 與 mobile entry points 共用的 shared redirect service，涵蓋 routing rules、whitelist validation、SSO handoff、Kafka-based asynchronous event delivery 與 click-tracking flows，支援數百個 pages、數十個 brands 與數百萬 product cards。
+            - **技術**: Python/Java, FastAPI/Spring Boot, PostgreSQL/Redis/DynamoDB, AWS EKS/SQS/Lambda/CloudWatch, Terraform/Helm, Kubernetes/Istio, Kafka, k6/Vegeta.
 
       - role: 後端軟體工程師
         time: 2020/04 - 2023/11
@@ -421,6 +431,8 @@ zh:
             - name: Performance Tuning
         - name: Architecture & Integration
           items:
+            - name: System Design
+            - name: Service Boundary Design
             - name: Distributed Systems
             - name: Event-driven Workflows
             - name: Kafka
