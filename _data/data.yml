@@ -62,7 +62,7 @@ education:
 
 career-profile:
     title: About Me
-    summary: >
+    summary: |
       Senior Backend / Platform Engineer with 6+ years of experience designing and building cloud-native backend systems, shared platform capabilities, and production infrastructure on AWS and EKS. Experienced in operating high-traffic services serving 2.5M+ users and ~10K peak RPS, with deep focus on system design, authentication, authorization, API design, performance, reliability, CI/CD, and observability.
 
       Strong track record of turning ambiguous business requirements, production bottlenecks, and repeated integration work into scalable engineering systems: designed reusable authentication and service bootstrap patterns across ~20 backend services, reduced critical service latency by up to 77%, improved throughput from 300 to 500 RPS, resolved high-traffic database bottlenecks, and reduced CI/CD pipeline time from 40 minutes to 20–25 minutes.
