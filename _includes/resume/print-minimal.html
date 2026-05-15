@@ -180,7 +180,21 @@
     font-weight: 700;
   }
 
-  .resume-bullet {
+  .experience-details {
+    margin: 0;
+  }
+
+  .experience-details p {
+    margin: 0 0 1.2mm 0;
+  }
+
+  .experience-details ul,
+  .experience-details ol {
+    margin: 0 0 1.2mm 0;
+    padding: 0 0 0 4mm;
+  }
+
+  .experience-details li {
     margin: 0 0 1.2mm 0;
     orphans: 2;
     widows: 2;
@@ -292,16 +306,11 @@
           {{ experience.company | markdownify | strip_html | strip }}
         </div>
         {% assign detail_source = experience.details_print | default: experience.details %}
-        {% assign detail_lines = detail_source | newline_to_br | split: '<br />' %}
-        {% for detail_line in detail_lines %}
-          {% assign clean_line = detail_line | strip %}
-          {% if clean_line != '' %}
-            {% assign normalized_line = clean_line | remove_first: '- ' | strip %}
-            {% if normalized_line != '' %}
-              <div class="resume-bullet">- {{ normalized_line | markdownify | strip_html | strip }}</div>
-            {% endif %}
-          {% endif %}
-        {% endfor %}
+        {% if detail_source %}
+          <div class="experience-details">
+            {{ detail_source | markdownify }}
+          </div>
+        {% endif %}
       </div>
     {% endfor %}
   </section>
