@@ -9,9 +9,13 @@ sidebar:
 
     # Profile information
     name: ChiaMin Liu (liuliu)
+    print_name: Chia-Min Liu
     tagline: Senior Software Engineer, Backend & Platform
+    print_tagline: Senior Backend / Platform Engineer
     avatar: avatar.jpg
     qrcode: qrcode.png
+
+    location: Taipei, Taiwan
 
     # Sidebar links
     email: liuliugit@gmail.com
@@ -62,6 +66,7 @@ education:
 
 career-profile:
     title: About Me
+    print_title: Summary
     summary: |
       Senior Backend / Platform Engineer with 6+ years of experience designing and building cloud-native backend systems, shared platform capabilities, and production infrastructure on AWS and EKS. Experienced in operating high-traffic services serving 2.5M+ users and ~10K peak RPS, with deep focus on system design, authentication, authorization, API design, performance, reliability, CI/CD, and observability.
 
@@ -91,13 +96,13 @@ experiences:
             - Testing/Perf: k6, Vegeta
 
         details_print: |
-          - Owned backend and platform services for a high-traffic web portal and mobile app serving 2.5M+ users and ~10K peak RPS on AWS + EKS, ensuring reliable authenticated user journeys during campaign and push-notification traffic spikes of ~200K users.
-          - Designed and built the company’s core post-login authorization service from 0 to 1, defining service boundaries, API access validation, token handling, and identity lifecycle management for business-critical membership and authorization flows.
-          - Designed reusable OIDC/SSO integration patterns through authentication SDKs and API service templates adopted by ~20 backend services, reducing authentication integration and service bootstrap effort by ~80% while improving consistency across teams.
-          - Led performance baselining, load testing, and tuning for authenticated authorization services, reducing critical endpoint latency by up to 77% and increasing throughput from 300 to 500 RPS.
-          - Investigated and resolved a complex multi-service production incident during traffic spikes, reducing DB CPU from >85% to 20–30%, eliminating timeouts, and lowering operational risk for login-dependent flows.
-          - Standardized IaC-based CI/CD workflows, CloudWatch dashboards/alarms, centralized logging, and audit logging across Spring Boot and Python backend services, cutting pipeline time from 40 minutes to 20–25 minutes and reducing incident investigation time by ~30%.
-          - Designed and operated a shared redirect service across web and mobile entry points, covering routing rules, whitelist validation, SSO handoff, Kafka-based asynchronous event delivery, and click-tracking flows for hundreds of pages, dozens of brands, and millions of product cards.
+          - Owned backend and platform services for a high-traffic web portal and mobile app serving 2.5M+ users and ~10K peak RPS on AWS + EKS, keeping membership login, campaign participation, and app entry flows stable during push-notification traffic spikes of ~200K users.
+          - Built a central post-login authorization service from 0 to 1 to protect membership, campaign, and partner-service access flows, standardizing API access validation, token handling, service boundaries, and identity lifecycle management.
+          - Reduced cross-team delivery cost for new authenticated services by designing reusable OIDC/SSO integration patterns, authentication SDKs, and API service templates adopted by ~20 backend services, cutting integration and bootstrap effort by ~80%.
+          - Improved customer-facing response time and traffic capacity for authenticated authorization flows through performance baselining, load testing, and tuning, reducing critical endpoint latency by up to 77% and increasing throughput from 300 to 500 RPS.
+          - Protected login-dependent membership and campaign flows during traffic spikes by resolving a complex multi-service production incident, reducing DB CPU from >85% to 20–30% and eliminating timeouts.
+          - Improved release safety, auditability, and incident response across Spring Boot and Python backend services by standardizing IaC-based CI/CD workflows, CloudWatch dashboards/alarms, centralized logging, and audit logging, cutting pipeline time from 40 minutes to 20–25 minutes and reducing investigation time by ~30%.
+          - Designed and operated a shared redirect service for web and mobile entry points, supporting campaign routing, brand traffic, SSO handoff, Kafka-based asynchronous event delivery, and click tracking across hundreds of pages, dozens of brands, and millions of product cards.
           - **Tech**: Python/Java, FastAPI/Spring Boot, PostgreSQL/Redis/DynamoDB, AWS EKS/SQS/Lambda/CloudWatch, Terraform/Helm, Kubernetes/Istio, Kafka, k6/Vegeta.
 
       - role: Backend Software Engineer
@@ -109,7 +114,7 @@ experiences:
           - Upgraded a Laravel monolith from v7 to v10 in 2 months through incremental migration, compatibility validation, and unit-test coverage, reducing legacy framework risk and improving API p99 latency by 20%.
           - Resolved critical MySQL performance bottlenecks through request-path profiling, EXPLAIN analysis, index tuning, and schema refactoring, reducing hot-path query time from 10–20 seconds to ~1 second and improving key workflow responsiveness.
           - Operated the AWS production stack across ALB, EC2, and RDS, covering CI/CD, autoscaling, CloudWatch dashboards/alarms, load testing, release verification, and post-release monitoring to improve availability and release safety.
-          - Improved monitoring and incident response with Slack alerting, reducing MTTD by ~80% and shortening issue detection time for user-facing and operational flows.
+          - Improved monitoring and incident response with Slack alerting, reducing MTTD by ~80% and shortening issue detection time for payment, learning, and internal operational flows.
           - Built asynchronous backend workflows with SQS + Lambda for LINE notifications and personalized recommendations, contributing to repeat engagement initiatives that improved retention by ~20%.
           - **Tech**:
             - Languages: PHP, JavaScript, Python
@@ -120,12 +125,12 @@ experiences:
             - Testing: PHPUnit
 
         details_print: |
-          - Owned backend APIs for a 100K+ user online learning platform with ~4K DAU, supporting revenue- and retention-critical workflows across cart, payment, learning progress, membership, internal admin workflows, revenue sharing, and coupon systems.
-          - Upgraded a Laravel monolith from v7 to v10 in 2 months through incremental migration, compatibility validation, and unit-test coverage, reducing legacy framework risk and improving API p99 latency by 20%.
-          - Resolved critical MySQL performance bottlenecks through request-path profiling, EXPLAIN analysis, index tuning, and schema refactoring, reducing hot-path query time from 10–20 seconds to ~1 second and improving key workflow responsiveness.
-          - Operated the AWS production stack across ALB, EC2, and RDS, covering CI/CD, autoscaling, CloudWatch dashboards/alarms, load testing, release verification, and post-release monitoring to improve availability and release safety.
-          - Improved monitoring and incident response with Slack alerting, reducing MTTD by ~80% and shortening issue detection time for user-facing and operational flows.
-          - Built asynchronous backend workflows with SQS + Lambda for LINE notifications and personalized recommendations, increasing repeat engagement and improving retention by ~20%.
+          - Owned backend APIs for a 100K+ user online learning platform with ~4K DAU, supporting revenue conversion, course consumption, user retention, and internal operations across cart, payment, learning progress, membership, revenue sharing, and coupon systems.
+          - Upgraded a Laravel monolith from v7 to v10 in 2 months without disrupting existing business operations, reducing legacy framework maintenance and security risk while improving API p99 latency by ~20%.
+          - Improved database performance for high-frequency purchase, learning, and back-office workflows through request-path profiling, EXPLAIN analysis, index tuning, and schema refactoring, reducing key query time from 10–20 seconds to ~1 second.
+          - Improved release safety and service stability under traffic peaks by operating the AWS production stack across ALB, EC2, and RDS, covering CI/CD, autoscaling, CloudWatch dashboards/alarms, load testing, release verification, and post-release monitoring.
+          - Improved monitoring and incident response with Slack alerting, reducing MTTD by ~80% and shortening issue detection time for payment, learning, and internal operational flows.
+          - Built asynchronous backend workflows with SQS + Lambda for LINE notifications and personalized recommendations, supporting user revisit, course engagement, and personalized outreach while contributing to a ~20% retention improvement.
 
 #      - role: Intern & Software Engineer
 #        time: Nov 2019 - Mar 2020, Sep 2018 - Jul 2019
@@ -261,9 +266,14 @@ footer: >
     Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
 
 zh:
+  print_labels:
+      summary: 摘要
   sidebar:
       name: 劉佳旻（劉劉）
+      print_name: 劉佳旻（Chia-Min Liu）
       tagline: 資深後端 / 平台工程師
+      print_tagline: 資深後端 / 平台工程師
+      location: 台北，台灣
   education:
       title: 學歷
       info:
@@ -301,13 +311,13 @@ zh:
               - 測試與效能: k6, Vegeta
 
         details_print: |
-            - 負責高流量 web portal 與 mobile app 的後端與平台服務，系統部署於 AWS + EKS，支援超過 250 萬用戶、峰值約 1 萬 RPS，並在活動與推播帶來約 20 萬用戶流量尖峰時維持穩定的 authenticated user journeys。
-            - 從 0 到 1 設計並建置公司級登入後授權核心服務，定義 service boundaries、API access validation、token handling 與 identity lifecycle management，支撐 business-critical membership 與 authorization flows。
-            - 設計 reusable OIDC/SSO integration patterns，透過 authentication SDKs 與 API service templates 推廣至約 20 個後端服務，將 authentication integration 與 service bootstrap effort 降低約 80%，並提升跨團隊整合一致性。
-            - 主導 authenticated authorization services 的 performance baselining、load testing 與 tuning，使 critical endpoint latency 最多降低 77%，並將 throughput 從 300 提升至 500 RPS。
-            - 排查並解決流量尖峰下的複雜 multi-service production incident，將 DB CPU 從 85% 以上降至 20～30%，消除 timeouts，並降低 login-dependent flows 的營運風險。
-            - 標準化 Spring Boot 與 Python 後端服務的 IaC-based CI/CD workflows、CloudWatch dashboards/alarms、centralized logging 與 audit logging，將 pipeline time 從 40 分鐘縮短至 20～25 分鐘，並將 incident investigation time 降低約 30%。
-            - 設計並維運 web 與 mobile entry points 共用的 shared redirect service，涵蓋 routing rules、whitelist validation、SSO handoff、Kafka-based asynchronous event delivery 與 click-tracking flows，支援數百個 pages、數十個 brands 與數百萬 product cards。
+            - 負責高流量 web portal 與 mobile app 的後端與平台服務，系統部署於 AWS + EKS，支援超過 250 萬用戶、峰值約 1 萬 RPS，並在活動與推播帶來約 20 萬用戶流量尖峰時維持會員登入、活動參與與 APP 入口流程穩定。
+            - 從 0 到 1 建置中央化登入後授權服務，保護會員、活動與合作服務存取流程，並標準化 API access validation、token handling、service boundaries 與 identity lifecycle management。
+            - 降低新 authenticated services 的跨團隊交付成本，設計 reusable OIDC/SSO integration patterns、authentication SDKs 與 API service templates，推廣至約 20 個後端服務，將整合與 bootstrap effort 降低約 80%。
+            - 改善登入後授權流程的使用者反應速度與流量承載能力，主導 performance baselining、load testing 與 tuning，使 critical endpoint latency 最多降低 77%，並將 throughput 從 300 提升至 500 RPS。
+            - 在流量尖峰期間保護依賴登入的會員與活動流程，排查並解決複雜 multi-service production incident，將 DB CPU 從 85% 以上降至 20～30%，並消除 timeouts。
+            - 提升 Spring Boot 與 Python 後端服務的發版安全性、稽核能力與 incident response 效率，標準化 IaC-based CI/CD workflows、CloudWatch dashboards/alarms、centralized logging 與 audit logging，將 pipeline time 從 40 分鐘縮短至 20～25 分鐘，並將 investigation time 降低約 30%。
+            - 設計並維運 web 與 mobile entry points 共用的 shared redirect service，支援活動導流、品牌流量、SSO handoff、Kafka-based asynchronous event delivery 與 click tracking，涵蓋數百個 pages、數十個 brands 與數百萬 product cards。
             - **技術**: Python/Java, FastAPI/Spring Boot, PostgreSQL/Redis/DynamoDB, AWS EKS/SQS/Lambda/CloudWatch, Terraform/Helm, Kubernetes/Istio, Kafka, k6/Vegeta.
 
       - role: 後端軟體工程師
@@ -330,12 +340,12 @@ zh:
               - 測試: PHPUnit
 
         details_print: |
-            - 負責 10 萬以上用戶、約 4K DAU 線上學習平台的後端 APIs，支撐購物車、金流、學習歷程、會員功能、內部管理流程、分潤與優惠券等影響營收與留存的核心流程。
-            - 完成 Laravel monolith 從 v7 升級至 v10，歷時 2 個月並透過 incremental migration、相容性驗證與 unit-test coverage，降低 legacy framework 風險並使 API p99 latency 改善 20%。
-            - 透過 request-path profiling、EXPLAIN analysis、index tuning 與 schema refactoring 解決 MySQL 關鍵效能瓶頸，將 hot-path query time 從 10～20 秒降至約 1 秒，改善核心流程反應速度。
-            - 維運 AWS production stack（ALB / EC2 / RDS），涵蓋 CI/CD、自動擴縮、CloudWatch dashboards/alarms、壓測、release verification 與 post-release monitoring，提升可用性與發版安全性。
-            - 導入 Slack alerting 與 incident response 流程，將 MTTD 降低約 80%，縮短 user-facing 與營運流程的異常發現時間。
-            - 以 SQS + Lambda 建立非同步後端流程，串接 LINE notifications 與 personalized recommendations，提升回訪與互動效果，並帶動約 20% 的留存成長。
+            - 負責 10 萬以上用戶、約 4K DAU 線上學習平台的後端 APIs，支撐購物車、金流、學習歷程、會員、內部營運、分潤與優惠券等直接影響營收轉換、課程使用與用戶留存的核心流程。
+            - 在不影響既有營運流程的前提下，於 2 個月內完成 Laravel monolith 從 v7 升級至 v10，降低 legacy framework 維護與安全風險，並使 API p99 latency 改善約 20%。
+            - 改善購買、學習與後台營運等高頻流程的資料庫效能，透過 request-path profiling、EXPLAIN analysis、index tuning 與 schema refactoring，將關鍵查詢時間從 10～20 秒降至約 1 秒。
+            - 提升高峰流量下的發版安全性與服務穩定性，維運 AWS production stack（ALB / EC2 / RDS），涵蓋 CI/CD、自動擴縮、CloudWatch dashboards/alarms、壓測、release verification 與 post-release monitoring。
+            - 導入 Slack alerting 與 incident response 流程，將 MTTD 降低約 80%，縮短付款、學習與後台營運流程的異常發現時間，降低關鍵業務流程中斷風險。
+            - 以 SQS + Lambda 建立非同步後端流程，串接 LINE notifications 與 personalized recommendations，支援用戶回訪、課程互動與個人化觸達，並參與推動約 20% 的留存改善成果。
 
   certifications:
       title: 證照

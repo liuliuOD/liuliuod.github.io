@@ -1,0 +1,354 @@
+{% assign resume_data_key = page.resume_lang | default: "default" %}
+{% assign resume_data = site.data.data[resume_data_key] | default: site.data.data %}
+
+{% assign base_sidebar = site.data.data.sidebar %}
+{% assign localized_sidebar = resume_data.sidebar | default: base_sidebar %}
+
+{% assign print_name = localized_sidebar.print_name | default: localized_sidebar.name | default: base_sidebar.print_name | default: base_sidebar.name %}
+{% assign print_tagline = localized_sidebar.print_tagline | default: localized_sidebar.tagline | default: base_sidebar.print_tagline | default: base_sidebar.tagline %}
+{% assign print_location = localized_sidebar.location | default: base_sidebar.location %}
+
+{% assign email = localized_sidebar.email | default: base_sidebar.email %}
+{% assign phone = localized_sidebar.phone | default: base_sidebar.phone %}
+{% assign website = localized_sidebar.website | default: base_sidebar.website %}
+{% assign linkedin = localized_sidebar.linkedin | default: base_sidebar.linkedin %}
+{% assign github = localized_sidebar.github | default: base_sidebar.github %}
+{% assign resume_link = localized_sidebar.resume | default: base_sidebar.resume %}
+
+{% assign experience_list = resume_data.experiences.info | default: resume_data.experiences.assignments %}
+{% assign education_list = resume_data.education.info | default: resume_data.education %}
+{% assign skill_list = resume_data.skills.categories | default: resume_data.skills.toolset %}
+
+{% assign is_zh = false %}
+{% if resume_data_key == "zh" %}
+  {% assign is_zh = true %}
+{% endif %}
+
+{% assign section_summary_title = resume_data.print_labels.summary | default: resume_data["career-profile"].print_title | default: resume_data["career-profile"].title | default: "Summary" %}
+{% assign section_experience_title = resume_data.experiences.print_title | default: resume_data.experiences.title | default: "Experience" %}
+{% assign section_skills_title = resume_data.skills.print_title | default: resume_data.skills.title | default: "Skills" %}
+{% assign section_education_title = resume_data.education.print_title | default: resume_data.education.title | default: "Education" %}
+{% assign section_certifications_title = resume_data.certifications.print_title | default: resume_data.certifications.title | default: "Certifications" %}
+
+{% assign certifications_list = resume_data.certifications.list %}
+
+<style>
+  :root {
+    --page-width: 210mm;
+    --page-padding: 12mm;
+    --text-color: #111;
+    --muted-color: #333;
+    --border-color: #d8d8d8;
+  }
+
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    background: #fff;
+  }
+
+  @page {
+    size: A4;
+    margin: 0;
+  }
+
+  body {
+    color: var(--text-color);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+    line-height: 1.28;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  body[data-lang="zh"] {
+    font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", "Heiti TC", Arial, Helvetica, sans-serif;
+    letter-spacing: 0.1px;
+    line-height: 1.34;
+  }
+
+  @media screen {
+    body {
+      background: #f2f2f2;
+    }
+  }
+
+  .resume-page {
+    width: var(--page-width);
+    max-width: var(--page-width);
+    min-height: 297mm;
+    margin: 16px auto;
+    padding: var(--page-padding);
+    background: #fff;
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.15);
+  }
+
+  @media print {
+    .resume-page {
+      margin: 0;
+      box-shadow: none;
+    }
+  }
+
+  .resume-page,
+  .resume-page * {
+    color: var(--text-color);
+    text-shadow: none !important;
+  }
+
+  .resume-page a {
+    color: var(--text-color);
+    text-decoration: underline;
+    text-underline-offset: 1px;
+  }
+
+  .resume-header {
+    margin: 0 0 5mm 0;
+    padding: 0 0 3mm 0;
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  .resume-name {
+    margin: 0 0 1mm 0;
+    font-size: 18pt;
+    font-weight: 700;
+    line-height: 1.15;
+  }
+
+  body[data-lang="zh"] .resume-name {
+    font-size: 17pt;
+  }
+
+  .resume-title {
+    margin: 0 0 1.5mm 0;
+    font-size: 11pt;
+    font-weight: 700;
+  }
+
+  .resume-contact {
+    font-size: 9.5pt;
+    line-height: 1.25;
+    word-break: break-word;
+  }
+
+  .resume-section-heading {
+    margin: 5mm 0 2mm 0;
+    padding: 0 0 1mm 0;
+    border-bottom: 1px solid var(--border-color);
+    font-size: 12pt;
+    font-weight: 700;
+    line-height: 1.2;
+    break-after: avoid;
+    page-break-after: avoid;
+    display: block !important;
+    position: static !important;
+    float: none !important;
+    clear: both !important;
+  }
+
+  .summary {
+    margin: 0 0 3mm 0;
+  }
+
+  .summary p {
+    margin: 0 0 2mm 0;
+  }
+
+  .experience-item {
+    margin: 0 0 4mm 0;
+    break-inside: auto;
+    page-break-inside: auto;
+  }
+
+  .experience-role-line {
+    margin: 0 0 1mm 0;
+    font-weight: 700;
+  }
+
+  .experience-time {
+    font-weight: 400;
+    color: var(--muted-color) !important;
+  }
+
+  .experience-company {
+    margin: 0 0 1.5mm 0;
+    font-weight: 700;
+  }
+
+  .resume-bullet {
+    margin: 0 0 1.2mm 0;
+    orphans: 2;
+    widows: 2;
+  }
+
+  .skill-group {
+    margin: 0 0 2.5mm 0;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .skill-title {
+    margin: 0 0 0.8mm 0;
+    font-weight: 700;
+  }
+
+  .skill-items {
+    margin: 0;
+  }
+
+  .education-item {
+    margin: 0 0 2mm 0;
+  }
+
+  .education-school {
+    margin: 0 0 1mm 0;
+    font-weight: 700;
+  }
+
+  .education-degree {
+    margin: 0;
+    color: var(--muted-color) !important;
+  }
+
+  .cert-item {
+    margin: 0 0 2mm 0;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .cert-name {
+    margin: 0 0 0.8mm 0;
+    font-weight: 700;
+  }
+
+  .cert-meta {
+    margin: 0;
+    color: var(--muted-color) !important;
+  }
+</style>
+
+<div class="resume-page">
+  <header class="resume-header">
+    <div class="resume-name">{{ print_name }}</div>
+    {% if print_tagline %}
+      <div class="resume-title">{{ print_tagline }}</div>
+    {% endif %}
+    <div class="resume-contact">
+      {% if print_location %}{{ print_location }}{% endif %}
+      {% if print_location and email %} | {% endif %}
+      {% if email %}
+        <a href="mailto:{{ email }}">{{ email }}</a>
+      {% endif %}
+      {% if phone %}
+        {% if print_location or email %} | {% endif %}
+        {{ phone }}
+      {% endif %}
+      {% if linkedin %}
+        {% if print_location or email or phone %} | {% endif %}
+        <a href="https://www.linkedin.com/in/{{ linkedin }}">LinkedIn</a>
+      {% endif %}
+      {% if github %}
+        {% if print_location or email or phone or linkedin %} | {% endif %}
+        <a href="https://github.com/{{ github }}">GitHub</a>
+      {% endif %}
+      {% if resume_link %}
+        {% if print_location or email or phone or linkedin or github %} | {% endif %}
+        <a href="{{ resume_link }}">Portfolio</a>
+      {% elsif website %}
+        {% if print_location or email or phone or linkedin or github %} | {% endif %}
+        {% assign website_url = website %}
+        {% unless website_url contains "://" %}
+          {% assign website_url = "https://" | append: website_url %}
+        {% endunless %}
+        <a href="{{ website_url }}">{{ website }}</a>
+      {% endif %}
+    </div>
+  </header>
+
+  <section>
+    <div class="resume-section-heading">
+      {% if is_zh %}{{ section_summary_title }}{% else %}{{ section_summary_title | upcase }}{% endif %}
+    </div>
+    <div class="summary">
+      {{ resume_data["career-profile"].summary | markdownify }}
+    </div>
+  </section>
+
+  <section>
+    <div class="resume-section-heading">
+      {% if is_zh %}{{ section_experience_title }}{% else %}{{ section_experience_title | upcase }}{% endif %}
+    </div>
+    {% for experience in experience_list %}
+      <div class="experience-item">
+        <div class="experience-role-line">
+          {{ experience.role }} <span class="experience-time">| {{ experience.time }}</span>
+        </div>
+        <div class="experience-company">
+          {{ experience.company | markdownify | strip_html | strip }}
+        </div>
+        {% assign detail_source = experience.details_print | default: experience.details %}
+        {% assign detail_lines = detail_source | newline_to_br | split: '<br />' %}
+        {% for detail_line in detail_lines %}
+          {% assign clean_line = detail_line | strip %}
+          {% if clean_line != '' %}
+            {% assign normalized_line = clean_line | remove_first: '- ' | strip %}
+            {% if normalized_line != '' %}
+              <div class="resume-bullet">- {{ normalized_line | markdownify | strip_html | strip }}</div>
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+      </div>
+    {% endfor %}
+  </section>
+
+  <section>
+    <div class="resume-section-heading">
+      {% if is_zh %}{{ section_skills_title }}{% else %}{{ section_skills_title | upcase }}{% endif %}
+    </div>
+    {% for skill_category in skill_list %}
+      <div class="skill-group">
+        <div class="skill-title">{{ skill_category.name }}</div>
+        <div class="skill-items">
+          {% for skill in skill_category.items %}
+            {{ skill.name }}{% unless forloop.last %}, {% endunless %}
+          {% endfor %}
+        </div>
+      </div>
+    {% endfor %}
+  </section>
+
+  {% if certifications_list and certifications_list.size > 0 %}
+    <section>
+      <div class="resume-section-heading">
+        {% if is_zh %}{{ section_certifications_title }}{% else %}{{ section_certifications_title | upcase }}{% endif %}
+      </div>
+      {% for cert in certifications_list %}
+        <div class="cert-item">
+          <div class="cert-name">{{ cert.name }}</div>
+          <div class="cert-meta">
+            {% if cert.organization %}{{ cert.organization }}{% endif %}
+            {% if cert.organization and cert.start %} | {% endif %}
+            {% if cert.start %}{{ cert.start }}{% endif %}{% if cert.end %}–{{ cert.end }}{% endif %}
+          </div>
+        </div>
+      {% endfor %}
+    </section>
+  {% endif %}
+
+  <section>
+    <div class="resume-section-heading">
+      {% if is_zh %}{{ section_education_title }}{% else %}{{ section_education_title | upcase }}{% endif %}
+    </div>
+    {% for education in education_list %}
+      <div class="education-item">
+        <div class="education-school">{{ education.university }}</div>
+        <div class="education-degree">{{ education.degree }}{% if education.time %} | {{ education.time }}{% endif %}</div>
+      </div>
+    {% endfor %}
+  </section>
+</div>

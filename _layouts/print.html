@@ -6,7 +6,15 @@
 <!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
 <!--[if !IE]><!-->
-<html lang="en">
+{% assign html_lang = page.html_lang %}
+{% if html_lang == nil %}
+  {% if page.resume_lang == "zh" %}
+    {% assign html_lang = "zh-Hant" %}
+  {% else %}
+    {% assign html_lang = "en" %}
+  {% endif %}
+{% endif %}
+<html lang="{{ html_lang }}">
 <!--<![endif]-->
 {% include_relative _includes/head.html %}
 <style>
@@ -23,7 +31,7 @@
   }
 </style>
 
-<body>
+<body data-lang="{% if page.resume_lang == "zh" %}zh{% else %}en{% endif %}">
   <div class="main-wrapper">{{ content }}</div>
 
   {% include_relative _includes/resume/scripts.html %}
