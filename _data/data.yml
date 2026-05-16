@@ -68,9 +68,9 @@ career-profile:
     title: About Me
     print_title: Summary
     summary: |
-      Senior Backend / Platform Engineer with 6+ years of experience designing and building cloud-native backend systems, shared platform capabilities, and production infrastructure on AWS and EKS. Experienced in operating high-traffic services serving 3.5M+ users and ~10K peak RPS, with deep focus on system design, authentication, authorization, API design, performance, reliability, CI/CD, and observability.
+      I help product and engineering teams turn ambiguous requirements, cross-role communication gaps, and production constraints into practical backend / platform direction. My strength is identifying the real needs behind written or verbal requests, clarifying responsibilities across roles, and translating technical trade-offs into language that Product, UED, PM, Frontend, Backend, Mobile, and Platform stakeholders can act on.
 
-      Strong track record of turning ambiguous business requirements, production bottlenecks, and repeated integration work into scalable engineering systems: designed reusable authentication and service bootstrap patterns across ~20 backend services, reduced critical service latency by up to 77%, improved throughput from 300 to 500 RPS, resolved high-traffic database bottlenecks, and reduced CI/CD pipeline time from 40 minutes to 20–25 minutes.
+      As a Senior Backend / Platform Engineer, I can own backend services from system design to production operation: defining service boundaries, designing authentication / authorization and API flows, standardizing reusable integration patterns, improving latency and reliability, and strengthening CI/CD and observability. I work best in environments that need both technical direction and team alignment, where backend architecture, platform capability, cross-team execution, and production reliability must move together.
 
 experiences:
     title: Experiences
@@ -281,9 +281,9 @@ zh:
   career-profile:
       title: 關於我
       summary: >
-        資深後端 / 平台工程師，具備 6 年以上在 AWS 與 EKS 上設計並建置雲原生後端系統、shared platform capabilities 與 production infrastructure 的經驗。曾維運支撐超過 350 萬用戶、峰值約 1 萬 RPS 的高流量服務，專注於 system design、authentication、authorization、API design、performance、reliability、CI/CD 與 observability。
+        我擅長協助產品與工程團隊釐清模糊需求、跨角色溝通落差與 production constraints，並轉化為可落地的後端與平台技術方向。我的強項是從文字與口語溝通中抓出實際需求，理解 Product、UED、PM、Frontend、Backend、Mobile APP 與 Platform 等不同角色的職責與痛點，釐清誤解、分析方案取捨，並用各角色容易理解的方式推動共識。
 
-        擅長將模糊業務需求、production bottlenecks 與重複性整合工作轉化為可擴展的工程系統：設計 reusable authentication 與 service bootstrap patterns 並推廣至約 20 個後端服務、核心服務 latency 最多降低 77%、throughput 從 300 提升至 500 RPS、排除高流量 database bottlenecks，並將 CI/CD pipeline 從 40 分鐘縮短至 20～25 分鐘。
+        作為 Senior Backend / Platform Engineer，我能從 system design 到 production operation 端到端負責後端服務：定義 service boundaries、設計 authentication / authorization 與 API flows、建立 reusable integration patterns、改善 latency 與 reliability，並強化 CI/CD 與 observability。我最能發揮價值的環境，是同時需要技術方向判斷、跨團隊協作、後端架構設計、平台能力建設與 production reliability 一起推進的團隊。
 
   experiences:
       title: 經歷
